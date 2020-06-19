@@ -10,17 +10,35 @@
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
+    "husky": "^4.2.5",
+    "lint": "^0.7.0",
+    "prettier": "^2.0.5",
     "react": "^16.13.1",
+    "react-animations": "^1.0.0",
     "react-dom": "^16.13.1",
+    "react-icons": "^3.10.0",
     "react-jss": "^10.3.0",
     "react-scripts": "3.4.1",
+    "typeface-roboto": "^0.0.75",
     "typescript": "~3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier:check": "prettier --config .prettierrc.js --check",
+    "prettier:fix": "yarn prettier:check --write",
+    "lint:check": "eslint --config .eslintrc.js \"./packages/**/*.{ts,tsx}\"",
+    "lint:fix": "yarn lint:check --fix",
+    "quality:check": "yarn lint:check && yarn prettier:check",
+    "quality:fix": "yarn lint:fix && yarn prettier:fix",
+    "precommit:check": "yarn test"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "yarn precommit:check"
+    }
   },
   "eslintConfig": {
     "extends": "react-app"
