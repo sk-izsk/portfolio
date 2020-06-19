@@ -1,5 +1,10 @@
+coverage/
 node_modules
-**/dist/**/*
-**/build/**/*
-**/.serverless/**/*
-**/cdk.out/**/*
+package.json
+package-lock.json
+yarn.lock
+babel.config.js
+tsconfig.json
+tslint.json
+app.json
+.vscode/*

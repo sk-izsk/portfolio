@@ -1,10 +1,10 @@
-import React from "react";
-import { createUseStyles } from "react-jss";
-import { AppBar } from "./components";
-import { CustomTheme } from "./theme";
+import React from 'react'
+import { createUseStyles } from 'react-jss'
+import { AppBar } from './components'
+import { CustomTheme } from './theme'
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
-  "@global": {
+  '@global': {
     body: {
       padding: 0,
       margin: 0,
@@ -12,15 +12,15 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
       fontFamily: theme.fontProperties.fontFamily,
     },
   },
-}));
+}))
 
 const App: React.FC = () => {
-  useStyles();
+  useStyles()
   return (
     <div>
       <AppBar />
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

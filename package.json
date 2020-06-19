@@ -18,7 +18,9 @@
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
     "react-jss": "^10.3.0",
+    "react-responsive": "^8.1.0",
     "react-scripts": "3.4.1",
+    "tslint": "^6.1.2",
     "typeface-roboto": "^0.0.75",
     "typescript": "~3.7.2"
   },
@@ -27,17 +29,21 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prettier:check": "prettier --config .prettierrc.js --check",
+    "test-ci": "react-scripts test --coverage",
+    "prettier:check": "prettier --config .prettierrc.js --check \"src/**/*.{ts,tsx}\"",
     "prettier:fix": "yarn prettier:check --write",
-    "lint:check": "eslint --config .eslintrc.js \"./packages/**/*.{ts,tsx}\"",
+    "prettier:fix-all": "yarn prettier-check --write",
+    "lint": "tslint --project tsconfig.json",
+    "lint:check": "eslint --config .eslintrc.js \"src/**/*.{ts,tsx}\"",
     "lint:fix": "yarn lint:check --fix",
     "quality:check": "yarn lint:check && yarn prettier:check",
     "quality:fix": "yarn lint:fix && yarn prettier:fix",
-    "precommit:check": "yarn test"
+    "precommit:check": "yarn prettier:fix-all",
+    "prettier-check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,sass,scss,css,html,md}\""
   },
   "husky": {
     "hooks": {
-      "pre-push": "yarn precommit:check"
+      "pre-commit": "yarn precommit:check"
     }
   },
   "eslintConfig": {
