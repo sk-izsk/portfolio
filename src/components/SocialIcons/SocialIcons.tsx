@@ -23,7 +23,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
 }));
 
-const socialIcons: JSX.Element[] = [
+const socialIcons: JSX.Element[] | any = [
   <FaGithub onClick={() => window.open('https://github.com/sk-izsk', '_blank')} size={25} />,
   <FaLinkedin onClick={() => window.open('https://www.linkedin.com/in/skizsk/', '_blank')} size={25} />,
   <FiTwitter onClick={() => window.open('https://twitter.com/Sk_iZsk', '_blank')} size={25} />,

@@ -5,7 +5,6 @@ import { CustomTheme } from '../../theme';
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
   mainContainer: {
-    marginTop: theme.spacing(4),
     backgroundColor: theme.colors.thirdColor,
     color: theme.colors.white,
     borderWidth: 0,

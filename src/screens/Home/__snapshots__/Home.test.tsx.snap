@@ -8,22 +8,26 @@ exports[`Home renders correctly 1`] = `
     <div
       class="childContainer-0-2-3"
     >
-      <img
-        alt="Avatar"
-        class="mainContainer-0-2-4"
-        src="https://lh3.googleusercontent.com/F8KLg2sPp76ZRIdAbG0QwHspM1jZbAgx6GdYVlOn0T9STESNoScrQon73LOLpmySnpl3WZXPA8P3lnwjW3Qoe2hsbNhAlwsvaxOIeIIpOpcFP_dNiYt8DyQUdI8c0dlZcdlZDSpwWo2Sd7_AzclMp0sAvOYl1T3VY2ME0IVzEGTYl6R7MwsAccokdfgzGmqDQ_d1LWG0EzpjZEA1jZuY0CGXFwcXGbeKpCGfnDlo3a4NByKuEMxWyHD5M_f8d7h3zRKRnOaroDnPqYwkIbCcuMex4vqheqaRzlJKYgzB76bzMLOnb45C2OhW6A5iIEY0hmLdhot5Vq8trKz7VAeDYlw8tW8XZ0m1Stm5kJYAR7RJShkNcCX5xYTsgvE6z47VY8k-RTBQLy8kcIHDS2yOu_R-i437kC5LLZUZqKiJSgto749pkYSxLihUJwxSzS9kunOCzV50qgHohIXweK847hJ-8QBqK3CPlRUpDPyGpwq_1UuB-XYj6FlXZjcfZiwVlMjUechy0nMOZkBLvM-EfhKcCPSpaSac6nj82IFH_hEBhifceD8lAeIStPVwmoYcCYvRXnLt5ZHIhgBL2J4fwkzOSH95gORWljPx3NIfkm2UNIE1883k4W3tPJATt8sYN7oDWR5_ksPtHdZS9z_DT9w-TPaDyg3t5-09hh3zDqVjSNpJ5ty5Uut8NKXQ_AU=w912-h861-no?authuser=0"
-      />
+      <div
+        style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+      >
+        <img
+          alt="Avatar"
+          class="mainContainer-0-2-5"
+          src="https://lh3.googleusercontent.com/F8KLg2sPp76ZRIdAbG0QwHspM1jZbAgx6GdYVlOn0T9STESNoScrQon73LOLpmySnpl3WZXPA8P3lnwjW3Qoe2hsbNhAlwsvaxOIeIIpOpcFP_dNiYt8DyQUdI8c0dlZcdlZDSpwWo2Sd7_AzclMp0sAvOYl1T3VY2ME0IVzEGTYl6R7MwsAccokdfgzGmqDQ_d1LWG0EzpjZEA1jZuY0CGXFwcXGbeKpCGfnDlo3a4NByKuEMxWyHD5M_f8d7h3zRKRnOaroDnPqYwkIbCcuMex4vqheqaRzlJKYgzB76bzMLOnb45C2OhW6A5iIEY0hmLdhot5Vq8trKz7VAeDYlw8tW8XZ0m1Stm5kJYAR7RJShkNcCX5xYTsgvE6z47VY8k-RTBQLy8kcIHDS2yOu_R-i437kC5LLZUZqKiJSgto749pkYSxLihUJwxSzS9kunOCzV50qgHohIXweK847hJ-8QBqK3CPlRUpDPyGpwq_1UuB-XYj6FlXZjcfZiwVlMjUechy0nMOZkBLvM-EfhKcCPSpaSac6nj82IFH_hEBhifceD8lAeIStPVwmoYcCYvRXnLt5ZHIhgBL2J4fwkzOSH95gORWljPx3NIfkm2UNIE1883k4W3tPJATt8sYN7oDWR5_ksPtHdZS9z_DT9w-TPaDyg3t5-09hh3zDqVjSNpJ5ty5Uut8NKXQ_AU=w912-h861-no?authuser=0"
+        />
+      </div>
       <h1
         class="textColor-0-2-2"
       >
         Zeeshan
       </h1>
       <div
-        class="textColor-0-2-5"
+        class="textColor-0-2-6"
       >
         I am a
         <span
-          class="animatedText-0-2-6"
+          class="animatedText-0-2-7"
         >
           <div
             class="x0 x1 x2 "
@@ -42,10 +46,10 @@ exports[`Home renders correctly 1`] = `
         </span>
       </div>
       <div
-        class="mainContainer-0-2-7"
+        class="mainContainer-0-2-8"
       >
         <div
-          class="socialIconContainer-0-2-8"
+          class="socialIconContainer-0-2-9"
         >
           <svg
             fill="currentColor"
@@ -63,7 +67,7 @@ exports[`Home renders correctly 1`] = `
           </svg>
         </div>
         <div
-          class="socialIconContainer-0-2-8"
+          class="socialIconContainer-0-2-9"
         >
           <svg
             fill="currentColor"
@@ -81,7 +85,7 @@ exports[`Home renders correctly 1`] = `
           </svg>
         </div>
         <div
-          class="socialIconContainer-0-2-8"
+          class="socialIconContainer-0-2-9"
         >
           <svg
             fill="none"
@@ -101,7 +105,7 @@ exports[`Home renders correctly 1`] = `
           </svg>
         </div>
         <div
-          class="socialIconContainer-0-2-8"
+          class="socialIconContainer-0-2-9"
         >
           <svg
             fill="currentColor"
@@ -119,7 +123,7 @@ exports[`Home renders correctly 1`] = `
           </svg>
         </div>
         <div
-          class="socialIconContainer-0-2-8"
+          class="socialIconContainer-0-2-9"
         >
           <svg
             fill="none"
@@ -153,7 +157,7 @@ exports[`Home renders correctly 1`] = `
           </svg>
         </div>
         <div
-          class="socialIconContainer-0-2-8"
+          class="socialIconContainer-0-2-9"
         >
           <svg
             fill="currentColor"
@@ -171,7 +175,7 @@ exports[`Home renders correctly 1`] = `
           </svg>
         </div>
         <div
-          class="socialIconContainer-0-2-8"
+          class="socialIconContainer-0-2-9"
         >
           <svg
             fill="currentColor"
@@ -189,11 +193,16 @@ exports[`Home renders correctly 1`] = `
           </svg>
         </div>
       </div>
-      <button
-        class="mainContainer-0-2-9"
+      <div
+        class="buttonContainer-0-2-4"
       >
-        Hire me
-      </button>
+        <button
+          class="mainContainer-0-2-10"
+          style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+        >
+          Hire me
+        </button>
+      </div>
     </div>
   </div>
 </DocumentFragment>

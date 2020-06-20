@@ -16,12 +16,12 @@
     "lint": "^0.7.0",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
-    "react-animations": "^1.0.0",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
     "react-jss": "^10.3.0",
     "react-responsive": "^8.1.0",
     "react-scripts": "3.4.1",
+    "react-spring": "^8.0.27",
     "react-text-loop": "^2.3.0",
     "tslint": "^6.1.2",
     "typeface-roboto": "^0.0.75",
@@ -41,7 +41,8 @@
     "lint:fix": "yarn lint:check --fix",
     "quality:check": "yarn lint:check && yarn prettier:check",
     "quality:fix": "yarn lint:fix && yarn prettier:fix",
-    "precommit:check": "yarn prettier:fix-all"
+    "precommit:check": "yarn prettier:fix-all",
+    "clean": "rm -fr node_modules"
   },
   "husky": {
     "hooks": {

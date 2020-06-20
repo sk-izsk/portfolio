@@ -1,3 +1,4 @@
+export { ThreeDAnimation } from './AnimatedContainer/AnimatedContainer';
 export { AnimatedText } from './AnimatedText/AnimatedText';
 export { AppBar } from './AppBar/AppBar';
 export { appBarItems } from './AppBar/AppBarItemType';

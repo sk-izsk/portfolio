@@ -38,6 +38,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   mobileAppBarItemsMainContainer: {
     display: 'flex',
     justifyContent: 'center',
+    marginBottom: theme.spacing(2.5),
   },
 }));
 
