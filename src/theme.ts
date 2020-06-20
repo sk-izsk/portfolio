@@ -3,6 +3,7 @@ export interface CustomTheme {
     primaryColor: string;
     secondaryColor: string;
     thirdColor: string;
+    darkerThirdColor: string;
     darkerPrimaryColor: string;
     lighterPrimaryColor: string;
     white: string;
@@ -20,6 +21,7 @@ const theme: CustomTheme = {
     primaryColor: '#353353',
     secondaryColor: '#FFD15C',
     thirdColor: '#FF4C60',
+    darkerThirdColor: '	 #ff334b',
     darkerPrimaryColor: '#302f4e',
     lighterPrimaryColor: '#8B88B1',
     white: '#fff',
