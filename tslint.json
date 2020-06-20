@@ -1,0 +1,22 @@
+{
+  "rulesDirectory": [],
+  "linterOptions": {
+    "exclude": ["node_modules/**/*"]
+  },
+  "rules": {
+    "no-duplicate-imports": false,
+    "ordered-imports": false,
+    "object-literal-short-keys":false,
+    "member-ordering":false,
+    "jsx-no-lambda":false,
+    "jsx-boolean-value":false
+  },
+  "extends":[
+    "tslint:recommended",
+    "tslint-config-standard",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "defaultSeverity":"error"
+}
+

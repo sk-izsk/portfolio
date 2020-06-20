@@ -30,16 +30,15 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "test-ci": "react-scripts test --coverage",
-    "prettier:check": "prettier --config .prettierrc.js --check \"src/**/*.{ts,tsx}\"",
+    "prettier:check": "prettier --config .prettierrc.js --check \"*/**/*.{ts,tsx,js,jsx,json,sass,scss,css,html,md}\"",
     "prettier:fix": "yarn prettier:check --write",
-    "prettier:fix-all": "yarn prettier-check --write",
-    "lint": "tslint --project tsconfig.json",
+    "prettier:fix-all": "yarn prettier:check --write",
+    "tslint": "tslint --project tsconfig.json",
     "lint:check": "eslint --config .eslintrc.js \"src/**/*.{ts,tsx}\"",
     "lint:fix": "yarn lint:check --fix",
     "quality:check": "yarn lint:check && yarn prettier:check",
     "quality:fix": "yarn lint:fix && yarn prettier:fix",
-    "precommit:check": "yarn prettier:fix-all",
-    "prettier-check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,sass,scss,css,html,md}\""
+    "precommit:check": "yarn prettier:fix-all"
   },
   "husky": {
     "hooks": {
@@ -60,5 +59,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^9.0.0",
+    "tslint-react": "^5.0.0"
   }
 }
