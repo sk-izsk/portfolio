@@ -1,6 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { AppBar } from './components';
+import { Home } from './screens';
 import { CustomTheme } from './theme';
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
@@ -19,6 +20,7 @@ const App: React.FC = () => {
   return (
     <div>
       <AppBar />
+      <Home />
     </div>
   );
 };

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders correctly 1`] = `
+<DocumentFragment>
+  <button
+    class="mainContainer-0-2-1"
+    style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+  >
+    Mock Button
+  </button>
+</DocumentFragment>
+`;

@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnimatedText renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="textColor-0-2-1"
+  >
+    I am a
+    <span
+      class="animatedText-0-2-2"
+    >
+      <div
+        class="x0 x1 x2 "
+      >
+        <div
+          style="transition: width 150ms linear; height: auto; width: auto;"
+        >
+          <div
+            class="x0 x3 x4 x5"
+            style="opacity: 1; transform: translateY(0px); position: relative;"
+          >
+            Front End Developer
+          </div>
+        </div>
+      </div>
+    </span>
+  </div>
+</DocumentFragment>
+`;
