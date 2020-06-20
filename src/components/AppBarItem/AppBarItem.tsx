@@ -13,9 +13,8 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     color: theme.colors.white,
     '&:hover': {
       color: theme.colors.secondaryColor,
-      borderBottomColor: theme.colors.secondaryColor,
-      borderBottomWidth: 2,
-      borderBottomStyle: 'solid',
+      borderBottom: `2px solid ${theme.colors.secondaryColor}`,
+      transition: 'borderBottom 1s',
     },
   },
   title: {
