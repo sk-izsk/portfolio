@@ -1,5 +1,6 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
+import Sticky from 'react-sticky-el';
 import { AppBar } from './components';
 import { Home } from './screens';
 import { CustomTheme } from './theme';
@@ -19,7 +20,10 @@ const App: React.FC = () => {
   useStyles();
   return (
     <div>
-      <AppBar />
+      <Sticky>
+        <AppBar />
+      </Sticky>
+
       <Home />
     </div>
   );

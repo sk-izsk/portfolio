@@ -15,6 +15,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     display: 'flex',
     justifyContent: 'space-evenly',
     position: 'sticky',
+    backgroundColor: theme.colors.primaryColor,
     paddingTop: theme.spacing(2.5),
     paddingBottom: theme.spacing(2.5),
   },
