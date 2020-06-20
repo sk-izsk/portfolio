@@ -1,18 +1,18 @@
 export interface CustomTheme {
   colors: {
-    primaryColor: string
-    secondaryColor: string
-    thirdColor: string
-    darkerPrimaryColor: string
-    lighterPrimaryColor: string
-    white: string
-  }
+    primaryColor: string;
+    secondaryColor: string;
+    thirdColor: string;
+    darkerPrimaryColor: string;
+    lighterPrimaryColor: string;
+    white: string;
+  };
   fontProperties: {
-    textFontSize: number
-    headerFontSize: number
-    fontFamily: string
-  }
-  spacing: (value: number) => number
+    textFontSize: number;
+    headerFontSize: number;
+    fontFamily: string;
+  };
+  spacing: (value: number) => number;
 }
 
 const theme: CustomTheme = {
@@ -30,6 +30,6 @@ const theme: CustomTheme = {
     fontFamily: 'Roboto',
   },
   spacing: (value: number) => 8 * value,
-}
+};
 
-export { theme }
+export { theme };
