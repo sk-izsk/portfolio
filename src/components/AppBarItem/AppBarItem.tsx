@@ -1,6 +1,11 @@
-import React from 'react'
-import { createUseStyles } from 'react-jss'
-import { CustomTheme } from '../../theme'
+import React from 'react';
+import { createUseStyles } from 'react-jss';
+import { CustomTheme } from '../../theme';
+
+interface AppBarItemProps {
+  icon: JSX.Element;
+  fontSize?: number | null;
+}
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
   mainContainer: {
@@ -14,26 +19,22 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     '&:hover': {
       color: theme.colors.secondaryColor,
       borderBottom: `2px solid ${theme.colors.secondaryColor}`,
-      transition: 'borderBottom 1s',
     },
   },
   title: {
     marginLeft: theme.spacing(1.25),
+    fontSize: ({ fontSize }: AppBarItemProps): number | null => (fontSize ? fontSize : null),
   },
-}))
+}));
 
-interface AppBarItemProps {
-  icon: JSX.Element
-}
-
-const AppBarItem: React.FC<AppBarItemProps> = ({ icon, children }) => {
-  const classes: Record<'mainContainer' | 'title', string> = useStyles()
+const AppBarItem: React.FC<AppBarItemProps> = (props) => {
+  const classes: Record<'mainContainer' | 'title', string> = useStyles(props);
   return (
     <div className={classes.mainContainer}>
-      {icon}
-      <div className={classes.title}>{children}</div>
+      {props.icon}
+      <div className={classes.title}>{props.children}</div>
     </div>
-  )
-}
+  );
+};
 
-export { AppBarItem }
+export { AppBarItem };

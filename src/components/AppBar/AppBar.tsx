@@ -1,9 +1,12 @@
-import React from 'react'
-import { FaCamera, FaCode, FaHome, FaUser } from 'react-icons/fa'
-import { IoIosChatbubbles, IoIosSchool } from 'react-icons/io'
-import { createUseStyles } from 'react-jss'
-import { CustomTheme } from '../../theme'
-import { AppBarItem } from '../AppBarItem/AppBarItem'
+import clsx from 'clsx';
+import React, { useState } from 'react';
+import { FiMenu } from 'react-icons/fi';
+import { IoMdClose } from 'react-icons/io';
+import { createUseStyles } from 'react-jss';
+import { useMediaQuery } from 'react-responsive';
+import { CustomTheme } from '../../theme';
+import { AppBarItem } from '../AppBarItem/AppBarItem';
+import { appBarItems, AppBarItemType } from './AppBarItemType';
 
 interface AppBarProps {}
 
@@ -15,53 +18,83 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     paddingTop: theme.spacing(2.5),
     paddingBottom: theme.spacing(2.5),
   },
-}))
-
-interface AppBarItemType {
-  title: string
-  icon: JSX.Element
-}
-
-const appBarItems: AppBarItemType[] = [
-  {
-    title: 'Home',
-    icon: <FaHome />,
+  mainContainerForMobile: {
+    color: theme.colors.white,
+    justifyContent: 'flex-end',
+    paddingRight: theme.spacing(2.5),
+    cursor: 'pointer',
+    '&:hover': {
+      color: theme.colors.secondaryColor,
+      pointerEvent: 'none',
+    },
   },
-  {
-    title: 'About',
-    icon: <FaUser />,
+  mobileAppBarItem: {
+    marginTop: theme.spacing(1.5),
   },
-  {
-    title: 'Education',
-    icon: <IoIosSchool />,
+  mobileAppBarItemsContainer: {
+    maxWidth: theme.spacing(32.5),
+    width: '100%',
   },
-  {
-    title: 'Experience',
-    icon: <FaCode />,
+  mobileAppBarItemsMainContainer: {
+    display: 'flex',
+    justifyContent: 'center',
   },
-  {
-    title: 'Photography',
-    icon: <FaCamera />,
-  },
-  {
-    title: 'Contact',
-    icon: <IoIosChatbubbles />,
-  },
-]
+}));
 
 const AppBar: React.FC<AppBarProps> = () => {
-  const classes: Record<'mainContainer', string> = useStyles()
-  return (
-    <div className={classes.mainContainer}>
-      {appBarItems.map((appBarItem: AppBarItemType) => {
-        return (
-          <AppBarItem key={appBarItem.title} icon={appBarItem.icon}>
-            {appBarItem.title}
-          </AppBarItem>
-        )
-      })}
-    </div>
-  )
-}
+  const classes: Record<
+    | 'mainContainer'
+    | 'mainContainerForMobile'
+    | 'mobileAppBarItemsContainer'
+    | 'mobileAppBarItem'
+    | 'mobileAppBarItemsMainContainer',
+    string
+  > = useStyles();
+  const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
+  const [showMobileAppBar, setShowMobileAppBar] = useState<boolean>(true);
 
-export { AppBar }
+  return (
+    <>
+      {!isMobile ? (
+        <div className={classes.mainContainer}>
+          {appBarItems.map((appBarItem: AppBarItemType) => {
+            return (
+              <AppBarItem key={appBarItem.title} icon={appBarItem.icon()}>
+                {appBarItem.title}
+              </AppBarItem>
+            );
+          })}
+        </div>
+      ) : (
+        <>
+          {showMobileAppBar ? (
+            <div className={clsx([classes.mainContainer, classes.mainContainerForMobile])}>
+              <FiMenu onClick={() => setShowMobileAppBar(false)} size={30} />
+            </div>
+          ) : (
+            <>
+              <div className={clsx([classes.mainContainer, classes.mainContainerForMobile])}>
+                <IoMdClose onClick={() => setShowMobileAppBar(true)} size={30} />
+              </div>
+              <div className={classes.mobileAppBarItemsMainContainer}>
+                <div className={classes.mobileAppBarItemsContainer}>
+                  {appBarItems.map((appBarItem: AppBarItemType) => {
+                    return (
+                      <div className={classes.mobileAppBarItem} key={appBarItem.title}>
+                        <AppBarItem fontSize={30} icon={appBarItem.icon(30)}>
+                          {appBarItem.title}
+                        </AppBarItem>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </>
+          )}
+        </>
+      )}
+    </>
+  );
+};
+
+export { AppBar };
