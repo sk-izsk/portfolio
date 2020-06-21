@@ -31,7 +31,10 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
   button: {
     position: 'relative',
-    top: theme.spacing(6.25),
+    top: theme.spacing(5.75),
+  },
+  buttonMobile: {
+    top: theme.spacing(5),
   },
   skillsInfoContainer: {
     display: 'flex',
@@ -74,6 +77,7 @@ const AboutInfo: React.FC<AboutInfoProps> = () => {
     | 'skillsInfoContainer'
     | 'triangleMobile'
     | 'triangleContainer'
+    | 'buttonMobile'
     | 'triangleContainerMobile',
     string
   > = useStyles();
@@ -89,9 +93,9 @@ const AboutInfo: React.FC<AboutInfoProps> = () => {
       <div className={classes.descriptionContainer}>
         <div className={classes.description}>
           I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website.
-          Also I am a hobbits photographer.
+          Also I am a hobbyist photographer.
         </div>
-        <div className={classes.button}>
+        <div className={clsx([classes.button, isMobile && classes.buttonMobile])}>
           <Button
             onClick={() =>
               window.open(
