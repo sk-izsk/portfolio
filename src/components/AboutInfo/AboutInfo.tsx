@@ -2,10 +2,9 @@ import clsx from 'clsx';
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { useMediaQuery } from 'react-responsive';
-import { Button } from '..';
+import { Button, ProgressBarContainer } from '..';
 import { CustomTheme } from '../../theme';
-import { ProgressBarContainer } from '../ProgressBarContainer/ProgressBarContainer';
-import { SkillInformationTypes, skillsInformation } from './skillsInformation';
+import { SkillInformationTypes, skillsInformation } from '../../utils/informations';
 
 interface AboutInfoProps {}
 

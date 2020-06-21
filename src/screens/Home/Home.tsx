@@ -1,8 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { Element } from 'react-scroll';
-import { AnimatedText, Button, SocialIcons, ThreeDAnimation } from '../../components';
-import { Avatar } from '../../components/Avatar/Avatar';
+import { AnimatedText, Avatar, Button, SocialIcons, ThreeDAnimation } from '../../components';
 import { CustomTheme } from '../../theme';
 
 interface HomeProps {}
