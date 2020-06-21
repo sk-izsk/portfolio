@@ -733,7 +733,7 @@ exports[`App renders correctly 1`] = `
               Guiker Inc, Montreal  — Junior Software Developer
             </h2>
             <div>
-              My job is to provide assistance to my team where we work on Mobile applications (https://play.google.com/store/apps/details?id=com.guiker.mobile&hl=en) for iOS and android. Also rebuilding the existing product(www.guiker.com) and its functionality The tools we are using Expo, Typescript, Jest, React Native, React, Material UI, JSS, Axios Etc.
+              My job is to provide assistance to my team where we work on Mobile applications for iOS and android(https://play.google.com/store/apps/details?id=com.guiker.mobile&hl=en). Also rebuilding the existing product(www.guiker.com) and its functionality The tools we are using Expo, Typescript, Jest, React Native, React, Material UI, JSS, Axios Etc.
             </div>
           </div>
         </div>
