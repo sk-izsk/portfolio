@@ -70,7 +70,7 @@ const AppBar: React.FC<AppBarProps> = () => {
         <div className={classes.mainContainer}>
           {appBarItems.map((appBarItem: AppBarItemType) => {
             return (
-              <Link key={appBarItem.title} to={appBarItem.title} spy={true} smooth={true} offset={50} duration={500}>
+              <Link key={appBarItem.title} to={appBarItem.title} spy={true} smooth={true} duration={500}>
                 <AppBarItem icon={appBarItem.icon()}>{appBarItem.title}</AppBarItem>
               </Link>
             );
@@ -91,11 +91,19 @@ const AppBar: React.FC<AppBarProps> = () => {
                 <div className={classes.mobileAppBarItemsContainer}>
                   {appBarItems.map((appBarItem: AppBarItemType) => {
                     return (
-                      <div className={classes.mobileAppBarItem} key={appBarItem.title}>
+                      <Link
+                        key={appBarItem.title}
+                        to={appBarItem.title}
+                        spy={true}
+                        smooth={true}
+                        duration={500}
+                        className={classes.mobileAppBarItem}
+                        onClick={() => setShowMobileAppBar(true)}
+                      >
                         <AppBarItem fontSize={30} icon={appBarItem.icon(30)}>
                           {appBarItem.title}
                         </AppBarItem>
-                      </div>
+                      </Link>
                     );
                   })}
                 </div>
