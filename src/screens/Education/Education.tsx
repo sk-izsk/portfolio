@@ -9,7 +9,14 @@ interface EducationProps {}
 const EducationIcon: () => JSX.Element = () => <IoMdSchool size={30} color={theme.colors.thirdColor} />;
 
 const Education: React.FC<EducationProps> = () => {
-  return <InformationBarContainer icon={<EducationIcon />} title='Education' informations={educationInformations} />;
+  return (
+    <InformationBarContainer
+      icon={<EducationIcon />}
+      marginTop={6}
+      title='Education'
+      informations={educationInformations}
+    />
+  );
 };
 
 export { Education };

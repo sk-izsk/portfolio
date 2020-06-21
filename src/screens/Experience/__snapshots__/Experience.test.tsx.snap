@@ -3,7 +3,7 @@
 exports[`Experience renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="mainContainer-0-2-1"
+    class="mainContainer-0-2-1 mainContainer-d0-0-2-6"
     name="Experience"
   >
     <div
@@ -13,7 +13,7 @@ exports[`Experience renders correctly 1`] = `
         style="opacity: 0; transform: translate3d(0,20px,0);"
       >
         <h2
-          class="h2Text-0-2-6"
+          class="h2Text-0-2-7"
         >
           Experience
         </h2>
@@ -26,10 +26,10 @@ exports[`Experience renders correctly 1`] = `
         class="informationBarContainer-0-2-4"
       >
         <div
-          class="mainContainer-0-2-7"
+          class="mainContainer-0-2-8"
         >
           <div
-            class="iconContainer-0-2-8"
+            class="iconContainer-0-2-9"
           >
             <svg
               color="#FF4C60"
@@ -49,10 +49,10 @@ exports[`Experience renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-9"
+            class="descriptionContainer-0-2-10"
           >
             <div
-              class="durationContainer-0-2-10"
+              class="durationContainer-0-2-11"
             >
               July, 2019-Present
             </div>
@@ -65,10 +65,10 @@ exports[`Experience renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-7"
+          class="mainContainer-0-2-8"
         >
           <div
-            class="iconContainer-0-2-8"
+            class="iconContainer-0-2-9"
           >
             <svg
               color="#FF4C60"
@@ -88,10 +88,10 @@ exports[`Experience renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-9"
+            class="descriptionContainer-0-2-10"
           >
             <div
-              class="durationContainer-0-2-10"
+              class="durationContainer-0-2-11"
             >
               2020-2020
             </div>
@@ -99,15 +99,15 @@ exports[`Experience renders correctly 1`] = `
               This Portfolio — Personal
             </h2>
             <div>
-              I made this portfolio by using React, React Hooks, Typescript, Jest for testing and use JSS with fully controlled style. I try to make it with proper optimization by using React features
+              I made this portfolio by using React, React Hooks, Typescript, Jest for testing and some animation tools. I use JSS with fully controlled style. I try to make it with proper optimization by using React features
             </div>
           </div>
         </div>
         <div
-          class="mainContainer-0-2-7"
+          class="mainContainer-0-2-8"
         >
           <div
-            class="iconContainer-0-2-8"
+            class="iconContainer-0-2-9"
           >
             <svg
               color="#FF4C60"
@@ -127,10 +127,10 @@ exports[`Experience renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-9"
+            class="descriptionContainer-0-2-10"
           >
             <div
-              class="durationContainer-0-2-10"
+              class="durationContainer-0-2-11"
             >
               2020-2020
             </div>
@@ -143,10 +143,10 @@ exports[`Experience renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-7"
+          class="mainContainer-0-2-8"
         >
           <div
-            class="iconContainer-0-2-8"
+            class="iconContainer-0-2-9"
           >
             <svg
               color="#FF4C60"
@@ -166,10 +166,10 @@ exports[`Experience renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-9"
+            class="descriptionContainer-0-2-10"
           >
             <div
-              class="durationContainer-0-2-10"
+              class="durationContainer-0-2-11"
             >
               April, 2019-May, 2019
             </div>
@@ -182,10 +182,10 @@ exports[`Experience renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-7"
+          class="mainContainer-0-2-8"
         >
           <div
-            class="iconContainer-0-2-8"
+            class="iconContainer-0-2-9"
           >
             <svg
               color="#FF4C60"
@@ -205,10 +205,10 @@ exports[`Experience renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-9"
+            class="descriptionContainer-0-2-10"
           >
             <div
-              class="durationContainer-0-2-10"
+              class="durationContainer-0-2-11"
             >
               June, 2018-June, 2019
             </div>
@@ -221,10 +221,10 @@ exports[`Experience renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-7"
+          class="mainContainer-0-2-8"
         >
           <div
-            class="iconContainer-0-2-8"
+            class="iconContainer-0-2-9"
           >
             <svg
               color="#FF4C60"
@@ -244,10 +244,10 @@ exports[`Experience renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-9"
+            class="descriptionContainer-0-2-10"
           >
             <div
-              class="durationContainer-0-2-10"
+              class="durationContainer-0-2-11"
             >
               Jan, 2016-Jan, 2016
             </div>
@@ -260,10 +260,10 @@ exports[`Experience renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-7"
+          class="mainContainer-0-2-8"
         >
           <div
-            class="iconContainer-0-2-8"
+            class="iconContainer-0-2-9"
           >
             <svg
               color="#FF4C60"
@@ -283,10 +283,10 @@ exports[`Experience renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-9"
+            class="descriptionContainer-0-2-10"
           >
             <div
-              class="durationContainer-0-2-10"
+              class="durationContainer-0-2-11"
             >
               May, 2015-July, 2015
             </div>
@@ -299,10 +299,10 @@ exports[`Experience renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-7"
+          class="mainContainer-0-2-8"
         >
           <div
-            class="iconContainer-0-2-8"
+            class="iconContainer-0-2-9"
           >
             <svg
               color="#FF4C60"
@@ -322,10 +322,10 @@ exports[`Experience renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-9"
+            class="descriptionContainer-0-2-10"
           >
             <div
-              class="durationContainer-0-2-10"
+              class="durationContainer-0-2-11"
             >
               June, 2014-July, 2014
             </div>
@@ -338,10 +338,10 @@ exports[`Experience renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-7"
+          class="mainContainer-0-2-8"
         >
           <div
-            class="iconContainer-0-2-8"
+            class="iconContainer-0-2-9"
           >
             <svg
               color="#FF4C60"
@@ -361,10 +361,10 @@ exports[`Experience renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-9"
+            class="descriptionContainer-0-2-10"
           >
             <div
-              class="durationContainer-0-2-10"
+              class="durationContainer-0-2-11"
             >
               April, 2019-Present
             </div>

@@ -11,11 +11,13 @@ interface InformationBarContainerProps {
   title?: string;
   informations?: Information[];
   icon?: JSX.Element;
+  marginTop?: number;
 }
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
   mainContainer: {
-    marginTop: theme.spacing(6),
+    marginTop: ({ marginTop }: InformationBarContainerProps): number | undefined =>
+      marginTop ? theme.spacing(marginTop) : undefined,
   },
   header: {
     color: theme.colors.white,
@@ -46,7 +48,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
 }));
 
-const InformationBarContainer: React.FC<InformationBarContainerProps> = ({ title, informations, icon }) => {
+const InformationBarContainer: React.FC<InformationBarContainerProps> = (props) => {
   const classes: Record<
     | 'header'
     | 'mainContainer'
@@ -54,7 +56,8 @@ const InformationBarContainer: React.FC<InformationBarContainerProps> = ({ title
     | 'informationBarContainerMobile'
     | 'informationBarContainer',
     string
-  > = useStyles();
+  > = useStyles(props);
+  const { title, informations, icon } = props;
   const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
 
   return (
