@@ -1,5 +1,7 @@
-import React from 'react';
-import { animated, useSpring } from 'react-spring';
+import React, { useState } from 'react';
+import { createUseStyles } from 'react-jss';
+import { animated, useSpring, useTrail } from 'react-spring';
+import { CustomTheme } from '../../theme';
 
 interface ThreeDAnimationProps {}
 
@@ -25,4 +27,48 @@ const ThreeDAnimation: React.FC<ThreeDAnimationProps> = ({ children }) => {
   );
 };
 
-export { ThreeDAnimation };
+interface VanishAnimationProps {
+  words: string[];
+}
+
+const config = { mass: 5, tension: 2000, friction: 200 };
+
+const useStyles = createUseStyles((theme: CustomTheme) => ({
+  h2Text: {
+    marginRight: theme.spacing(1),
+  },
+}));
+
+const VanishAnimation: React.FC<VanishAnimationProps> = ({ words }) => {
+  const classes: Record<'h2Text', string> = useStyles();
+
+  const [toggle, setToggle] = useState(true);
+  const trail = useTrail(words.length, {
+    config,
+    opacity: toggle ? 1 : 0,
+    x: toggle ? 0 : 20,
+    height: toggle ? 80 : 0,
+    from: { opacity: 0, x: 20, height: 0 },
+  });
+  return (
+    <>
+      {trail.map(({ x, height, ...rest }, index) => (
+        <animated.div
+          onClick={() => {
+            setToggle(false);
+            setTimeout(() => {
+              setToggle(true);
+            }, 1000);
+          }}
+          key={words[index]}
+          //@ts-ignore
+          style={{ ...rest, transform: x.interpolate((x: number) => `translate3d(0,${x}px,0)`) }}
+        >
+          <animated.h2 className={classes.h2Text}>{words[index]}</animated.h2>
+        </animated.div>
+      ))}
+    </>
+  );
+};
+
+export { ThreeDAnimation, VanishAnimation };

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AnimatedContainer component render correctly ThreeDAnimation renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+  >
+     mock children
+  </div>
+</DocumentFragment>
+`;
+
+exports[`AnimatedContainer component render correctly VanishAnimation renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    style="opacity: 0; transform: translate3d(0,20px,0);"
+  >
+    <h2
+      class="h2Text-0-2-1"
+    >
+      mock
+    </h2>
+  </div>
+  <div
+    style="opacity: 0; transform: translate3d(0,20px,0);"
+  >
+    <h2
+      class="h2Text-0-2-1"
+    >
+      words
+    </h2>
+  </div>
+</DocumentFragment>
+`;

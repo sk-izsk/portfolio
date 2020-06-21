@@ -7,6 +7,7 @@ export interface CustomTheme {
     darkerPrimaryColor: string;
     lighterPrimaryColor: string;
     white: string;
+    blue: string;
   };
   fontProperties: {
     textFontSize: number;
@@ -24,6 +25,7 @@ const theme: CustomTheme = {
     darkerThirdColor: '	 #ff334b',
     darkerPrimaryColor: '#302f4e',
     lighterPrimaryColor: '#8B88B1',
+    blue: 'rgb(108, 108, 229)',
     white: '#fff',
   },
   fontProperties: {

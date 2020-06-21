@@ -26,12 +26,12 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
   buttonContainer: {
     marginTop: theme.spacing(3),
-    height: '100%',
   },
 }));
 
 const Home: React.FC<HomeProps> = () => {
   const classes: Record<'mainContainer' | 'textColor' | 'childContainer' | 'buttonContainer', string> = useStyles();
+
   return (
     <div className={classes.mainContainer}>
       <div className={classes.childContainer}>
@@ -42,7 +42,7 @@ const Home: React.FC<HomeProps> = () => {
         <AnimatedText />
         <SocialIcons />
         <div className={classes.buttonContainer}>
-          <Button>Hire me</Button>
+          <Button onClick={() => window.open('mailto:sk.zeeshan1992@gmail.com', '_blank')}>Hire me</Button>
         </div>
       </div>
     </div>

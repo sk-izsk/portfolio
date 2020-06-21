@@ -1,7 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { AppBar } from './components';
-import { Home } from './screens';
+import { About, Home } from './screens';
 import { CustomTheme } from './theme';
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
@@ -13,22 +13,15 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
       fontFamily: theme.fontProperties.fontFamily,
     },
   },
-  sticky: {
-    position: 'sticky',
-    top: 0,
-    zIndex: 1,
-  },
 }));
 
 const App: React.FC = () => {
   useStyles();
-  const classes: Record<'@global' | 'sticky', string> = useStyles();
   return (
     <>
-      <div className={classes.sticky}>
-        <AppBar />
-      </div>
+      <AppBar />
       <Home />
+      <About />
     </>
   );
 };
