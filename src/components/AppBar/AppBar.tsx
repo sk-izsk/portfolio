@@ -15,6 +15,8 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     display: 'flex',
     justifyContent: 'space-evenly',
     position: 'sticky',
+    top: 0,
+    zIndex: 1,
     backgroundColor: theme.colors.primaryColor,
     paddingTop: theme.spacing(2.5),
     paddingBottom: theme.spacing(2.5),
@@ -41,6 +43,11 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     justifyContent: 'center',
     marginBottom: theme.spacing(2.5),
   },
+  sticky: {
+    position: 'sticky',
+    top: 0,
+    zIndex: 1,
+  },
 }));
 
 const AppBar: React.FC<AppBarProps> = () => {
@@ -49,6 +56,7 @@ const AppBar: React.FC<AppBarProps> = () => {
     | 'mainContainerForMobile'
     | 'mobileAppBarItemsContainer'
     | 'mobileAppBarItem'
+    | 'sticky'
     | 'mobileAppBarItemsMainContainer',
     string
   > = useStyles();
@@ -56,7 +64,7 @@ const AppBar: React.FC<AppBarProps> = () => {
   const [showMobileAppBar, setShowMobileAppBar] = useState<boolean>(true);
 
   return (
-    <>
+    <div className={classes.sticky}>
       {!isMobile ? (
         <div className={classes.mainContainer}>
           {appBarItems.map((appBarItem: AppBarItemType) => {
@@ -95,7 +103,7 @@ const AppBar: React.FC<AppBarProps> = () => {
           )}
         </>
       )}
-    </>
+    </div>
   );
 };
 

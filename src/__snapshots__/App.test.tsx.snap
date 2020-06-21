@@ -3,10 +3,10 @@
 exports[`App renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="sticky-0-2-1"
+    class="sticky-0-2-6"
   >
     <div
-      class="mainContainer-0-2-2"
+      class="mainContainer-0-2-1"
     >
       <div
         class="mainContainer-0-2-7"

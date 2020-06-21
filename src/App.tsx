@@ -13,21 +13,13 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
       fontFamily: theme.fontProperties.fontFamily,
     },
   },
-  sticky: {
-    position: 'sticky',
-    top: 0,
-    zIndex: 1,
-  },
 }));
 
 const App: React.FC = () => {
   useStyles();
-  const classes: Record<'@global' | 'sticky', string> = useStyles();
   return (
     <>
-      <div className={classes.sticky}>
-        <AppBar />
-      </div>
+      <AppBar />
       <Home />
       <About />
     </>
