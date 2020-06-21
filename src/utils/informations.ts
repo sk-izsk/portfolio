@@ -35,7 +35,6 @@ const educationInformations: Information[] = [
     details:
       "I have completed my Master's of Engineering from Concordia University in Electrical and Computer Engineering. Where I gathered information about how computer hardware work in cpu level, model driven architecture, signal processing, digital communication and so on.",
   },
-
   {
     nameOfOrganization: 'Narula Institute of Technology(India)',
     startYear: '2011',
@@ -60,7 +59,6 @@ const experienceInformations: Information[] = [
     details:
       'I made this portfolio by using React, React Hooks, Typescript, Jest for testing and some animation tools. I use JSS with fully controlled style. I try to make it with proper optimization by using React features',
   },
-
   {
     nameOfOrganization: 'CoronaVirus-tracker — Personal',
     startYear: '2020',
@@ -96,7 +94,6 @@ const experienceInformations: Information[] = [
     details:
       'Led a team of 5 to create a Matlab-controlled Arduino robot. By uploading an image, users could instruct the robot to do commands, such as it follows the specific color. A paper on this project was published through IEEE, a major science publisher.',
   },
-
   {
     nameOfOrganization: 'STQC Directorate run by Government of India, Kolkata, India — Trainee',
     startYear: 'June, 2014',

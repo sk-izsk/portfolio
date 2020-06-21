@@ -33,7 +33,7 @@ const theme: CustomTheme = {
   fontProperties: {
     textFontSize: 16,
     headerFontSize: 36,
-    fontFamily: 'Roboto',
+    fontFamily: 'Open Sans,Montserrat, Fira Sans, Lato, Roboto',
   },
   spacing: (value: number) => 8 * value,
 };
