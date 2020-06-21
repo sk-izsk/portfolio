@@ -22,7 +22,6 @@
     "react-responsive": "^8.1.0",
     "react-scripts": "3.4.1",
     "react-spring": "^8.0.27",
-    "react-sticky-el": "^2.0.5",
     "react-text-loop": "^2.3.0",
     "tslint": "^6.1.2",
     "typeface-roboto": "^0.0.75",
