@@ -51,7 +51,7 @@ const experienceInformations: Information[] = [
     startYear: 'July, 2019',
     endYear: 'Present',
     details:
-      'My job is to provide assistance to my team where we work on Mobile applications for iOS and android(https://play.google.com/store/apps/details?id=com.guiker.mobile&hl=en). Also rebuilding the existing product(www.guiker.com) and its functionality The tools we are using Expo, Typescript, Jest, React Native, React, Material UI, JSS, Axios Etc.',
+      'My job is to provide assistance to my team where we work on Mobile applications for iOS and android. Also rebuilding the existing product(www.guiker.com) and its functionality The tools we are using Expo, Typescript, Jest, React Native, React, Material UI, JSS, Axios Etc.',
   },
   {
     nameOfOrganization: 'This Portfolio — Personal',
