@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { useMediaQuery } from 'react-responsive';
+import { Element } from 'react-scroll';
 import { AboutInfo, Avatar, ThreeDAnimation, VanishAnimation } from '../../components';
 import { CustomTheme } from '../../theme';
 
@@ -48,7 +49,7 @@ const About: React.FC<AboutProps> = () => {
   const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
 
   return (
-    <div>
+    <Element name='About'>
       <div className={classes.header}>
         <VanishAnimation words={['About', 'Me']} />
       </div>
@@ -62,7 +63,7 @@ const About: React.FC<AboutProps> = () => {
           <AboutInfo />
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

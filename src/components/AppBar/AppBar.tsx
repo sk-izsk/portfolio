@@ -4,6 +4,7 @@ import { FiMenu } from 'react-icons/fi';
 import { IoMdClose } from 'react-icons/io';
 import { createUseStyles } from 'react-jss';
 import { useMediaQuery } from 'react-responsive';
+import { Link } from 'react-scroll';
 import { CustomTheme } from '../../theme';
 import { AppBarItem } from '../AppBarItem/AppBarItem';
 import { appBarItems, AppBarItemType } from './AppBarItemType';
@@ -69,9 +70,9 @@ const AppBar: React.FC<AppBarProps> = () => {
         <div className={classes.mainContainer}>
           {appBarItems.map((appBarItem: AppBarItemType) => {
             return (
-              <AppBarItem key={appBarItem.title} icon={appBarItem.icon()}>
-                {appBarItem.title}
-              </AppBarItem>
+              <Link key={appBarItem.title} to={appBarItem.title} spy={true} smooth={true} offset={50} duration={500}>
+                <AppBarItem icon={appBarItem.icon()}>{appBarItem.title}</AppBarItem>
+              </Link>
             );
           })}
         </div>

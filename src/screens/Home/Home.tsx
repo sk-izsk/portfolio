@@ -1,5 +1,6 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
+import { Element } from 'react-scroll';
 import { AnimatedText, Button, SocialIcons, ThreeDAnimation } from '../../components';
 import { Avatar } from '../../components/Avatar/Avatar';
 import { CustomTheme } from '../../theme';
@@ -33,19 +34,21 @@ const Home: React.FC<HomeProps> = () => {
   const classes: Record<'mainContainer' | 'textColor' | 'childContainer' | 'buttonContainer', string> = useStyles();
 
   return (
-    <div className={classes.mainContainer}>
-      <div className={classes.childContainer}>
-        <ThreeDAnimation>
-          <Avatar url='https://lh3.googleusercontent.com/pw/ACtC-3epfH7nv1M0gjlxBPvjEuzVhub4UxRHhjAQXJoj32Q9-N6q6b0m8GX49RkVZCaDcXk4CjofoCgH-AabzYJ_cs8oSET1qfdHKtj98MKtx1v4dpndoBmvskb6Mlb6-fravD4EDkvQggGuFv8-_ccNRtcgFA=w912-h861-no' />
-        </ThreeDAnimation>
-        <h1 className={classes.textColor}>Zeeshan</h1>
-        <AnimatedText />
-        <SocialIcons />
-        <div className={classes.buttonContainer}>
-          <Button onClick={() => window.open('mailto:sk.zeeshan1992@gmail.com', '_blank')}>Hire me</Button>
+    <Element name='Home'>
+      <div className={classes.mainContainer}>
+        <div className={classes.childContainer}>
+          <ThreeDAnimation>
+            <Avatar url='https://lh3.googleusercontent.com/pw/ACtC-3epfH7nv1M0gjlxBPvjEuzVhub4UxRHhjAQXJoj32Q9-N6q6b0m8GX49RkVZCaDcXk4CjofoCgH-AabzYJ_cs8oSET1qfdHKtj98MKtx1v4dpndoBmvskb6Mlb6-fravD4EDkvQggGuFv8-_ccNRtcgFA=w912-h861-no' />
+          </ThreeDAnimation>
+          <h1 className={classes.textColor}>Zeeshan</h1>
+          <AnimatedText />
+          <SocialIcons />
+          <div className={classes.buttonContainer}>
+            <Button onClick={() => window.open('mailto:sk.zeeshan1992@gmail.com', '_blank')}>Hire me</Button>
+          </div>
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 

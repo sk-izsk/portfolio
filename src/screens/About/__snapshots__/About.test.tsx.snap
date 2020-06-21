@@ -2,7 +2,9 @@
 
 exports[`About renders correctly 1`] = `
 <DocumentFragment>
-  <div>
+  <div
+    name="About"
+  >
     <div
       class="header-0-2-1"
     >
