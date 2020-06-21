@@ -11,8 +11,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     borderRadius: 25,
     maxWidth: 172,
     width: '100%',
-    maxHeight: 40,
-    height: '100%',
+    height: 40,
     outline: 'none',
     cursor: 'pointer',
     '&:hover': {
@@ -29,9 +28,11 @@ const calc: (x: number, y: number) => number[] = (x: number, y: number) => [
 const trans: (x: number, y: number, s: number) => string | undefined = (x: number, y: number, s: number) =>
   `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`;
 
-interface ButtonProps {}
+interface ButtonProps {
+  onClick?: () => void;
+}
 
-const Button: React.FC<ButtonProps> = ({ children }) => {
+const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
   const classes: Record<'mainContainer', string> = useStyles();
   const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }));
 
@@ -40,7 +41,7 @@ const Button: React.FC<ButtonProps> = ({ children }) => {
       onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{ transform: props.xys.interpolate(trans as any) }}
-      onClick={() => window.open('mailto:sk.zeeshan1992@gmail.com', '_blank')}
+      onClick={onClick}
       className={classes.mainContainer}
     >
       {children}

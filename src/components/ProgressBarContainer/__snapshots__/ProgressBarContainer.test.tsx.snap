@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProgressBarContainer renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="progressBarParent-0-2-5"
+  >
+    <div
+      class="description-0-2-2"
+    >
+      <h3>
+        mock name
+      </h3>
+      <h3>
+        50%
+      </h3>
+    </div>
+    <div
+      class="progressBarContainer-0-2-3"
+    >
+      <div
+        class="progressBar-0-2-4 progressBar-d0-0-2-6"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

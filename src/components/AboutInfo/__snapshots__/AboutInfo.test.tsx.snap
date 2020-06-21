@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutInfo renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="mainContainer-0-2-1"
+  >
+    <div
+      class="triangleContainer-0-2-6"
+    >
+      <div
+        class="triangle-0-2-7"
+      />
+    </div>
+    <div
+      class="descriptionContainer-0-2-2"
+    >
+      <div
+        class="description-0-2-3"
+      >
+        I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website. Also I am a hobbits photographer.
+      </div>
+      <div
+        class="button-0-2-4"
+      >
+        <button
+          class="mainContainer-0-2-10"
+          style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+        >
+          Download My CV
+        </button>
+      </div>
+    </div>
+    <div
+      class="skillsInfoContainer-0-2-5"
+    >
+      <div
+        class="progressBarParent-0-2-15"
+      >
+        <div
+          class="description-0-2-12"
+        >
+          <h3>
+            React
+          </h3>
+          <h3>
+            80%
+          </h3>
+        </div>
+        <div
+          class="progressBarContainer-0-2-13"
+        >
+          <div
+            class="progressBar-0-2-14 progressBar-d0-0-2-16"
+          />
+        </div>
+      </div>
+      <div
+        class="progressBarParent-0-2-15"
+      >
+        <div
+          class="description-0-2-12"
+        >
+          <h3>
+            Typescript
+          </h3>
+          <h3>
+            75%
+          </h3>
+        </div>
+        <div
+          class="progressBarContainer-0-2-13"
+        >
+          <div
+            class="progressBar-0-2-14 progressBar-d1-0-2-17"
+          />
+        </div>
+      </div>
+      <div
+        class="progressBarParent-0-2-15"
+      >
+        <div
+          class="description-0-2-12"
+        >
+          <h3>
+            Redux
+          </h3>
+          <h3>
+            75%
+          </h3>
+        </div>
+        <div
+          class="progressBarContainer-0-2-13"
+        >
+          <div
+            class="progressBar-0-2-14 progressBar-d2-0-2-18"
+          />
+        </div>
+      </div>
+      <div
+        class="progressBarParent-0-2-15"
+      >
+        <div
+          class="description-0-2-12"
+        >
+          <h3>
+            Photography
+          </h3>
+          <h3>
+            70%
+          </h3>
+        </div>
+        <div
+          class="progressBarContainer-0-2-13"
+        >
+          <div
+            class="progressBar-0-2-14 progressBar-d3-0-2-19"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
