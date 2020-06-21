@@ -6,5 +6,7 @@ export { appBarItems } from './AppBar/AppBarItemType';
 export { AppBarItem } from './AppBarItem/AppBarItem';
 export { Avatar } from './Avatar/Avatar';
 export { Button } from './Button/Button';
+export { InformationBar } from './InformationBar/InformationBar';
+export { InformationBarContainer } from './InformationBarContainer/InformationBarContainer';
 export { ProgressBarContainer } from './ProgressBarContainer/ProgressBarContainer';
 export { SocialIcons } from './SocialIcons/SocialIcons';

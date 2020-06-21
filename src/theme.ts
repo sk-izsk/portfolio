@@ -8,6 +8,7 @@ export interface CustomTheme {
     lighterPrimaryColor: string;
     white: string;
     blue: string;
+    grayishBlue: string;
   };
   fontProperties: {
     textFontSize: number;
@@ -27,6 +28,7 @@ const theme: CustomTheme = {
     lighterPrimaryColor: '#8B88B1',
     blue: 'rgb(108, 108, 229)',
     white: '#fff',
+    grayishBlue: '#8B88B1',
   },
   fontProperties: {
     textFontSize: 16,
