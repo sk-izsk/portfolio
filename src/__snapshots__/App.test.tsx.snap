@@ -675,5 +675,382 @@ exports[`App renders correctly 1`] = `
       </div>
     </div>
   </div>
+  <div
+    class="mainContainer-0-2-50"
+    name="Experience"
+  >
+    <div
+      class="header-0-2-51"
+    >
+      <div
+        style="opacity: 0; transform: translate3d(0,20px,0);"
+      >
+        <h2
+          class="h2Text-0-2-31"
+        >
+          Experience
+        </h2>
+      </div>
+    </div>
+    <div
+      class="informationBarContainerParent-0-2-52"
+    >
+      <div
+        class="informationBarContainer-0-2-53"
+      >
+        <div
+          class="mainContainer-0-2-55"
+        >
+          <div
+            class="iconContainer-0-2-56"
+          >
+            <svg
+              color="#FF4C60"
+              fill="currentColor"
+              height="30"
+              size="30"
+              stroke="currentColor"
+              stroke-width="0"
+              style="color: rgb(255, 76, 96);"
+              viewBox="0 0 640 512"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"
+              />
+            </svg>
+          </div>
+          <div
+            class="descriptionContainer-0-2-57"
+          >
+            <div
+              class="durationContainer-0-2-58"
+            >
+              July, 2019-Present
+            </div>
+            <h2>
+              Guiker Inc, Montreal  — Junior Software Developer
+            </h2>
+            <div>
+              My job is to provide assistance to my team where we work on Mobile applications (https://play.google.com/store/apps/details?id=com.guiker.mobile&hl=en) for iOS and android. Also rebuilding the existing product(www.guiker.com) and its functionality The tools we are using Expo, Typescript, Jest, React Native, React, Material UI, JSS, Axios Etc.
+            </div>
+          </div>
+        </div>
+        <div
+          class="mainContainer-0-2-55"
+        >
+          <div
+            class="iconContainer-0-2-56"
+          >
+            <svg
+              color="#FF4C60"
+              fill="currentColor"
+              height="30"
+              size="30"
+              stroke="currentColor"
+              stroke-width="0"
+              style="color: rgb(255, 76, 96);"
+              viewBox="0 0 640 512"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"
+              />
+            </svg>
+          </div>
+          <div
+            class="descriptionContainer-0-2-57"
+          >
+            <div
+              class="durationContainer-0-2-58"
+            >
+              2020-2020
+            </div>
+            <h2>
+              This Portfolio — Personal
+            </h2>
+            <div>
+              I made this portfolio by using React, React Hooks, Typescript, Jest for testing and use JSS with fully controlled style. I try to make it with proper optimization by using React features
+            </div>
+          </div>
+        </div>
+        <div
+          class="mainContainer-0-2-55"
+        >
+          <div
+            class="iconContainer-0-2-56"
+          >
+            <svg
+              color="#FF4C60"
+              fill="currentColor"
+              height="30"
+              size="30"
+              stroke="currentColor"
+              stroke-width="0"
+              style="color: rgb(255, 76, 96);"
+              viewBox="0 0 640 512"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"
+              />
+            </svg>
+          </div>
+          <div
+            class="descriptionContainer-0-2-57"
+          >
+            <div
+              class="durationContainer-0-2-58"
+            >
+              2020-2020
+            </div>
+            <h2>
+              CoronaVirus-tracker — Personal
+            </h2>
+            <div>
+              An application where we can track the activity of Covid-19 based on country, continent, province with several factors and graphs. Built on React native,Typescript,React-native Element, Axios, Redux-toolkit. For source code kindly check my github. Here is demo link for it : youtu.be/e_fFipPN9Ic .
+            </div>
+          </div>
+        </div>
+        <div
+          class="mainContainer-0-2-55"
+        >
+          <div
+            class="iconContainer-0-2-56"
+          >
+            <svg
+              color="#FF4C60"
+              fill="currentColor"
+              height="30"
+              size="30"
+              stroke="currentColor"
+              stroke-width="0"
+              style="color: rgb(255, 76, 96);"
+              viewBox="0 0 640 512"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"
+              />
+            </svg>
+          </div>
+          <div
+            class="descriptionContainer-0-2-57"
+          >
+            <div
+              class="durationContainer-0-2-58"
+            >
+              April, 2019-May, 2019
+            </div>
+            <h2>
+              Meal Delivery App, Montreal — Co-member(DecodeMtl)
+            </h2>
+            <div>
+              Marketplace where customers can order food and sellers can manage their items. Built in 10 days with a team of 4, this is a full stack application built with React, Redux, Express & MongoDB, where I tackled most of the front-end, including all the major views, animations, and state management. For source code kindly check my github. Here is demo link for it : youtu.be/CKuMCXpg-3Q . 
+            </div>
+          </div>
+        </div>
+        <div
+          class="mainContainer-0-2-55"
+        >
+          <div
+            class="iconContainer-0-2-56"
+          >
+            <svg
+              color="#FF4C60"
+              fill="currentColor"
+              height="30"
+              size="30"
+              stroke="currentColor"
+              stroke-width="0"
+              style="color: rgb(255, 76, 96);"
+              viewBox="0 0 640 512"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"
+              />
+            </svg>
+          </div>
+          <div
+            class="descriptionContainer-0-2-57"
+          >
+            <div
+              class="durationContainer-0-2-58"
+            >
+              June, 2018-June, 2019
+            </div>
+            <h2>
+              Fusion BPO Services, Montreal  — Technical support representative
+            </h2>
+            <div>
+              My job was providing technical support for general computer or gadget troubleshooting. I help people remove malware, install new programs, or learn how to use Windows and Macintosh operating systems or any electronic gadget which requires internet.
+            </div>
+          </div>
+        </div>
+        <div
+          class="mainContainer-0-2-55"
+        >
+          <div
+            class="iconContainer-0-2-56"
+          >
+            <svg
+              color="#FF4C60"
+              fill="currentColor"
+              height="30"
+              size="30"
+              stroke="currentColor"
+              stroke-width="0"
+              style="color: rgb(255, 76, 96);"
+              viewBox="0 0 640 512"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"
+              />
+            </svg>
+          </div>
+          <div
+            class="descriptionContainer-0-2-57"
+          >
+            <div
+              class="durationContainer-0-2-58"
+            >
+              Jan, 2016-Jan, 2016
+            </div>
+            <h2>
+              IEEE Publication, India — Main Author
+            </h2>
+            <div>
+              Authored a paper on an embedded hardware project, "Controlling an Embedded Robot through Image Processing based Object Tracking using MATLAB”. The publication is about a robot where users can instruct it to do commands by specific color object. The robot automatically tracks the specific object. Link of our paper: ieeexplore.ieee.org/document/7726922
+            </div>
+          </div>
+        </div>
+        <div
+          class="mainContainer-0-2-55"
+        >
+          <div
+            class="iconContainer-0-2-56"
+          >
+            <svg
+              color="#FF4C60"
+              fill="currentColor"
+              height="30"
+              size="30"
+              stroke="currentColor"
+              stroke-width="0"
+              style="color: rgb(255, 76, 96);"
+              viewBox="0 0 640 512"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"
+              />
+            </svg>
+          </div>
+          <div
+            class="descriptionContainer-0-2-57"
+          >
+            <div
+              class="durationContainer-0-2-58"
+            >
+              May, 2015-July, 2015
+            </div>
+            <h2>
+              ESL, Kolkata, India  — Trainee
+            </h2>
+            <div>
+              Led a team of 5 to create a Matlab-controlled Arduino robot. By uploading an image, users could instruct the robot to do commands, such as it follows the specific color. A paper on this project was published through IEEE, a major science publisher.
+            </div>
+          </div>
+        </div>
+        <div
+          class="mainContainer-0-2-55"
+        >
+          <div
+            class="iconContainer-0-2-56"
+          >
+            <svg
+              color="#FF4C60"
+              fill="currentColor"
+              height="30"
+              size="30"
+              stroke="currentColor"
+              stroke-width="0"
+              style="color: rgb(255, 76, 96);"
+              viewBox="0 0 640 512"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"
+              />
+            </svg>
+          </div>
+          <div
+            class="descriptionContainer-0-2-57"
+          >
+            <div
+              class="durationContainer-0-2-58"
+            >
+              June, 2014-July, 2014
+            </div>
+            <h2>
+              STQC Directorate run by Government of India, Kolkata, India — Trainee
+            </h2>
+            <div>
+              STQC provides quality assurance services in the area of Electronics and IT through a country wide network of laboratories and centres.Completed two projects based on PLC(Programmable Logic Controller). Sequential Control of three motors Automatic Traffic Control.
+            </div>
+          </div>
+        </div>
+        <div
+          class="mainContainer-0-2-55"
+        >
+          <div
+            class="iconContainer-0-2-56"
+          >
+            <svg
+              color="#FF4C60"
+              fill="currentColor"
+              height="30"
+              size="30"
+              stroke="currentColor"
+              stroke-width="0"
+              style="color: rgb(255, 76, 96);"
+              viewBox="0 0 640 512"
+              width="30"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"
+              />
+            </svg>
+          </div>
+          <div
+            class="descriptionContainer-0-2-57"
+          >
+            <div
+              class="durationContainer-0-2-58"
+            >
+              April, 2019-Present
+            </div>
+            <h2>
+              For Other Projects — Personal
+            </h2>
+            <div>
+              For other projects kindly checkout my github link. http://github.com/sk-izsk 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </DocumentFragment>
 `;
