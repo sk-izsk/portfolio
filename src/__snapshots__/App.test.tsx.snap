@@ -1163,5 +1163,89 @@ exports[`App renders correctly 1`] = `
       </div>
     </div>
   </div>
+  <div
+    name="Contact"
+  >
+    <div
+      class="header-0-2-73"
+    >
+      <div
+        style="opacity: 0; transform: translate3d(0,20px,0);"
+      >
+        <h2
+          class="h2Text-0-2-31"
+        >
+          Contact
+        </h2>
+      </div>
+    </div>
+    <div
+      class="formContainer-0-2-74"
+    >
+      <form
+        class="form-0-2-75"
+      >
+        <div
+          class="smallInputFieldContainer-0-2-77"
+        >
+          <div
+            class="smallInputFieldParentContainer-0-2-78"
+          >
+            <input
+              class="smallInputField-0-2-79"
+              name="name"
+              placeholder="Your Name"
+              type="text"
+            />
+          </div>
+          <div
+            class="smallInputFieldParentContainer-0-2-78"
+          >
+            <input
+              class="smallInputField-0-2-79"
+              name="email"
+              placeholder="Email address"
+              type="email"
+            />
+          </div>
+        </div>
+        <div
+          class="biggerInputFieldContainer-0-2-80"
+        >
+          <input
+            class="smallInputField-0-2-79"
+            name="subject"
+            placeholder="Subject"
+            type="text"
+          />
+        </div>
+        <textarea
+          class="smallInputField-0-2-79 textArea-0-2-81"
+          name="description"
+          placeholder="Type your message here."
+        />
+        <div
+          class="buttonContainer-0-2-82"
+        >
+          <button
+            class="mainContainer-0-2-24"
+            style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+          >
+            Send Message
+          </button>
+          <div
+            class="emailTextContainer-0-2-83"
+          >
+            Don't link forms? Send me an
+            <span
+              class="email-0-2-84"
+            >
+              Email
+            </span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
 </DocumentFragment>
 `;
