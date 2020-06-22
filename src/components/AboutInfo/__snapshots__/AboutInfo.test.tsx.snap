@@ -6,10 +6,10 @@ exports[`AboutInfo renders correctly 1`] = `
     class="mainContainer-0-2-1"
   >
     <div
-      class="triangleContainer-0-2-7"
+      class="triangleContainer-0-2-8"
     >
       <div
-        class="triangle-0-2-8"
+        class="triangle-0-2-9"
       />
     </div>
     <div
@@ -21,10 +21,10 @@ exports[`AboutInfo renders correctly 1`] = `
         I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website. Also I am a hobbyist photographer.
       </div>
       <div
-        class="button-0-2-4"
+        class="button-0-2-5"
       >
         <button
-          class="mainContainer-0-2-11"
+          class="mainContainer-0-2-12"
           style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
         >
           Download My CV
@@ -32,13 +32,13 @@ exports[`AboutInfo renders correctly 1`] = `
       </div>
     </div>
     <div
-      class="skillsInfoContainer-0-2-6"
+      class="skillsInfoContainer-0-2-7"
     >
       <div
-        class="progressBarParent-0-2-16"
+        class="progressBarParent-0-2-17"
       >
         <div
-          class="description-0-2-13"
+          class="description-0-2-14"
         >
           <h3>
             React
@@ -48,18 +48,18 @@ exports[`AboutInfo renders correctly 1`] = `
           </h3>
         </div>
         <div
-          class="progressBarContainer-0-2-14"
+          class="progressBarContainer-0-2-15"
         >
           <div
-            class="progressBar-0-2-15 progressBar-d0-0-2-17"
+            class="progressBar-0-2-16 progressBar-d0-0-2-18"
           />
         </div>
       </div>
       <div
-        class="progressBarParent-0-2-16"
+        class="progressBarParent-0-2-17"
       >
         <div
-          class="description-0-2-13"
+          class="description-0-2-14"
         >
           <h3>
             Typescript
@@ -69,18 +69,18 @@ exports[`AboutInfo renders correctly 1`] = `
           </h3>
         </div>
         <div
-          class="progressBarContainer-0-2-14"
+          class="progressBarContainer-0-2-15"
         >
           <div
-            class="progressBar-0-2-15 progressBar-d1-0-2-18"
+            class="progressBar-0-2-16 progressBar-d1-0-2-19"
           />
         </div>
       </div>
       <div
-        class="progressBarParent-0-2-16"
+        class="progressBarParent-0-2-17"
       >
         <div
-          class="description-0-2-13"
+          class="description-0-2-14"
         >
           <h3>
             Redux
@@ -90,18 +90,18 @@ exports[`AboutInfo renders correctly 1`] = `
           </h3>
         </div>
         <div
-          class="progressBarContainer-0-2-14"
+          class="progressBarContainer-0-2-15"
         >
           <div
-            class="progressBar-0-2-15 progressBar-d2-0-2-19"
+            class="progressBar-0-2-16 progressBar-d2-0-2-20"
           />
         </div>
       </div>
       <div
-        class="progressBarParent-0-2-16"
+        class="progressBarParent-0-2-17"
       >
         <div
-          class="description-0-2-13"
+          class="description-0-2-14"
         >
           <h3>
             Photography
@@ -111,10 +111,10 @@ exports[`AboutInfo renders correctly 1`] = `
           </h3>
         </div>
         <div
-          class="progressBarContainer-0-2-14"
+          class="progressBarContainer-0-2-15"
         >
           <div
-            class="progressBar-0-2-15 progressBar-d3-0-2-20"
+            class="progressBar-0-2-16 progressBar-d3-0-2-21"
           />
         </div>
       </div>

@@ -50,10 +50,10 @@ exports[`About renders correctly 1`] = `
           class="mainContainer-0-2-9"
         >
           <div
-            class="triangleContainer-0-2-15"
+            class="triangleContainer-0-2-16"
           >
             <div
-              class="triangle-0-2-16"
+              class="triangle-0-2-17"
             />
           </div>
           <div
@@ -65,10 +65,10 @@ exports[`About renders correctly 1`] = `
               I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website. Also I am a hobbyist photographer.
             </div>
             <div
-              class="button-0-2-12"
+              class="button-0-2-13"
             >
               <button
-                class="mainContainer-0-2-19"
+                class="mainContainer-0-2-20"
                 style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
               >
                 Download My CV
@@ -76,13 +76,13 @@ exports[`About renders correctly 1`] = `
             </div>
           </div>
           <div
-            class="skillsInfoContainer-0-2-14"
+            class="skillsInfoContainer-0-2-15"
           >
             <div
-              class="progressBarParent-0-2-24"
+              class="progressBarParent-0-2-25"
             >
               <div
-                class="description-0-2-21"
+                class="description-0-2-22"
               >
                 <h3>
                   React
@@ -92,18 +92,18 @@ exports[`About renders correctly 1`] = `
                 </h3>
               </div>
               <div
-                class="progressBarContainer-0-2-22"
+                class="progressBarContainer-0-2-23"
               >
                 <div
-                  class="progressBar-0-2-23 progressBar-d0-0-2-25"
+                  class="progressBar-0-2-24 progressBar-d0-0-2-26"
                 />
               </div>
             </div>
             <div
-              class="progressBarParent-0-2-24"
+              class="progressBarParent-0-2-25"
             >
               <div
-                class="description-0-2-21"
+                class="description-0-2-22"
               >
                 <h3>
                   Typescript
@@ -113,18 +113,18 @@ exports[`About renders correctly 1`] = `
                 </h3>
               </div>
               <div
-                class="progressBarContainer-0-2-22"
+                class="progressBarContainer-0-2-23"
               >
                 <div
-                  class="progressBar-0-2-23 progressBar-d1-0-2-26"
+                  class="progressBar-0-2-24 progressBar-d1-0-2-27"
                 />
               </div>
             </div>
             <div
-              class="progressBarParent-0-2-24"
+              class="progressBarParent-0-2-25"
             >
               <div
-                class="description-0-2-21"
+                class="description-0-2-22"
               >
                 <h3>
                   Redux
@@ -134,18 +134,18 @@ exports[`About renders correctly 1`] = `
                 </h3>
               </div>
               <div
-                class="progressBarContainer-0-2-22"
+                class="progressBarContainer-0-2-23"
               >
                 <div
-                  class="progressBar-0-2-23 progressBar-d2-0-2-27"
+                  class="progressBar-0-2-24 progressBar-d2-0-2-28"
                 />
               </div>
             </div>
             <div
-              class="progressBarParent-0-2-24"
+              class="progressBarParent-0-2-25"
             >
               <div
-                class="description-0-2-21"
+                class="description-0-2-22"
               >
                 <h3>
                   Photography
@@ -155,10 +155,10 @@ exports[`About renders correctly 1`] = `
                 </h3>
               </div>
               <div
-                class="progressBarContainer-0-2-22"
+                class="progressBarContainer-0-2-23"
               >
                 <div
-                  class="progressBar-0-2-23 progressBar-d3-0-2-28"
+                  class="progressBar-0-2-24 progressBar-d3-0-2-29"
                 />
               </div>
             </div>

@@ -29,6 +29,9 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   description: {
     fontSize: 22,
   },
+  descriptionMobile: {
+    fontSize: 15,
+  },
   button: {
     position: 'relative',
     top: theme.spacing(5.75),
@@ -78,11 +81,13 @@ const AboutInfo: React.FC<AboutInfoProps> = () => {
     | 'triangleMobile'
     | 'triangleContainer'
     | 'buttonMobile'
-    | 'triangleContainerMobile',
+    | 'triangleContainerMobile'
+    | 'descriptionMobile',
     string
   > = useStyles();
 
   const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
+  const isSmallerDevices: boolean = useMediaQuery({ maxWidth: 480 });
 
   return (
     <div className={classes.mainContainer}>
@@ -91,7 +96,7 @@ const AboutInfo: React.FC<AboutInfoProps> = () => {
       </div>
 
       <div className={classes.descriptionContainer}>
-        <div className={classes.description}>
+        <div className={clsx([classes.description, isSmallerDevices && classes.descriptionMobile])}>
           I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website.
           Also I am a hobbyist photographer.
         </div>

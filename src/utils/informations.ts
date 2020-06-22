@@ -89,7 +89,7 @@ const experienceInformations: Information[] = [
     startYear: 'Jan, 2016',
     endYear: 'Jan, 2016',
     details:
-      'Authored a paper on an embedded hardware project, "Controlling an Embedded Robot through Image Processing based Object Tracking using MATLAB”. The publication is about a robot where users can instruct it to do commands by specific color object. The robot automatically tracks the specific object. Link of our paper: ieeexplore.ieee.org/document/7726922',
+      'Authored a paper on an embedded hardware project, "Controlling an Embedded Robot through Image Processing based Object Tracking using MATLAB”. The publication is about a robot where users can instruct it to do commands by specific color object. The robot automatically tracks the specific object.',
   },
   {
     nameOfOrganization: 'ESL, Kolkata, India  — Trainee',
