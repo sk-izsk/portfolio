@@ -13,6 +13,10 @@ export interface SkillInformationTypes {
   backgroundColor?: string;
 }
 
+export interface PhotoType {
+  url: string;
+}
+
 const skillsInformation: SkillInformationTypes[] = [
   { name: 'React', progress: 80, backgroundColor: theme.colors.secondaryColor },
   { name: 'Typescript', progress: 75, backgroundColor: theme.colors.blue },
@@ -109,4 +113,39 @@ const experienceInformations: Information[] = [
   },
 ];
 
-export { educationInformations, skillsInformation, experienceInformations };
+const photos: PhotoType[] = [
+  {
+    url:
+      'https://lh3.googleusercontent.com/pw/ACtC-3fn3fohPamP-S-zK3KcM922JgG3qK-MpoGUQyKxGMa4fiSHBWE7GocRT4TEQTQ2RJ-os9-5PBZ9HsOUH9WA82DwhAFK4pJvtZax-03UaLVDZFmQKZNlfr2WzP__mfdzhzikyJp0vokt82o62rCQ05mfKA=w1391-h927-no',
+  },
+  {
+    url:
+      'https://lh3.googleusercontent.com/pw/ACtC-3eQQqwZSCuzi8WmWIpCtNxxeWPKgRFY3W8xxDHKTfR2dvxO_xACqMWjkbZdGMrw8AFIpPrniAefxLdvQuljOeKV0U5tmssgwkr8Z27rjNuH7UJ8x0P7yfGRIluskInKtwwQoxx6YPsMyqRQuZdiVdAGog=w1391-h927-no',
+  },
+  {
+    url:
+      'https://lh3.googleusercontent.com/pw/ACtC-3fvoWyn4aTnVPqsc4nyVyiSxV4peiPbQGlNPvTXNkdBgYJ7KTqCUhtmrUtzQw60geTDJC-hiyPqX_uh8uAuhhXAtIrigS48BXBvr_LSo1S16qqtF1CX4_g_CqjopQdlwKQGhMpFqZ5YNFAMRxJJI0Ueag=w1391-h927-no',
+  },
+  {
+    url:
+      'https://lh3.googleusercontent.com/pw/ACtC-3cX6nKa7XhUbbYnwTeWvZa6VovsMIVzF8GltehNe91O07bnKb9AnuxCpAJ3lHSvfR8T7mPde5WOu3UKbftvBOuSayjAhMd2ZwDKl_f5dAyVl0O8jgQgmHPA-AswABMQEF8V4eaBIaj3Oc5vOpU-13Adbw=w1391-h927-no',
+  },
+  {
+    url:
+      'https://lh3.googleusercontent.com/pw/ACtC-3fK0Axi7ncyuRm63A8nrehtXoSIXabywMfhUnyWuErfzZF8r7ZcJhx6Gjc5FcDPlH89xBPtosNEdHBZhkn8M2Jj3_E3rTyJaK8x1KRP539tExiAm2fMLF23OIJkzLqLdu8Me_gPNohLXlW_cnebUVco4A=w1391-h927-no',
+  },
+  {
+    url:
+      'https://lh3.googleusercontent.com/pw/ACtC-3dRZQoh-SlCSZGzl-1g2tsTZOK7HCjsNQ97x12lT4eeOTkg0Xt49hoPAwYq9SSx56Fq2YqlFlume637PIwxDHyC9hMrrk7bHwe5VBlw6rQoeMV_BeQGbCxns4u7YdfC2ZFjIY9un3CjElVQLwl_WvSGJQ=w836-h927-no',
+  },
+  {
+    url:
+      'https://lh3.googleusercontent.com/pw/ACtC-3ebjvTFu1RTieS3Ao7LJkJLkVraeXYdjhfpHmQAlP9BEt_oEef64Dn7Aj7jq8qt5HkGhvdmjcFn68Hj1MFCCKShbEGIyH-K3AnZh6MuKX9sz0C1UKJBuvXlgfR0tci2LKa2fnjD95vLBB1EFjKT0rwQ1Q=w1391-h927-no',
+  },
+  {
+    url:
+      'https://lh3.googleusercontent.com/pw/ACtC-3ci7pPtJtX1mJ471oCJBKOxDIW7K4VzJQmoZbmXoztG5n9RY7AP51m1aCPn-nXY9tOYPr_wL52BBu3HwQ20DuvItkkU_yPgGAqEv7X0fzZJjO5qiD5ZilYU2kCAnf1JJrUT8CCj3N7u2PEC1kOLuvMU7Q=w1391-h927-no',
+  },
+];
+
+export { educationInformations, skillsInformation, experienceInformations, photos };
