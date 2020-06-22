@@ -97,7 +97,7 @@ exports[`App renders correctly 1`] = `
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
-              d="M278.9 511.5l-61-17.7c-6.4-1.8-10-8.5-8.2-14.9L346.2 8.7c1.8-6.4 8.5-10 14.9-8.2l61 17.7c6.4 1.8 10 8.5 8.2 14.9L293.8 503.3c-1.9 6.4-8.5 10.1-14.9 8.2zm-114-112.2l43.5-46.4c4.6-4.9 4.3-12.7-.8-17.2L117 256l90.6-79.7c5.1-4.5 5.5-12.3.8-17.2l-43.5-46.4c-4.5-4.8-12.1-5.1-17-.5L3.8 247.2c-5.1 4.7-5.1 12.8 0 17.5l144.1 135.1c4.9 4.6 12.5 4.4 17-.5zm327.2.6l144.1-135.1c5.1-4.7 5.1-12.8 0-17.5L492.1 112.1c-4.8-4.5-12.4-4.3-17 .5L431.6 159c-4.6 4.9-4.3 12.7.8 17.2L523 256l-90.6 79.7c-5.1 4.5-5.5 12.3-.8 17.2l43.5 46.4c4.5 4.9 12.1 5.1 17 .6z"
+              d="M640 264v-16c0-8.84-7.16-16-16-16H344v-40h72c17.67 0 32-14.33 32-32V32c0-17.67-14.33-32-32-32H224c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h72v40H16c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16h104v40H64c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h304v40h-56c-17.67 0-32 14.33-32 32v128c0 17.67 14.33 32 32 32h160c17.67 0 32-14.33 32-32V352c0-17.67-14.33-32-32-32h-56v-40h104c8.84 0 16-7.16 16-16zM256 128V64h128v64H256zm-64 320H96v-64h96v64zm352 0h-96v-64h96v64z"
             />
           </svg>
           <div
@@ -415,10 +415,10 @@ exports[`App renders correctly 1`] = `
           class="mainContainer-0-2-32"
         >
           <div
-            class="triangleContainer-0-2-37"
+            class="triangleContainer-0-2-38"
           >
             <div
-              class="triangle-0-2-38"
+              class="triangle-0-2-39"
             />
           </div>
           <div
@@ -427,7 +427,7 @@ exports[`App renders correctly 1`] = `
             <div
               class="description-0-2-34"
             >
-              I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website. Also I am a hobbits photographer.
+              I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website. Also I am a hobbyist photographer.
             </div>
             <div
               class="button-0-2-35"
@@ -441,13 +441,13 @@ exports[`App renders correctly 1`] = `
             </div>
           </div>
           <div
-            class="skillsInfoContainer-0-2-36"
+            class="skillsInfoContainer-0-2-37"
           >
             <div
-              class="progressBarParent-0-2-45"
+              class="progressBarParent-0-2-46"
             >
               <div
-                class="description-0-2-42"
+                class="description-0-2-43"
               >
                 <h3>
                   React
@@ -457,18 +457,18 @@ exports[`App renders correctly 1`] = `
                 </h3>
               </div>
               <div
-                class="progressBarContainer-0-2-43"
+                class="progressBarContainer-0-2-44"
               >
                 <div
-                  class="progressBar-0-2-44 progressBar-d0-0-2-46"
+                  class="progressBar-0-2-45 progressBar-d0-0-2-47"
                 />
               </div>
             </div>
             <div
-              class="progressBarParent-0-2-45"
+              class="progressBarParent-0-2-46"
             >
               <div
-                class="description-0-2-42"
+                class="description-0-2-43"
               >
                 <h3>
                   Typescript
@@ -478,18 +478,18 @@ exports[`App renders correctly 1`] = `
                 </h3>
               </div>
               <div
-                class="progressBarContainer-0-2-43"
+                class="progressBarContainer-0-2-44"
               >
                 <div
-                  class="progressBar-0-2-44 progressBar-d1-0-2-47"
+                  class="progressBar-0-2-45 progressBar-d1-0-2-48"
                 />
               </div>
             </div>
             <div
-              class="progressBarParent-0-2-45"
+              class="progressBarParent-0-2-46"
             >
               <div
-                class="description-0-2-42"
+                class="description-0-2-43"
               >
                 <h3>
                   Redux
@@ -499,18 +499,18 @@ exports[`App renders correctly 1`] = `
                 </h3>
               </div>
               <div
-                class="progressBarContainer-0-2-43"
+                class="progressBarContainer-0-2-44"
               >
                 <div
-                  class="progressBar-0-2-44 progressBar-d2-0-2-48"
+                  class="progressBar-0-2-45 progressBar-d2-0-2-49"
                 />
               </div>
             </div>
             <div
-              class="progressBarParent-0-2-45"
+              class="progressBarParent-0-2-46"
             >
               <div
-                class="description-0-2-42"
+                class="description-0-2-43"
               >
                 <h3>
                   Photography
@@ -520,10 +520,10 @@ exports[`App renders correctly 1`] = `
                 </h3>
               </div>
               <div
-                class="progressBarContainer-0-2-43"
+                class="progressBarContainer-0-2-44"
               >
                 <div
-                  class="progressBar-0-2-44 progressBar-d3-0-2-49"
+                  class="progressBar-0-2-45 progressBar-d3-0-2-50"
                 />
               </div>
             </div>
@@ -533,11 +533,11 @@ exports[`App renders correctly 1`] = `
     </div>
   </div>
   <div
-    class="mainContainer-0-2-50"
+    class="mainContainer-0-2-51 mainContainer-d0-0-2-56"
     name="Education"
   >
     <div
-      class="header-0-2-51"
+      class="header-0-2-52"
     >
       <div
         style="opacity: 0; transform: translate3d(0,20px,0);"
@@ -550,16 +550,16 @@ exports[`App renders correctly 1`] = `
       </div>
     </div>
     <div
-      class="informationBarContainerParent-0-2-52"
+      class="informationBarContainerParent-0-2-53"
     >
       <div
-        class="informationBarContainer-0-2-53"
+        class="informationBarContainer-0-2-54"
       >
         <div
-          class="mainContainer-0-2-55"
+          class="mainContainer-0-2-57"
         >
           <div
-            class="iconContainer-0-2-56"
+            class="iconContainer-0-2-58"
           >
             <svg
               color="#FF4C60"
@@ -579,10 +579,10 @@ exports[`App renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-57"
+            class="descriptionContainer-0-2-59"
           >
             <div
-              class="durationContainer-0-2-58"
+              class="durationContainer-0-2-60"
             >
               April, 2019-May, 2019
             </div>
@@ -595,10 +595,10 @@ exports[`App renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-55"
+          class="mainContainer-0-2-57"
         >
           <div
-            class="iconContainer-0-2-56"
+            class="iconContainer-0-2-58"
           >
             <svg
               color="#FF4C60"
@@ -618,10 +618,10 @@ exports[`App renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-57"
+            class="descriptionContainer-0-2-59"
           >
             <div
-              class="durationContainer-0-2-58"
+              class="durationContainer-0-2-60"
             >
               2016-2018
             </div>
@@ -634,10 +634,10 @@ exports[`App renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-55"
+          class="mainContainer-0-2-57"
         >
           <div
-            class="iconContainer-0-2-56"
+            class="iconContainer-0-2-58"
           >
             <svg
               color="#FF4C60"
@@ -657,10 +657,10 @@ exports[`App renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-57"
+            class="descriptionContainer-0-2-59"
           >
             <div
-              class="durationContainer-0-2-58"
+              class="durationContainer-0-2-60"
             >
               2011-2015
             </div>
@@ -676,11 +676,11 @@ exports[`App renders correctly 1`] = `
     </div>
   </div>
   <div
-    class="mainContainer-0-2-50"
+    class="mainContainer-0-2-51 mainContainer-d1-0-2-61"
     name="Experience"
   >
     <div
-      class="header-0-2-51"
+      class="header-0-2-52"
     >
       <div
         style="opacity: 0; transform: translate3d(0,20px,0);"
@@ -693,16 +693,16 @@ exports[`App renders correctly 1`] = `
       </div>
     </div>
     <div
-      class="informationBarContainerParent-0-2-52"
+      class="informationBarContainerParent-0-2-53"
     >
       <div
-        class="informationBarContainer-0-2-53"
+        class="informationBarContainer-0-2-54"
       >
         <div
-          class="mainContainer-0-2-55"
+          class="mainContainer-0-2-57"
         >
           <div
-            class="iconContainer-0-2-56"
+            class="iconContainer-0-2-58"
           >
             <svg
               color="#FF4C60"
@@ -722,10 +722,10 @@ exports[`App renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-57"
+            class="descriptionContainer-0-2-59"
           >
             <div
-              class="durationContainer-0-2-58"
+              class="durationContainer-0-2-60"
             >
               July, 2019-Present
             </div>
@@ -733,15 +733,15 @@ exports[`App renders correctly 1`] = `
               Guiker Inc, Montreal  — Junior Software Developer
             </h2>
             <div>
-              My job is to provide assistance to my team where we work on Mobile applications (https://play.google.com/store/apps/details?id=com.guiker.mobile&hl=en) for iOS and android. Also rebuilding the existing product(www.guiker.com) and its functionality The tools we are using Expo, Typescript, Jest, React Native, React, Material UI, JSS, Axios Etc.
+              My job is to provide assistance to my team where we work on Mobile applications for iOS and android. Also rebuilding the existing product(www.guiker.com) and its functionality The tools we are using Expo, Typescript, Jest, React Native, React, Material UI, JSS, Axios Etc.
             </div>
           </div>
         </div>
         <div
-          class="mainContainer-0-2-55"
+          class="mainContainer-0-2-57"
         >
           <div
-            class="iconContainer-0-2-56"
+            class="iconContainer-0-2-58"
           >
             <svg
               color="#FF4C60"
@@ -761,10 +761,10 @@ exports[`App renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-57"
+            class="descriptionContainer-0-2-59"
           >
             <div
-              class="durationContainer-0-2-58"
+              class="durationContainer-0-2-60"
             >
               2020-2020
             </div>
@@ -772,15 +772,15 @@ exports[`App renders correctly 1`] = `
               This Portfolio — Personal
             </h2>
             <div>
-              I made this portfolio by using React, React Hooks, Typescript, Jest for testing and use JSS with fully controlled style. I try to make it with proper optimization by using React features
+              I made this portfolio by using React, React Hooks, Typescript, Jest for testing and some animation tools. I use JSS with fully controlled style. I try to make it with proper optimization by using React features
             </div>
           </div>
         </div>
         <div
-          class="mainContainer-0-2-55"
+          class="mainContainer-0-2-57"
         >
           <div
-            class="iconContainer-0-2-56"
+            class="iconContainer-0-2-58"
           >
             <svg
               color="#FF4C60"
@@ -800,10 +800,10 @@ exports[`App renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-57"
+            class="descriptionContainer-0-2-59"
           >
             <div
-              class="durationContainer-0-2-58"
+              class="durationContainer-0-2-60"
             >
               2020-2020
             </div>
@@ -816,10 +816,10 @@ exports[`App renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-55"
+          class="mainContainer-0-2-57"
         >
           <div
-            class="iconContainer-0-2-56"
+            class="iconContainer-0-2-58"
           >
             <svg
               color="#FF4C60"
@@ -839,10 +839,10 @@ exports[`App renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-57"
+            class="descriptionContainer-0-2-59"
           >
             <div
-              class="durationContainer-0-2-58"
+              class="durationContainer-0-2-60"
             >
               April, 2019-May, 2019
             </div>
@@ -855,10 +855,10 @@ exports[`App renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-55"
+          class="mainContainer-0-2-57"
         >
           <div
-            class="iconContainer-0-2-56"
+            class="iconContainer-0-2-58"
           >
             <svg
               color="#FF4C60"
@@ -878,10 +878,10 @@ exports[`App renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-57"
+            class="descriptionContainer-0-2-59"
           >
             <div
-              class="durationContainer-0-2-58"
+              class="durationContainer-0-2-60"
             >
               June, 2018-June, 2019
             </div>
@@ -894,10 +894,10 @@ exports[`App renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-55"
+          class="mainContainer-0-2-57"
         >
           <div
-            class="iconContainer-0-2-56"
+            class="iconContainer-0-2-58"
           >
             <svg
               color="#FF4C60"
@@ -917,10 +917,10 @@ exports[`App renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-57"
+            class="descriptionContainer-0-2-59"
           >
             <div
-              class="durationContainer-0-2-58"
+              class="durationContainer-0-2-60"
             >
               Jan, 2016-Jan, 2016
             </div>
@@ -933,10 +933,10 @@ exports[`App renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-55"
+          class="mainContainer-0-2-57"
         >
           <div
-            class="iconContainer-0-2-56"
+            class="iconContainer-0-2-58"
           >
             <svg
               color="#FF4C60"
@@ -956,10 +956,10 @@ exports[`App renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-57"
+            class="descriptionContainer-0-2-59"
           >
             <div
-              class="durationContainer-0-2-58"
+              class="durationContainer-0-2-60"
             >
               May, 2015-July, 2015
             </div>
@@ -972,10 +972,10 @@ exports[`App renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-55"
+          class="mainContainer-0-2-57"
         >
           <div
-            class="iconContainer-0-2-56"
+            class="iconContainer-0-2-58"
           >
             <svg
               color="#FF4C60"
@@ -995,10 +995,10 @@ exports[`App renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-57"
+            class="descriptionContainer-0-2-59"
           >
             <div
-              class="durationContainer-0-2-58"
+              class="durationContainer-0-2-60"
             >
               June, 2014-July, 2014
             </div>
@@ -1011,10 +1011,10 @@ exports[`App renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="mainContainer-0-2-55"
+          class="mainContainer-0-2-57"
         >
           <div
-            class="iconContainer-0-2-56"
+            class="iconContainer-0-2-58"
           >
             <svg
               color="#FF4C60"
@@ -1034,10 +1034,10 @@ exports[`App renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-57"
+            class="descriptionContainer-0-2-59"
           >
             <div
-              class="durationContainer-0-2-58"
+              class="durationContainer-0-2-60"
             >
               April, 2019-Present
             </div>
@@ -1048,6 +1048,117 @@ exports[`App renders correctly 1`] = `
               For other projects kindly checkout my github link. http://github.com/sk-izsk 
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    name="Photography"
+  >
+    <div
+      class="header-0-2-62"
+    >
+      <div
+        style="opacity: 0; transform: translate3d(0,20px,0);"
+      >
+        <h2
+          class="h2Text-0-2-31"
+        >
+          Photography
+        </h2>
+      </div>
+    </div>
+    <div
+      class="photographyContainer-0-2-63"
+    >
+      <div
+        class="mainContainer-0-2-65"
+      >
+        <div
+          class="photosContainer-0-2-67"
+        >
+          <div
+            style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+          >
+            <img
+              alt="photoBanner"
+              class="photo-0-2-69"
+              src="https://lh3.googleusercontent.com/pw/ACtC-3fn3fohPamP-S-zK3KcM922JgG3qK-MpoGUQyKxGMa4fiSHBWE7GocRT4TEQTQ2RJ-os9-5PBZ9HsOUH9WA82DwhAFK4pJvtZax-03UaLVDZFmQKZNlfr2WzP__mfdzhzikyJp0vokt82o62rCQ05mfKA=w1391-h927-no"
+            />
+          </div>
+          <div
+            style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+          >
+            <img
+              alt="photoBanner"
+              class="photo-0-2-69"
+              src="https://lh3.googleusercontent.com/pw/ACtC-3eQQqwZSCuzi8WmWIpCtNxxeWPKgRFY3W8xxDHKTfR2dvxO_xACqMWjkbZdGMrw8AFIpPrniAefxLdvQuljOeKV0U5tmssgwkr8Z27rjNuH7UJ8x0P7yfGRIluskInKtwwQoxx6YPsMyqRQuZdiVdAGog=w1391-h927-no"
+            />
+          </div>
+          <div
+            style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+          >
+            <img
+              alt="photoBanner"
+              class="photo-0-2-69"
+              src="https://lh3.googleusercontent.com/pw/ACtC-3fvoWyn4aTnVPqsc4nyVyiSxV4peiPbQGlNPvTXNkdBgYJ7KTqCUhtmrUtzQw60geTDJC-hiyPqX_uh8uAuhhXAtIrigS48BXBvr_LSo1S16qqtF1CX4_g_CqjopQdlwKQGhMpFqZ5YNFAMRxJJI0Ueag=w1391-h927-no"
+            />
+          </div>
+          <div
+            style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+          >
+            <img
+              alt="photoBanner"
+              class="photo-0-2-69"
+              src="https://lh3.googleusercontent.com/pw/ACtC-3cX6nKa7XhUbbYnwTeWvZa6VovsMIVzF8GltehNe91O07bnKb9AnuxCpAJ3lHSvfR8T7mPde5WOu3UKbftvBOuSayjAhMd2ZwDKl_f5dAyVl0O8jgQgmHPA-AswABMQEF8V4eaBIaj3Oc5vOpU-13Adbw=w1391-h927-no"
+            />
+          </div>
+          <div
+            style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+          >
+            <img
+              alt="photoBanner"
+              class="photo-0-2-69"
+              src="https://lh3.googleusercontent.com/pw/ACtC-3fK0Axi7ncyuRm63A8nrehtXoSIXabywMfhUnyWuErfzZF8r7ZcJhx6Gjc5FcDPlH89xBPtosNEdHBZhkn8M2Jj3_E3rTyJaK8x1KRP539tExiAm2fMLF23OIJkzLqLdu8Me_gPNohLXlW_cnebUVco4A=w1391-h927-no"
+            />
+          </div>
+          <div
+            style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+          >
+            <img
+              alt="photoBanner"
+              class="photo-0-2-69"
+              src="https://lh3.googleusercontent.com/pw/ACtC-3dRZQoh-SlCSZGzl-1g2tsTZOK7HCjsNQ97x12lT4eeOTkg0Xt49hoPAwYq9SSx56Fq2YqlFlume637PIwxDHyC9hMrrk7bHwe5VBlw6rQoeMV_BeQGbCxns4u7YdfC2ZFjIY9un3CjElVQLwl_WvSGJQ=w836-h927-no"
+            />
+          </div>
+          <div
+            style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+          >
+            <img
+              alt="photoBanner"
+              class="photo-0-2-69"
+              src="https://lh3.googleusercontent.com/pw/ACtC-3ebjvTFu1RTieS3Ao7LJkJLkVraeXYdjhfpHmQAlP9BEt_oEef64Dn7Aj7jq8qt5HkGhvdmjcFn68Hj1MFCCKShbEGIyH-K3AnZh6MuKX9sz0C1UKJBuvXlgfR0tci2LKa2fnjD95vLBB1EFjKT0rwQ1Q=w1391-h927-no"
+            />
+          </div>
+          <div
+            style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+          >
+            <img
+              alt="photoBanner"
+              class="photo-0-2-69"
+              src="https://lh3.googleusercontent.com/pw/ACtC-3ci7pPtJtX1mJ471oCJBKOxDIW7K4VzJQmoZbmXoztG5n9RY7AP51m1aCPn-nXY9tOYPr_wL52BBu3HwQ20DuvItkkU_yPgGAqEv7X0fzZJjO5qiD5ZilYU2kCAnf1JJrUT8CCj3N7u2PEC1kOLuvMU7Q=w1391-h927-no"
+            />
+          </div>
+        </div>
+        <div
+          class="button-0-2-68"
+        >
+          <button
+            class="mainContainer-0-2-24"
+            style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+          >
+            Explore more images
+          </button>
         </div>
       </div>
     </div>

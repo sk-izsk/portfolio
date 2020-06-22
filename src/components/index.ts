@@ -8,5 +8,7 @@ export { Avatar } from './Avatar/Avatar';
 export { Button } from './Button/Button';
 export { InformationBar } from './InformationBar/InformationBar';
 export { InformationBarContainer } from './InformationBarContainer/InformationBarContainer';
+export { Photo } from './Photo/Photo';
+export { PhotographsContainer } from './PhotographsContainer/PhotographsContainer';
 export { ProgressBarContainer } from './ProgressBarContainer/ProgressBarContainer';
 export { SocialIcons } from './SocialIcons/SocialIcons';

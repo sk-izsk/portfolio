@@ -3,7 +3,7 @@
 exports[`InformationBarContainer renders correctly 1`] = `
 <DocumentFragment>
   <div
-    class="mainContainer-0-2-1"
+    class="mainContainer-0-2-1 mainContainer-d0-0-2-6"
     name="mock title"
   >
     <div
@@ -13,7 +13,7 @@ exports[`InformationBarContainer renders correctly 1`] = `
         style="opacity: 0; transform: translate3d(0,20px,0);"
       >
         <h2
-          class="h2Text-0-2-6"
+          class="h2Text-0-2-7"
         >
           mock title
         </h2>
@@ -26,10 +26,10 @@ exports[`InformationBarContainer renders correctly 1`] = `
         class="informationBarContainer-0-2-4"
       >
         <div
-          class="mainContainer-0-2-7"
+          class="mainContainer-0-2-8"
         >
           <div
-            class="iconContainer-0-2-8"
+            class="iconContainer-0-2-9"
           >
             <svg
               fill="currentColor"
@@ -46,10 +46,10 @@ exports[`InformationBarContainer renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="descriptionContainer-0-2-9"
+            class="descriptionContainer-0-2-10"
           >
             <div
-              class="durationContainer-0-2-10"
+              class="durationContainer-0-2-11"
             >
               2016-2019
             </div>

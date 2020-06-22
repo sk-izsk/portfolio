@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCamera, FaCode, FaHome, FaUser } from 'react-icons/fa';
+import { FaCamera, FaHome, FaNetworkWired, FaUser } from 'react-icons/fa';
 import { IoIosChatbubbles, IoIosSchool } from 'react-icons/io';
 
 export interface AppBarItemType {
@@ -29,7 +29,7 @@ const appBarItems: AppBarItemType[] = [
   {
     title: 'Experience',
     icon: (size?: number, color?: string) => (
-      <FaCode size={size ? size : undefined} color={color ? color : undefined} />
+      <FaNetworkWired size={size ? size : undefined} color={color ? color : undefined} />
     ),
   },
   {
