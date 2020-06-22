@@ -13,23 +13,33 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     width: 200,
     height: 150,
     borderRadius: 30,
-    padding: 16,
+    padding: theme.spacing(2),
     cursor: 'pointer',
   },
   photoMobile: {
     width: 150,
     height: 114,
   },
+  photoForSmallerDevice: {
+    width: 126,
+    height: 100,
+    padding: theme.spacing(1.625),
+  },
 }));
 
 const Photo: React.FC<PhotoProps> = ({ url }) => {
-  const classes: Record<'photo' | 'photoMobile', string> = useStyles();
+  const classes: Record<'photo' | 'photoMobile' | 'photoForSmallerDevice', string> = useStyles();
 
   const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
+  const isSmallerDevice: boolean = useMediaQuery({ maxWidth: 480 });
   return (
     <img
       onClick={() => window.open('https://www.instagram.com/sk_izsk/', '_blank')}
-      className={clsx([classes.photo, isMobile && classes.photoMobile])}
+      className={clsx([
+        classes.photo,
+        isMobile && classes.photoMobile,
+        isSmallerDevice && classes.photoForSmallerDevice,
+      ])}
       alt='photoBanner'
       src={url}
     />

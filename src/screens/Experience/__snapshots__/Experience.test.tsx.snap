@@ -255,7 +255,7 @@ exports[`Experience renders correctly 1`] = `
               IEEE Publication, India — Main Author
             </h2>
             <div>
-              Authored a paper on an embedded hardware project, "Controlling an Embedded Robot through Image Processing based Object Tracking using MATLAB”. The publication is about a robot where users can instruct it to do commands by specific color object. The robot automatically tracks the specific object. Link of our paper: ieeexplore.ieee.org/document/7726922
+              Authored a paper on an embedded hardware project, "Controlling an Embedded Robot through Image Processing based Object Tracking using MATLAB”. The publication is about a robot where users can instruct it to do commands by specific color object. The robot automatically tracks the specific object.
             </div>
           </div>
         </div>

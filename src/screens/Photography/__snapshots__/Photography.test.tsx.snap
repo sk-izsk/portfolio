@@ -104,7 +104,7 @@ exports[`Photography renders correctly 1`] = `
           class="button-0-2-8"
         >
           <button
-            class="mainContainer-0-2-11"
+            class="mainContainer-0-2-12"
             style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
           >
             Explore more images
