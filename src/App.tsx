@@ -1,7 +1,7 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { AppBar } from './components';
-import { About, Education, Experience, Home, Photography } from './screens';
+import { About, Contact, Education, Experience, Home, Photography } from './screens';
 import { CustomTheme } from './theme';
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
@@ -25,6 +25,7 @@ const App: React.FC = () => {
       <Education />
       <Experience />
       <Photography />
+      <Contact />
     </>
   );
 };
