@@ -1180,74 +1180,98 @@ exports[`App renders correctly 1`] = `
       </div>
     </div>
     <div
-      class="formContainer-0-2-74"
+      class="contactUsContainer-0-2-77"
     >
-      <form
-        class="form-0-2-75"
+      <div
+        class="mapContainer-0-2-75"
       >
         <div
-          class="smallInputFieldContainer-0-2-77"
+          style="position: relative; width: 0px; height: 0px; cursor: grab; outline: none;"
+          tabindex="0"
         >
           <div
-            class="smallInputFieldParentContainer-0-2-78"
+            style="position: relative; width: 100%; height: 100%;"
           >
-            <input
-              class="smallInputField-0-2-79"
-              name="name"
-              placeholder="Your Name"
-              type="text"
-              value=""
+            <div
+              class=""
+              style="position: absolute; width: 100%; height: 100%; overflow: hidden; visibility: inherit;"
             />
-          </div>
-          <div
-            class="smallInputFieldParentContainer-0-2-78"
-          >
-            <input
-              class="smallInputField-0-2-79"
-              name="email"
-              placeholder="Email address"
-              type="email"
-              value=""
+            <div
+              style="overflow: visible; height: 0px; width: 0px;"
             />
+            <div
+              class="resize-triggers"
+            >
+              <div
+                class="expand-trigger"
+              >
+                <div
+                  style="width: 1px; height: 1px;"
+                />
+              </div>
+              <div
+                class="contract-trigger"
+              />
+            </div>
           </div>
         </div>
-        <div
-          class="biggerInputFieldContainer-0-2-80"
+      </div>
+      <div
+        class="formContainer-0-2-74"
+      >
+        <form
+          class="form-0-2-79"
         >
           <input
-            class="smallInputField-0-2-79"
+            class="smallInputField-0-2-80"
+            name="name"
+            placeholder="Your Name"
+            type="text"
+            value=""
+          />
+          <input
+            class="smallInputField-0-2-80"
+            name="email"
+            placeholder="Email address"
+            type="email"
+            value=""
+          />
+          <input
+            class="smallInputField-0-2-80"
             name="subject"
             placeholder="Subject"
             type="text"
             value=""
           />
-        </div>
-        <textarea
-          class="smallInputField-0-2-79 textArea-0-2-81"
-          name="message"
-          placeholder="Type your message here."
-        />
-        <div
-          class="buttonContainer-0-2-82"
-        >
-          <button
-            class="mainContainer-0-2-24"
-            style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
-          >
-            Send Message
-          </button>
+          <textarea
+            class="smallInputField-0-2-80 textArea-0-2-81"
+            name="message"
+            placeholder="Type your message here."
+          />
           <div
-            class="emailTextContainer-0-2-83"
+            class="buttonContainer-0-2-82"
           >
-            Don't like forms? Send me an
-            <span
-              class="email-0-2-84"
-            >
-              Email
-            </span>
+            <div>
+              <button
+                class="mainContainer-0-2-24"
+                style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+              >
+                Send Message
+              </button>
+              <div
+                class="emailTextContainer-0-2-83"
+              >
+                Don't like forms? Send me an
+                <span
+                  class="email-0-2-84"
+                >
+                  Email
+                </span>
+              </div>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
 </DocumentFragment>
