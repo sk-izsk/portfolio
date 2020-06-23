@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FormContainer renders correctly 1`] = `
+<DocumentFragment>
+  <form
+    class="form-0-2-1"
+  >
+    <div
+      class="smallInputFieldContainer-0-2-3"
+    >
+      <div
+        class="smallInputFieldParentContainer-0-2-4"
+      >
+        <input
+          class="smallInputField-0-2-5"
+          name="name"
+          placeholder="Your Name"
+          type="text"
+          value=""
+        />
+      </div>
+      <div
+        class="smallInputFieldParentContainer-0-2-4"
+      >
+        <input
+          class="smallInputField-0-2-5"
+          name="email"
+          placeholder="Email address"
+          type="email"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      class="biggerInputFieldContainer-0-2-6"
+    >
+      <input
+        class="smallInputField-0-2-5"
+        name="subject"
+        placeholder="Subject"
+        type="text"
+        value=""
+      />
+    </div>
+    <textarea
+      class="smallInputField-0-2-5 textArea-0-2-7"
+      name="message"
+      placeholder="Type your message here."
+    />
+    <div
+      class="buttonContainer-0-2-8"
+    >
+      <button
+        class="mainContainer-0-2-14"
+        style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+      >
+        Send Message
+      </button>
+      <div
+        class="emailTextContainer-0-2-9"
+      >
+        Don't like forms? Send me an
+        <span
+          class="email-0-2-10"
+        >
+          Email
+        </span>
+      </div>
+    </div>
+  </form>
+</DocumentFragment>
+`;
