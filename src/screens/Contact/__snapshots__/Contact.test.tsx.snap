@@ -12,7 +12,7 @@ exports[`Contact renders correctly 1`] = `
         style="opacity: 0; transform: translate3d(0,20px,0);"
       >
         <h2
-          class="h2Text-0-2-15"
+          class="h2Text-0-2-16"
         >
           Contact
         </h2>
@@ -35,6 +35,7 @@ exports[`Contact renders correctly 1`] = `
               name="name"
               placeholder="Your Name"
               type="text"
+              value=""
             />
           </div>
           <div
@@ -45,6 +46,7 @@ exports[`Contact renders correctly 1`] = `
               name="email"
               placeholder="Email address"
               type="email"
+              value=""
             />
           </div>
         </div>
@@ -56,18 +58,19 @@ exports[`Contact renders correctly 1`] = `
             name="subject"
             placeholder="Subject"
             type="text"
+            value=""
           />
         </div>
         <textarea
           class="smallInputField-0-2-7 textArea-0-2-9"
-          name="description"
+          name="message"
           placeholder="Type your message here."
         />
         <div
           class="buttonContainer-0-2-10"
         >
           <button
-            class="mainContainer-0-2-16"
+            class="mainContainer-0-2-17"
             style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
           >
             Send Message
@@ -75,7 +78,7 @@ exports[`Contact renders correctly 1`] = `
           <div
             class="emailTextContainer-0-2-11"
           >
-            Don't link forms? Send me an
+            Don't like forms? Send me an
             <span
               class="email-0-2-12"
             >

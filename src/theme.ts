@@ -9,6 +9,7 @@ export interface CustomTheme {
     white: string;
     blue: string;
     grayishBlue: string;
+    red: string;
   };
   fontProperties: {
     textFontSize: number;
@@ -29,6 +30,7 @@ const theme: CustomTheme = {
     blue: 'rgb(108, 108, 229)',
     white: '#fff',
     grayishBlue: '#8B88B1',
+    red: '#ff0000',
   },
   fontProperties: {
     textFontSize: 16,

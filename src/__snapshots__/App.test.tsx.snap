@@ -1196,6 +1196,7 @@ exports[`App renders correctly 1`] = `
               name="name"
               placeholder="Your Name"
               type="text"
+              value=""
             />
           </div>
           <div
@@ -1206,6 +1207,7 @@ exports[`App renders correctly 1`] = `
               name="email"
               placeholder="Email address"
               type="email"
+              value=""
             />
           </div>
         </div>
@@ -1217,11 +1219,12 @@ exports[`App renders correctly 1`] = `
             name="subject"
             placeholder="Subject"
             type="text"
+            value=""
           />
         </div>
         <textarea
           class="smallInputField-0-2-79 textArea-0-2-81"
-          name="description"
+          name="message"
           placeholder="Type your message here."
         />
         <div
@@ -1236,7 +1239,7 @@ exports[`App renders correctly 1`] = `
           <div
             class="emailTextContainer-0-2-83"
           >
-            Don't link forms? Send me an
+            Don't like forms? Send me an
             <span
               class="email-0-2-84"
             >
