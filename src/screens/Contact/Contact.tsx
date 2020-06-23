@@ -25,13 +25,13 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   mapContainer: {
     display: 'flex',
     width: '50%',
-    alignSelf: 'center',
     justifyContent: 'center',
     marginLeft: theme.spacing(3),
   },
   mapContainerMobile: {
     width: '90%',
     marginLeft: theme.spacing(0),
+    alignSelf: 'center',
   },
   contactUsContainer: {
     display: 'flex',
