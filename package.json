@@ -12,6 +12,8 @@
     "@types/react-dom": "^16.9.0",
     "@types/react-responsive": "^8.0.2",
     "@types/react-scroll": "^1.5.5",
+    "@types/yup": "^0.29.3",
+    "axios": "^0.19.2",
     "clsx": "^1.1.1",
     "husky": "^4.2.5",
     "lint": "^0.7.0",
@@ -28,7 +30,8 @@
     "react-text-loop": "^2.3.0",
     "tslint": "^6.1.2",
     "typeface-roboto": "^0.0.75",
-    "typescript": "~3.7.2"
+    "typescript": "~3.7.2",
+    "yup": "^0.29.1"
   },
   "scripts": {
     "start": "react-scripts start",

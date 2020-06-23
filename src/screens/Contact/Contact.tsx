@@ -115,6 +115,11 @@ const Contact: React.FC<ContactProps> = () => {
   const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
   const [openModal, setOpenModal] = useState<boolean>(false);
 
+  const onSubmit: (e: KeyboardEvent) => void = (e: KeyboardEvent) => {
+    e.preventDefault();
+    setOpenModal(true);
+  };
+
   return (
     <Element name='Contact'>
       <Modal
@@ -153,7 +158,7 @@ const Contact: React.FC<ContactProps> = () => {
             name='description'
           />
           <div className={classes.buttonContainer}>
-            <Button onClick={() => setOpenModal(true)}>Send Message</Button>
+            <Button onClick={onSubmit as any}>Send Message</Button>
             <div className={classes.emailTextContainer}>
               Don't link forms? Send me an
               <span onClick={() => window.open('mailto:sk.zeeshan1992@gmail.com', '_blank')} className={classes.email}>
