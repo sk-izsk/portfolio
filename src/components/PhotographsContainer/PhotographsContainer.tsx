@@ -30,7 +30,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     display: 'flex',
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-around',
+    justifyContent: 'space-evenly',
   },
   button: {
     position: 'relative',

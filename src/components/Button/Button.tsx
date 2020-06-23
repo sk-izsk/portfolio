@@ -30,9 +30,10 @@ const trans: (x: number, y: number, s: number) => string | undefined = (x: numbe
 
 interface ButtonProps {
   onClick?: () => void;
+  onKeyDown?: () => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
+const Button: React.FC<ButtonProps> = ({ children, onClick, onKeyDown }) => {
   const classes: Record<'mainContainer', string> = useStyles();
   const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }));
 
@@ -43,6 +44,7 @@ const Button: React.FC<ButtonProps> = ({ children, onClick }) => {
       style={{ transform: props.xys.interpolate(trans as any) }}
       onClick={onClick}
       className={classes.mainContainer}
+      onKeyDown={onKeyDown}
     >
       {children}
     </animated.button>
