@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import React, { useState } from 'react';
 import { createUseStyles } from 'react-jss';
-import { useMediaQuery } from 'react-responsive';
 import { Button, Modal } from '..';
 import { CustomTheme } from '../../theme';
 import { useForm } from '../../utils/CutomHook';
@@ -18,21 +17,8 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   form: {
     display: 'flex',
     flexDirection: 'column',
-    width: '60%',
-    alignItems: 'center',
-  },
-  formMobile: {
     width: '90%',
-  },
-  smallInputFieldContainer: {
-    display: 'flex',
-    width: '100%',
-    justifyContent: 'space-evenly',
-    flexWrap: 'wrap',
-  },
-  smallInputFieldParentContainer: {
-    padding: theme.spacing(0.8),
-    flex: '1 1 330px',
+    alignItems: 'center',
   },
   smallInputField: {
     height: 50,
@@ -42,28 +28,29 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     border: 0,
     textAlign: 'center',
     fontSize: 18,
-  },
-
-  biggerInputFieldContainer: {
+    marginTop: theme.spacing(1),
+    display: 'flex',
+    justifyContent: 'space-evenly',
+    flexDirection: 'column',
     padding: theme.spacing(0.8),
-    flex: '1 1 56px',
-    width: '100%',
+    flex: 1,
   },
   textArea: {
     height: 100,
-    borderRadius: 20,
+    borderRadius: 8,
     fontSize: 22,
-    paddingTop: 22,
+    paddingTop: theme.spacing(8),
+    paddingBottom: theme.spacing(8),
     resize: 'none',
   },
   buttonContainer: {
     display: 'flex',
-    flexDirection: 'row',
     width: '100%',
     marginTop: theme.spacing(3),
     marginBottom: theme.spacing(3),
-    flexWrap: 'wrap',
+    flexDirection: 'column',
     justifyContent: 'space-around',
+    textAlign: 'center',
   },
   emailTextContainer: {
     marginTop: theme.spacing(0.8),
@@ -82,17 +69,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
 
 const FormContainer: React.FC<FormContainerProps> = () => {
   const classes: Record<
-    | 'form'
-    | 'smallInputField'
-    | 'smallInputFieldContainer'
-    | 'textArea'
-    | 'buttonContainer'
-    | 'biggerInputFieldContainer'
-    | 'email'
-    | 'smallInputFieldParentContainer'
-    | 'emailTextContainer'
-    | 'formMobile'
-    | 'warningMessage',
+    'form' | 'smallInputField' | 'textArea' | 'buttonContainer' | 'email' | 'emailTextContainer' | 'warningMessage',
     string
   > = useStyles();
   const [openModal, setOpenModal] = useState<boolean>(false);
@@ -111,8 +88,6 @@ const FormContainer: React.FC<FormContainerProps> = () => {
     }
   };
 
-  const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
-
   const onKeyDownHandler = (e: KeyboardEvent) => {
     if (e.keyCode === 13) {
       onSubmit(e);
@@ -122,42 +97,34 @@ const FormContainer: React.FC<FormContainerProps> = () => {
   return (
     <>
       <Modal open={openModal} onClose={() => setOpenModal(false)} />
-      <form className={clsx([classes.form, isMobile && classes.formMobile])}>
-        <div className={classes.smallInputFieldContainer}>
-          <div className={classes.smallInputFieldParentContainer}>
-            <input
-              value={values.name}
-              className={classes.smallInputField}
-              onChange={handleChange}
-              name='name'
-              type='text'
-              placeholder='Your Name'
-            />
-            {error.name === 'name' && <span className={classes.warningMessage}>*{error.errorMessage}</span>}
-          </div>
-          <div className={classes.smallInputFieldParentContainer}>
-            <input
-              className={classes.smallInputField}
-              value={values.email}
-              onChange={handleChange}
-              name='email'
-              type='email'
-              placeholder='Email address'
-            />
-            {error.name === 'email' && <span className={classes.warningMessage}>*{error.errorMessage}</span>}
-          </div>
-        </div>
-        <div className={classes.biggerInputFieldContainer}>
-          <input
-            value={values.subject}
-            onChange={handleChange}
-            className={classes.smallInputField}
-            name='subject'
-            type='text'
-            placeholder='Subject'
-          />
-          {error.name === 'subject' && <span className={classes.warningMessage}>*{error.errorMessage}</span>}
-        </div>
+      <form className={classes.form}>
+        <input
+          value={values.name}
+          className={classes.smallInputField}
+          onChange={handleChange}
+          name='name'
+          type='text'
+          placeholder='Your Name'
+        />
+        {error.name === 'name' && <span className={classes.warningMessage}>*{error.errorMessage}</span>}
+        <input
+          className={classes.smallInputField}
+          value={values.email}
+          onChange={handleChange}
+          name='email'
+          type='email'
+          placeholder='Email address'
+        />
+        {error.name === 'email' && <span className={classes.warningMessage}>*{error.errorMessage}</span>}
+        <input
+          value={values.subject}
+          onChange={handleChange}
+          className={classes.smallInputField}
+          name='subject'
+          type='text'
+          placeholder='Subject'
+        />
+        {error.name === 'subject' && <span className={classes.warningMessage}>*{error.errorMessage}</span>}
         <textarea
           className={clsx([classes.smallInputField, classes.textArea])}
           placeholder='Type your message here.'
@@ -166,16 +133,17 @@ const FormContainer: React.FC<FormContainerProps> = () => {
           onChange={handleChange}
         />
         {error.name === 'message' && <span className={classes.warningMessage}>*{error.errorMessage}</span>}
-
         <div className={classes.buttonContainer}>
-          <Button onKeyDown={onKeyDownHandler as any} onClick={onSubmit as any}>
-            Send Message
-          </Button>
-          <div className={classes.emailTextContainer}>
-            Don't like forms? Send me an
-            <span onClick={() => window.open('mailto:sk.zeeshan1992@gmail.com', '_blank')} className={classes.email}>
-              Email
-            </span>
+          <div>
+            <Button onKeyDown={onKeyDownHandler as any} onClick={onSubmit as any}>
+              Send Message
+            </Button>
+            <div className={classes.emailTextContainer}>
+              Don't like forms? Send me an
+              <span onClick={() => window.open('mailto:sk.zeeshan1992@gmail.com', '_blank')} className={classes.email}>
+                Email
+              </span>
+            </div>
           </div>
         </div>
       </form>
