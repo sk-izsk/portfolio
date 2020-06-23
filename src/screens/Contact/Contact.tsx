@@ -133,7 +133,7 @@ const Contact: React.FC<ContactProps> = () => {
     try {
       e.preventDefault();
       setError({ name: '', errorMessage: '' });
-      const validatedForm = await formSchema.validate(values);
+      await formSchema.validate(values);
       ['name', 'subject', 'message', 'email'].forEach((item: string) => reset(item));
       setOpenModal(true);
     } catch (err) {
