@@ -1,7 +1,10 @@
 import axios, { AxiosResponse } from 'axios';
 import { InputValues } from '../validation/validation';
 
-const url: string = process.env.NODE_ENV === 'development' ? 'http://localhost:5000/email' : 'production';
+const url: string =
+  process.env.NODE_ENV === 'development'
+    ? 'http://localhost:5000/email'
+    : 'https://izsk-portfolio-backend.herokuapp.com/email';
 
 const sendEmail: (data: InputValues) => Promise<AxiosResponse<any>> = async (data: InputValues) => {
   const response = await axios({
