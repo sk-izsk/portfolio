@@ -1,13 +1,13 @@
 import React from 'react';
-import { FaRegThumbsUp } from 'react-icons/fa';
 import { createUseStyles } from 'react-jss';
 import { Modal as ResponsiveModal } from 'react-responsive-modal';
 import { Button } from '..';
-import { CustomTheme, theme } from '../../theme';
+import { CustomTheme } from '../../theme';
 
 interface ModalProps {
   open: boolean;
   onClose: () => void;
+  icon?: JSX.Element;
 }
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
@@ -27,7 +27,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
 }));
 
-const Modal: React.FC<ModalProps> = ({ open, onClose }) => {
+const Modal: React.FC<ModalProps> = ({ open, onClose, icon, children }) => {
   const classes: Record<'modalContainer' | 'modal', string> = useStyles();
   return (
     <ResponsiveModal
@@ -39,8 +39,8 @@ const Modal: React.FC<ModalProps> = ({ open, onClose }) => {
       center
     >
       <div className={classes.modal}>
-        <FaRegThumbsUp color={theme.colors.thirdColor} size={50} />
-        <h2>Will get back to you as soon as possible</h2>
+        {icon}
+        <h2>{children}</h2>
         <Button onClick={onClose}>Okay</Button>
       </div>
     </ResponsiveModal>

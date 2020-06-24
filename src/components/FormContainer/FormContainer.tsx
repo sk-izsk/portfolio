@@ -1,10 +1,14 @@
 import clsx from 'clsx';
 import React, { useState } from 'react';
+import { FaRegThumbsUp } from 'react-icons/fa';
+import { IoMdSad } from 'react-icons/io';
 import { createUseStyles } from 'react-jss';
+import { Shape } from 'yup';
 import { Button, Modal } from '..';
-import { CustomTheme } from '../../theme';
+import { sendEmail } from '../../api/api';
+import { CustomTheme, theme } from '../../theme';
 import { useForm } from '../../utils/CutomHook';
-import { formSchema } from '../../validation/validation';
+import { formSchema, InputValues } from '../../validation/validation';
 
 interface FormContainerProps {}
 
@@ -67,12 +71,16 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
 }));
 
+const SuccessIcon = () => <FaRegThumbsUp color={theme.colors.thirdColor} size={50} />;
+const SadIcon = () => <IoMdSad color={theme.colors.thirdColor} size={50} />;
+
 const FormContainer: React.FC<FormContainerProps> = () => {
   const classes: Record<
     'form' | 'smallInputField' | 'textArea' | 'buttonContainer' | 'email' | 'emailTextContainer' | 'warningMessage',
     string
   > = useStyles();
   const [openModal, setOpenModal] = useState<boolean>(false);
+  const [openErrorModal, setOpenErrorModal] = useState<boolean>(false);
   const [error, setError] = useState<Error>({ name: '', errorMessage: '' });
   const [values, handleChange, reset] = useForm({ name: '', subject: '', message: '', email: '' });
 
@@ -80,11 +88,28 @@ const FormContainer: React.FC<FormContainerProps> = () => {
     try {
       e.preventDefault();
       setError({ name: '', errorMessage: '' });
-      await formSchema.validate(values);
-      ['name', 'subject', 'message', 'email'].forEach((item: string) => reset(item));
-      setOpenModal(true);
+      const validatedValues: Shape<
+        InputValues | undefined,
+        {
+          name: string;
+          email: string;
+          subject: string;
+          message: string;
+        }
+      > = await formSchema.validate(values);
+      if (validatedValues !== undefined) {
+        const response = await sendEmail(validatedValues);
+        if (response.status === 200) {
+          const dataArray: string[] = ['name', 'subject', 'message', 'email'];
+          dataArray.forEach((item: string) => reset(item));
+          console.log(response);
+          setOpenModal(true);
+        }
+      }
     } catch (err) {
-      setError({ name: err.path, errorMessage: err.message });
+      err.name === 'ValidationError'
+        ? setError({ name: err.path, errorMessage: err.message })
+        : setOpenErrorModal(true);
     }
   };
 
@@ -96,7 +121,16 @@ const FormContainer: React.FC<FormContainerProps> = () => {
 
   return (
     <>
-      <Modal open={openModal} onClose={() => setOpenModal(false)} />
+      <Modal open={openModal} onClose={() => setOpenModal(false)} icon={<SuccessIcon />}>
+        Will get back to you as soon as possible
+      </Modal>
+      <Modal open={openErrorModal} onClose={() => setOpenErrorModal(false)} icon={<SadIcon />}>
+        Something is going wrong. Kindly send me email at
+        <span onClick={() => window.open('mailto:sk.zeeshan1992@gmail.com', '_blank')} className={classes.email}>
+          sk.zeeshan1992@gmail.com
+        </span>{' '}
+        . Thanks
+      </Modal>
       <form className={classes.form}>
         <input
           value={values.name}
