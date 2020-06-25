@@ -3,6 +3,7 @@ import { createUseStyles } from 'react-jss';
 import { AppBar } from './components';
 import { About, Contact, Education, Experience, Home, Photography } from './screens';
 import { CustomTheme } from './theme';
+import { MemoizedComponent } from './utils/custom-hook';
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
   '@global': {
@@ -17,15 +18,21 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
 
 const App: React.FC = () => {
   useStyles();
+
+  const Components: JSX.Element[] = [
+    <AppBar />,
+    <Home />,
+    <About />,
+    <Education />,
+    <Experience />,
+    <Photography />,
+    <Contact />,
+  ];
   return (
     <>
-      <AppBar />
-      <Home />
-      <About />
-      <Education />
-      <Experience />
-      <Photography />
-      <Contact />
+      {Components.map((Component: JSX.Element, index: number) => (
+        <div key={index}>{MemoizedComponent(Component)}</div>
+      ))}
     </>
   );
 };

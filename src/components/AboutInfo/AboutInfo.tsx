@@ -4,6 +4,7 @@ import { createUseStyles } from 'react-jss';
 import { useMediaQuery } from 'react-responsive';
 import { Button, ProgressBarContainer } from '..';
 import { CustomTheme } from '../../theme';
+import { MemoizedComponent } from '../../utils/custom-hook';
 import { SkillInformationTypes, skillsInformation } from '../../utils/informations';
 
 interface AboutInfoProps {}
@@ -89,42 +90,46 @@ const AboutInfo: React.FC<AboutInfoProps> = () => {
   const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
   const isSmallerDevices: boolean = useMediaQuery({ maxWidth: 480 });
 
+  const onClick = () =>
+    window.open(
+      'https://docs.google.com/document/d/16Ko4S8n50fedwi4re2K-djKxe2zGrRRWKuXdtko7jow/edit?usp=sharing',
+      '_blank',
+    );
+
   return (
     <div className={classes.mainContainer}>
-      <div className={clsx([classes.triangleContainer, isMobile && classes.triangleContainerMobile])}>
-        <div className={clsx([classes.triangle, isMobile && classes.triangleMobile])} />
-      </div>
-
-      <div className={classes.descriptionContainer}>
-        <div className={clsx([classes.description, isSmallerDevices && classes.descriptionMobile])}>
-          I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website.
-          Also I am a hobbyist photographer.
-        </div>
-        <div className={clsx([classes.button, isMobile && classes.buttonMobile])}>
-          <Button
-            onClick={() =>
-              window.open(
-                'https://docs.google.com/document/d/16Ko4S8n50fedwi4re2K-djKxe2zGrRRWKuXdtko7jow/edit?usp=sharing',
-                '_blank',
-              )
-            }
-          >
-            Download My CV
-          </Button>
-        </div>
-      </div>
-      <div className={classes.skillsInfoContainer}>
-        {skillsInformation.map((skillInformation: SkillInformationTypes) => {
-          return (
-            <ProgressBarContainer
-              name={skillInformation.name}
-              progress={skillInformation.progress}
-              backgroundColor={skillInformation.backgroundColor}
-              key={skillInformation.name}
-            />
-          );
-        })}
-      </div>
+      {MemoizedComponent(
+        <div className={clsx([classes.triangleContainer, isMobile && classes.triangleContainerMobile])}>
+          <div className={clsx([classes.triangle, isMobile && classes.triangleMobile])} />
+        </div>,
+        isMobile,
+      )}
+      {MemoizedComponent(
+        <>
+          <div className={classes.descriptionContainer}>
+            <div className={clsx([classes.description, isSmallerDevices && classes.descriptionMobile])}>
+              I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making
+              Website. Also I am a hobbyist photographer.
+            </div>
+            <div className={clsx([classes.button, isMobile && classes.buttonMobile])}>
+              <Button onClick={onClick}>Download My CV</Button>
+            </div>
+          </div>
+          <div className={classes.skillsInfoContainer}>
+            {skillsInformation.map((skillInformation: SkillInformationTypes) => {
+              return (
+                <ProgressBarContainer
+                  name={skillInformation.name}
+                  progress={skillInformation.progress}
+                  backgroundColor={skillInformation.backgroundColor}
+                  key={skillInformation.name}
+                />
+              );
+            })}
+          </div>
+        </>,
+        onClick,
+      )}
     </div>
   );
 };

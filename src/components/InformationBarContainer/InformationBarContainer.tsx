@@ -5,6 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 import { Element } from 'react-scroll';
 import { InformationBar, VanishAnimation } from '../../components';
 import { CustomTheme } from '../../theme';
+import { MemoizedComponent } from '../../utils/custom-hook';
 import { Information } from '../../utils/informations';
 
 interface InformationBarContainerProps {
@@ -62,18 +63,23 @@ const InformationBarContainer: React.FC<InformationBarContainerProps> = (props) 
 
   return (
     <Element className={classes.mainContainer} name={`${title}`}>
-      <div className={classes.header}>
-        <VanishAnimation words={[`${title}`]} />
-      </div>
-      <div className={classes.informationBarContainerParent}>
-        <div className={clsx([classes.informationBarContainer, isMobile && classes.informationBarContainerMobile])}>
-          {informations?.map((educationInformation: Information) => {
-            return (
-              <InformationBar icon={icon} {...educationInformation} key={educationInformation.nameOfOrganization} />
-            );
-          })}
-        </div>
-      </div>
+      {MemoizedComponent(
+        <div className={classes.header}>
+          <VanishAnimation words={[`${title}`]} />
+        </div>,
+      )}
+      {MemoizedComponent(
+        <div className={classes.informationBarContainerParent}>
+          <div className={clsx([classes.informationBarContainer, isMobile && classes.informationBarContainerMobile])}>
+            {informations?.map((educationInformation: Information) => {
+              return (
+                <InformationBar icon={icon} {...educationInformation} key={educationInformation.nameOfOrganization} />
+              );
+            })}
+          </div>
+        </div>,
+        isMobile,
+      )}
     </Element>
   );
 };

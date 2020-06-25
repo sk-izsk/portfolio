@@ -4,6 +4,7 @@ import { createUseStyles } from 'react-jss';
 import { useMediaQuery } from 'react-responsive';
 import { Button, Photo } from '..';
 import { CustomTheme } from '../../theme';
+import { MemoizedComponent } from '../../utils/custom-hook';
 import { photos, PhotoType } from '../../utils/informations';
 import { ThreeDAnimation } from '../AnimatedContainer/AnimatedContainer';
 
@@ -46,9 +47,7 @@ const PhotographsContainer: React.FC<PhotographsContainerProps> = () => {
       <div className={classes.photosContainer}>
         {photos.map((photo: PhotoType) => {
           return (
-            <ThreeDAnimation key={photo.url}>
-              <Photo url={photo.url} />
-            </ThreeDAnimation>
+            <ThreeDAnimation key={photo.url}>{MemoizedComponent(<Photo url={photo.url} />, photo.url)}</ThreeDAnimation>
           );
         })}
       </div>

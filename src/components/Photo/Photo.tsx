@@ -27,7 +27,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
 }));
 
-const Photo: React.FC<PhotoProps> = ({ url }) => {
+const UnMemoizedPhoto: React.FC<PhotoProps> = ({ url }) => {
   const classes: Record<'photo' | 'photoMobile' | 'photoForSmallerDevice', string> = useStyles();
 
   const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
@@ -45,5 +45,7 @@ const Photo: React.FC<PhotoProps> = ({ url }) => {
     />
   );
 };
+
+const Photo: React.NamedExoticComponent<PhotoProps> = React.memo(UnMemoizedPhoto);
 
 export { Photo };

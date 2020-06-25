@@ -32,7 +32,13 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
 }));
 
-const InformationBar: React.FC<InformationBarProps> = ({ icon, startYear, endYear, details, nameOfOrganization }) => {
+const UnMemoizedInformationBar: React.FC<InformationBarProps> = ({
+  icon,
+  startYear,
+  endYear,
+  details,
+  nameOfOrganization,
+}) => {
   const classes: Record<
     'mainContainer' | 'iconContainer' | 'durationContainer' | 'descriptionContainer',
     string
@@ -51,5 +57,7 @@ const InformationBar: React.FC<InformationBarProps> = ({ icon, startYear, endYea
     </div>
   );
 };
+
+const InformationBar = React.memo(UnMemoizedInformationBar);
 
 export { InformationBar };

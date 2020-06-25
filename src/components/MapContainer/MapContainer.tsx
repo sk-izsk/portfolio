@@ -5,7 +5,7 @@ import { theme } from '../../theme';
 
 interface MapContainerProps {}
 
-const MapContainer: React.FC<MapContainerProps> = () => {
+const UnMemoizedMapContainer: React.FC<MapContainerProps> = () => {
   const [viewPort, setViewPort] = useState({
     width: '100vw',
     height: '65vh',
@@ -27,5 +27,7 @@ const MapContainer: React.FC<MapContainerProps> = () => {
     </ReactMapGl>
   );
 };
+
+const MapContainer: React.NamedExoticComponent<MapContainerProps> = React.memo(UnMemoizedMapContainer);
 
 export { MapContainer };
