@@ -12,6 +12,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
       margin: 0,
       backgroundColor: theme.colors.primaryColor,
       fontFamily: theme.fontProperties.fontFamily,
+      scrollBehavior: 'smooth',
     },
   },
 }));
