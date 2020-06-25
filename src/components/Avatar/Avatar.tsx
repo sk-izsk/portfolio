@@ -14,10 +14,12 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
 }));
 
-const Avatar: React.FC<AvatarProps> = ({ url }) => {
+const UnMemoizedAvatar: React.FC<AvatarProps> = ({ url }) => {
   const classes: Record<'mainContainer', string> = useStyles();
 
   return <img className={classes.mainContainer} alt='Avatar' src={url} />;
 };
+
+const Avatar: React.NamedExoticComponent<AvatarProps> = React.memo(UnMemoizedAvatar);
 
 export { Avatar };

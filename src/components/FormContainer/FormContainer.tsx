@@ -7,7 +7,7 @@ import { Shape } from 'yup';
 import { Button, Modal } from '..';
 import { sendEmail } from '../../api/api';
 import { CustomTheme, theme } from '../../theme';
-import { useForm } from '../../utils/CutomHook';
+import { useForm } from '../../utils/custom-hook';
 import { formSchema, InputValues } from '../../validation/validation';
 
 interface FormContainerProps {}

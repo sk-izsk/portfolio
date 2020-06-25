@@ -99,7 +99,7 @@ exports[`Experience renders correctly 1`] = `
               This Portfolio — Personal
             </h2>
             <div>
-              I made this portfolio by using React, React Hooks, Typescript, Jest for testing and some animation tools. I use JSS with fully controlled style. I try to make it with proper optimization by using React features
+              I made this portfolio by using React, React Hooks, Typescript, Yup for validation, axios for api call. Jest for testing and some animation tools. I use JSS with fully controlled style. For Back end I use NodeJS, with express, typescript, cors, yup for validation, nodemailer with mailgun. I try to make it with proper optimization by using React features
             </div>
           </div>
         </div>

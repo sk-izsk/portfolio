@@ -39,7 +39,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
 }));
 
-const VanishAnimation: React.FC<VanishAnimationProps> = ({ words }) => {
+const UnMemoizedVanishAnimation: React.FC<VanishAnimationProps> = ({ words }) => {
   const classes: Record<'h2Text', string> = useStyles();
 
   const [toggle, setToggle] = useState(true);
@@ -50,6 +50,7 @@ const VanishAnimation: React.FC<VanishAnimationProps> = ({ words }) => {
     height: toggle ? 80 : 0,
     from: { opacity: 0, x: 20, height: 0 },
   });
+
   return (
     <>
       {trail.map(({ x, height, ...rest }, index) => (
@@ -70,5 +71,7 @@ const VanishAnimation: React.FC<VanishAnimationProps> = ({ words }) => {
     </>
   );
 };
+
+const VanishAnimation: React.NamedExoticComponent<VanishAnimationProps> = React.memo(UnMemoizedVanishAnimation);
 
 export { ThreeDAnimation, VanishAnimation };

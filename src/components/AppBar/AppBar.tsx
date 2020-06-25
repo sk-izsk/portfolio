@@ -70,9 +70,11 @@ const AppBar: React.FC<AppBarProps> = () => {
         <div className={classes.mainContainer}>
           {appBarItems.map((appBarItem: AppBarItemType) => {
             return (
-              <Link key={appBarItem.title} to={appBarItem.title} spy={true} smooth={true} duration={500}>
-                <AppBarItem icon={appBarItem.icon()}>{appBarItem.title}</AppBarItem>
-              </Link>
+              <div key={appBarItem.title}>
+                <Link to={appBarItem.title} spy={true} smooth={true} duration={500}>
+                  <AppBarItem icon={appBarItem.icon()}>{appBarItem.title}</AppBarItem>
+                </Link>
+              </div>
             );
           })}
         </div>

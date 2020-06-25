@@ -34,7 +34,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     width: '100%',
   },
 }));
-const ProgressBarContainer: React.FC<ProgressBarContainerProps> = (props) => {
+const UnMemoizedProgressBarContainer: React.FC<ProgressBarContainerProps> = (props) => {
   const classes: Record<
     'mainContainer' | 'description' | 'progressBarContainer' | 'progressBar' | 'progressBarParent',
     string
@@ -54,5 +54,9 @@ const ProgressBarContainer: React.FC<ProgressBarContainerProps> = (props) => {
     </div>
   );
 };
+
+const ProgressBarContainer: React.NamedExoticComponent<ProgressBarContainerProps> = React.memo(
+  UnMemoizedProgressBarContainer,
+);
 
 export { ProgressBarContainer };

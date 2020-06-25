@@ -1,4 +1,4 @@
-import { ChangeEvent, useState } from 'react';
+import { ChangeEvent, useMemo, useState } from 'react';
 
 const useForm = (initialValue: any) => {
   const [values, setValues] = useState(initialValue);
@@ -17,4 +17,9 @@ const useForm = (initialValue: any) => {
   return [values, handleChange, reset];
 };
 
-export { useForm };
+const MemoizedComponent = (Component: JSX.Element, dependencies?: unknown) => {
+  // eslint-disable-next-line
+  return useMemo(() => Component, [Component, dependencies]);
+};
+
+export { useForm, MemoizedComponent };
