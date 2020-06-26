@@ -102,7 +102,6 @@ const FormContainer: React.FC<FormContainerProps> = () => {
         if (response.status === 200) {
           const dataArray: string[] = ['name', 'subject', 'message', 'email'];
           dataArray.forEach((item: string) => reset(item));
-          console.log(response);
           setOpenModal(true);
         }
       }
