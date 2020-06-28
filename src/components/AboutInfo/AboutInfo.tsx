@@ -32,7 +32,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     fontSize: 22,
   },
   descriptionMobile: {
-    fontSize: 15,
+    fontSize: 20,
   },
   button: {
     position: 'relative',
