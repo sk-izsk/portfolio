@@ -17,7 +17,6 @@ exports[`Home renders correctly 1`] = `
           <img
             alt="Avatar"
             class="mainContainer-0-2-5"
-            src="https://lh3.googleusercontent.com/pw/ACtC-3epfH7nv1M0gjlxBPvjEuzVhub4UxRHhjAQXJoj32Q9-N6q6b0m8GX49RkVZCaDcXk4CjofoCgH-AabzYJ_cs8oSET1qfdHKtj98MKtx1v4dpndoBmvskb6Mlb6-fravD4EDkvQggGuFv8-_ccNRtcgFA=w912-h861-no"
           />
         </div>
         <h1
