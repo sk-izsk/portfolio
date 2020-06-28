@@ -39,7 +39,6 @@ exports[`About renders correctly 1`] = `
           <img
             alt="Avatar"
             class="mainContainer-0-2-8"
-            src="https://lh3.googleusercontent.com/pw/ACtC-3fkT2wC_oB8Y4Fo48qOW6acvyLmAhr7NoFlLzb1Vnh-5qY_FDc_1ktlCP42JrwK5_TpT6PyAJZ18v63iAk-hIGQ6xnQEDw1agvzeGw_U8j-RN6ipnl6Z-1bHyfdL8jbLAXmXPJRNaGN1Qi6oq0k-6ntEQ=w800-h741-no"
           />
         </div>
       </div>
@@ -77,92 +76,7 @@ exports[`About renders correctly 1`] = `
           </div>
           <div
             class="skillsInfoContainer-0-2-15"
-          >
-            <div
-              class="progressBarParent-0-2-25"
-            >
-              <div
-                class="description-0-2-22"
-              >
-                <h3>
-                  React
-                </h3>
-                <h3>
-                  80%
-                </h3>
-              </div>
-              <div
-                class="progressBarContainer-0-2-23"
-              >
-                <div
-                  class="progressBar-0-2-24 progressBar-d0-0-2-26"
-                />
-              </div>
-            </div>
-            <div
-              class="progressBarParent-0-2-25"
-            >
-              <div
-                class="description-0-2-22"
-              >
-                <h3>
-                  Typescript
-                </h3>
-                <h3>
-                  75%
-                </h3>
-              </div>
-              <div
-                class="progressBarContainer-0-2-23"
-              >
-                <div
-                  class="progressBar-0-2-24 progressBar-d1-0-2-27"
-                />
-              </div>
-            </div>
-            <div
-              class="progressBarParent-0-2-25"
-            >
-              <div
-                class="description-0-2-22"
-              >
-                <h3>
-                  Redux
-                </h3>
-                <h3>
-                  75%
-                </h3>
-              </div>
-              <div
-                class="progressBarContainer-0-2-23"
-              >
-                <div
-                  class="progressBar-0-2-24 progressBar-d2-0-2-28"
-                />
-              </div>
-            </div>
-            <div
-              class="progressBarParent-0-2-25"
-            >
-              <div
-                class="description-0-2-22"
-              >
-                <h3>
-                  Photography
-                </h3>
-                <h3>
-                  70%
-                </h3>
-              </div>
-              <div
-                class="progressBarContainer-0-2-23"
-              >
-                <div
-                  class="progressBar-0-2-24 progressBar-d3-0-2-29"
-                />
-              </div>
-            </div>
-          </div>
+          />
         </div>
       </div>
     </div>

@@ -1,11 +1,13 @@
 import clsx from 'clsx';
-import React from 'react';
+import React, { useContext } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useMediaQuery } from 'react-responsive';
 import { Element } from 'react-scroll';
+import { InformationsContext } from '../../App';
 import { AboutInfo, Avatar, ThreeDAnimation, VanishAnimation } from '../../components';
 import { CustomTheme } from '../../theme';
 import { MemoizedComponent } from '../../utils/custom-hook';
+import { Informations } from '../../utils/informations';
 
 interface AboutProps {}
 
@@ -48,6 +50,7 @@ const About: React.FC<AboutProps> = () => {
     string
   > = useStyles();
   const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
+  const context: Informations | undefined = useContext<Informations | undefined>(InformationsContext);
 
   return (
     <Element name='About'>
@@ -56,7 +59,7 @@ const About: React.FC<AboutProps> = () => {
         <div className={classes.avatar}>
           {MemoizedComponent(
             <ThreeDAnimation>
-              <Avatar url='https://lh3.googleusercontent.com/pw/ACtC-3fkT2wC_oB8Y4Fo48qOW6acvyLmAhr7NoFlLzb1Vnh-5qY_FDc_1ktlCP42JrwK5_TpT6PyAJZ18v63iAk-hIGQ6xnQEDw1agvzeGw_U8j-RN6ipnl6Z-1bHyfdL8jbLAXmXPJRNaGN1Qi6oq0k-6ntEQ=w800-h741-no' />
+              <Avatar url={context?.avatar.avatarTwo as string} />
             </ThreeDAnimation>,
           )}
         </div>

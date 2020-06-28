@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { createUseStyles } from 'react-jss';
 import { Element } from 'react-scroll';
+import { InformationsContext } from '../../App';
 import { AnimatedText, Avatar, Button, SocialIcons, ThreeDAnimation } from '../../components';
 import { CustomTheme } from '../../theme';
+import { Informations } from '../../utils/informations';
 
 interface HomeProps {}
 
@@ -31,13 +33,14 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
 
 const Home: React.FC<HomeProps> = () => {
   const classes: Record<'mainContainer' | 'textColor' | 'childContainer' | 'buttonContainer', string> = useStyles();
+  const context: Informations | undefined = useContext<Informations | undefined>(InformationsContext);
 
   return (
     <Element name='Home'>
       <div className={classes.mainContainer}>
         <div className={classes.childContainer}>
           <ThreeDAnimation>
-            <Avatar url='https://lh3.googleusercontent.com/pw/ACtC-3epfH7nv1M0gjlxBPvjEuzVhub4UxRHhjAQXJoj32Q9-N6q6b0m8GX49RkVZCaDcXk4CjofoCgH-AabzYJ_cs8oSET1qfdHKtj98MKtx1v4dpndoBmvskb6Mlb6-fravD4EDkvQggGuFv8-_ccNRtcgFA=w912-h861-no' />
+            <Avatar url={context?.avatar.avatarOne as string} />
           </ThreeDAnimation>
           <h1 className={classes.textColor}>Zeeshan</h1>
           <AnimatedText />

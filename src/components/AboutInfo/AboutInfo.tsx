@@ -1,11 +1,12 @@
 import clsx from 'clsx';
-import React from 'react';
+import React, { useContext } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useMediaQuery } from 'react-responsive';
 import { Button, ProgressBarContainer } from '..';
+import { InformationsContext } from '../../App';
 import { CustomTheme } from '../../theme';
 import { MemoizedComponent } from '../../utils/custom-hook';
-import { SkillInformationTypes, skillsInformation } from '../../utils/informations';
+import { Informations, SkillInformationTypes } from '../../utils/informations';
 
 interface AboutInfoProps {}
 
@@ -89,6 +90,7 @@ const AboutInfo: React.FC<AboutInfoProps> = () => {
 
   const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
   const isSmallerDevices: boolean = useMediaQuery({ maxWidth: 480 });
+  const context: Informations | undefined = useContext<Informations | undefined>(InformationsContext);
 
   const onClick = () =>
     window.open(
@@ -116,7 +118,7 @@ const AboutInfo: React.FC<AboutInfoProps> = () => {
             </div>
           </div>
           <div className={classes.skillsInfoContainer}>
-            {skillsInformation.map((skillInformation: SkillInformationTypes) => {
+            {context?.skillsInformation.map((skillInformation: SkillInformationTypes) => {
               return (
                 <ProgressBarContainer
                   name={skillInformation.name}

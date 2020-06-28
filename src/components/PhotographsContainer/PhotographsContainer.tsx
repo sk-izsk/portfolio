@@ -1,11 +1,11 @@
 import clsx from 'clsx';
-import React from 'react';
+import React, { useContext } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useMediaQuery } from 'react-responsive';
 import { Button, Photo } from '..';
+import { InformationsContext } from '../../App';
 import { CustomTheme } from '../../theme';
-import { MemoizedComponent } from '../../utils/custom-hook';
-import { photos, PhotoType } from '../../utils/informations';
+import { Informations, PhotoType } from '../../utils/informations';
 import { ThreeDAnimation } from '../AnimatedContainer/AnimatedContainer';
 
 interface PhotographsContainerProps {}
@@ -41,14 +41,13 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
 const PhotographsContainer: React.FC<PhotographsContainerProps> = () => {
   const classes: Record<'mainContainer' | 'mainContainerMobile' | 'photosContainer' | 'button', string> = useStyles();
   const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
+  const context: Informations | undefined = useContext<Informations | undefined>(InformationsContext);
 
   return (
     <div className={clsx([classes.mainContainer, isMobile && classes.mainContainerMobile])}>
       <div className={classes.photosContainer}>
-        {photos.map((photo: PhotoType) => {
-          return (
-            <ThreeDAnimation key={photo.url}>{MemoizedComponent(<Photo url={photo.url} />, photo.url)}</ThreeDAnimation>
-          );
+        {context?.photos.map((photo: PhotoType) => {
+          return <ThreeDAnimation key={photo.url}>{<Photo url={photo.url} />}</ThreeDAnimation>;
         })}
       </div>
 
