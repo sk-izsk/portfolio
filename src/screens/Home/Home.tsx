@@ -39,9 +39,11 @@ const Home: React.FC<HomeProps> = () => {
     <Element name='Home'>
       <div className={classes.mainContainer}>
         <div className={classes.childContainer}>
-          <ThreeDAnimation>
-            <Avatar url={context?.avatar.avatarOne as string} />
-          </ThreeDAnimation>
+          {context?.avatar.avatarOne && (
+            <ThreeDAnimation>
+              <Avatar url={context.avatar.avatarOne as string} />
+            </ThreeDAnimation>
+          )}
           <h1 className={classes.textColor}>Zeeshan</h1>
           <AnimatedText />
           <SocialIcons />

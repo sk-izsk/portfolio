@@ -57,10 +57,10 @@ const About: React.FC<AboutProps> = () => {
       <div className={classes.header}>{MemoizedComponent(<VanishAnimation words={['About', 'Me']} />)}</div>
       <div className={clsx([classes.aboutContainer, isMobile && classes.aboutContainerMobile])}>
         <div className={classes.avatar}>
-          {MemoizedComponent(
+          {context?.avatar.avatarTwo && (
             <ThreeDAnimation>
-              <Avatar url={context?.avatar.avatarTwo as string} />
-            </ThreeDAnimation>,
+              <Avatar url={context.avatar.avatarTwo as string} />
+            </ThreeDAnimation>
           )}
         </div>
         <div className={clsx([classes.aboutInfo, isMobile && classes.aboutInfoMobile])}>

@@ -46,9 +46,10 @@ const PhotographsContainer: React.FC<PhotographsContainerProps> = () => {
   return (
     <div className={clsx([classes.mainContainer, isMobile && classes.mainContainerMobile])}>
       <div className={classes.photosContainer}>
-        {context?.photos.map((photo: PhotoType) => {
-          return <ThreeDAnimation key={photo.url}>{<Photo url={photo.url} />}</ThreeDAnimation>;
-        })}
+        {context?.photos &&
+          context.photos.map((photo: PhotoType) => {
+            return <ThreeDAnimation key={photo.url}>{<Photo url={photo.url} />}</ThreeDAnimation>;
+          })}
       </div>
 
       <div className={classes.button}>
