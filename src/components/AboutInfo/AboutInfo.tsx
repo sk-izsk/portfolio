@@ -21,15 +21,23 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     border: `1px solid ${theme.colors.secondaryColor}`,
   },
   descriptionContainer: {
-    maxWidth: theme.spacing(27.25),
     width: '100%',
     borderRightColor: theme.colors.thirdColor,
     borderRightWidth: 2,
     borderRightStyle: 'solid',
     paddingRight: theme.spacing(2),
   },
+  descriptionContainerMobile: {
+    borderBottomColor: theme.colors.thirdColor,
+    borderBottomWidth: 2,
+    borderBottomStyle: 'solid',
+    borderRightColor: null,
+    borderRightWidth: 0,
+    borderRightStyle: null,
+    paddingRight: theme.spacing(0),
+  },
   description: {
-    fontSize: 22,
+    fontSize: 25,
   },
   descriptionMobile: {
     fontSize: 20,
@@ -37,9 +45,13 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   button: {
     position: 'relative',
     top: theme.spacing(5.75),
+    justifyContent: 'center',
+    display: 'flex',
   },
   buttonMobile: {
-    top: theme.spacing(5),
+    top: theme.spacing(0),
+    marginBottom: theme.spacing(2.5),
+    marginTop: theme.spacing(2.5),
   },
   skillsInfoContainer: {
     display: 'flex',
@@ -47,6 +59,9 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     paddingLeft: theme.spacing(2.5),
     paddingRight: theme.spacing(1),
     width: '100%',
+  },
+  skillsInfoContainerMobile: {
+    paddingLeft: theme.spacing(0),
   },
   triangleContainer: {
     display: 'flex',
@@ -70,20 +85,26 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   triangleContainerMobile: {
     alignSelf: 'end',
   },
+  descriptionParentContainer: { display: 'flex', width: '100%', flexDirection: 'row' },
+  descriptionParentContainerMobile: { flexDirection: 'column' },
 }));
 
 const AboutInfo: React.FC<AboutInfoProps> = () => {
   const classes: Record<
     | 'mainContainer'
     | 'descriptionContainer'
+    | 'descriptionParentContainer'
+    | 'descriptionParentContainerMobile'
     | 'triangle'
     | 'description'
+    | 'descriptionContainerMobile'
     | 'button'
     | 'skillsInfoContainer'
     | 'triangleMobile'
     | 'triangleContainer'
     | 'buttonMobile'
     | 'triangleContainerMobile'
+    | 'skillsInfoContainerMobile'
     | 'descriptionMobile',
     string
   > = useStyles();
@@ -107,8 +128,10 @@ const AboutInfo: React.FC<AboutInfoProps> = () => {
         isMobile,
       )}
       {MemoizedComponent(
-        <>
-          <div className={classes.descriptionContainer}>
+        <div
+          className={clsx([classes.descriptionParentContainer, isMobile && classes.descriptionParentContainerMobile])}
+        >
+          <div className={clsx([classes.descriptionContainer, isMobile && classes.descriptionContainerMobile])}>
             <div className={clsx([classes.description, isSmallerDevices && classes.descriptionMobile])}>
               I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making
               Website. Also I am a hobbyist photographer.
@@ -117,7 +140,7 @@ const AboutInfo: React.FC<AboutInfoProps> = () => {
               <Button onClick={onClick}>Download My CV</Button>
             </div>
           </div>
-          <div className={classes.skillsInfoContainer}>
+          <div className={clsx([classes.skillsInfoContainer, isMobile && classes.skillsInfoContainerMobile])}>
             {context?.skillsInformation.map((skillInformation: SkillInformationTypes) => {
               return (
                 <ProgressBarContainer
@@ -129,7 +152,7 @@ const AboutInfo: React.FC<AboutInfoProps> = () => {
               );
             })}
           </div>
-        </>,
+        </div>,
         onClick,
       )}
     </div>

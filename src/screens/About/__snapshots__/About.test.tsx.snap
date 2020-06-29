@@ -49,34 +49,38 @@ exports[`About renders correctly 1`] = `
           class="mainContainer-0-2-9"
         >
           <div
-            class="triangleContainer-0-2-16"
+            class="triangleContainer-0-2-18"
           >
             <div
-              class="triangle-0-2-17"
+              class="triangle-0-2-19"
             />
           </div>
           <div
-            class="descriptionContainer-0-2-10"
+            class="descriptionParentContainer-0-2-22"
           >
             <div
-              class="description-0-2-11"
+              class="descriptionContainer-0-2-10"
             >
-              I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website. Also I am a hobbyist photographer.
+              <div
+                class="description-0-2-12"
+              >
+                I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website. Also I am a hobbyist photographer.
+              </div>
+              <div
+                class="button-0-2-14"
+              >
+                <button
+                  class="mainContainer-0-2-24"
+                  style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+                >
+                  Download My CV
+                </button>
+              </div>
             </div>
             <div
-              class="button-0-2-13"
-            >
-              <button
-                class="mainContainer-0-2-20"
-                style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
-              >
-                Download My CV
-              </button>
-            </div>
+              class="skillsInfoContainer-0-2-16"
+            />
           </div>
-          <div
-            class="skillsInfoContainer-0-2-15"
-          />
         </div>
       </div>
     </div>
