@@ -430,34 +430,38 @@ exports[`App renders correctly 1`] = `
             class="mainContainer-0-2-32"
           >
             <div
-              class="triangleContainer-0-2-39"
+              class="triangleContainer-0-2-41"
             >
               <div
-                class="triangle-0-2-40"
+                class="triangle-0-2-42"
               />
             </div>
             <div
-              class="descriptionContainer-0-2-33"
+              class="descriptionParentContainer-0-2-45"
             >
               <div
-                class="description-0-2-34"
+                class="descriptionContainer-0-2-33"
               >
-                I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website. Also I am a hobbyist photographer.
+                <div
+                  class="description-0-2-35"
+                >
+                  I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website. Also I am a hobbyist photographer.
+                </div>
+                <div
+                  class="button-0-2-37"
+                >
+                  <button
+                    class="mainContainer-0-2-24"
+                    style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+                  >
+                    Download My CV
+                  </button>
+                </div>
               </div>
               <div
-                class="button-0-2-36"
-              >
-                <button
-                  class="mainContainer-0-2-24"
-                  style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
-                >
-                  Download My CV
-                </button>
-              </div>
+                class="skillsInfoContainer-0-2-39"
+              />
             </div>
-            <div
-              class="skillsInfoContainer-0-2-38"
-            />
           </div>
         </div>
       </div>
@@ -465,11 +469,11 @@ exports[`App renders correctly 1`] = `
   </div>
   <div>
     <div
-      class="mainContainer-0-2-43 mainContainer-d0-0-2-48"
+      class="mainContainer-0-2-47 mainContainer-d0-0-2-52"
       name="Education"
     >
       <div
-        class="header-0-2-44"
+        class="header-0-2-48"
       >
         <div
           style="opacity: 0; transform: translate3d(0,20px,0);"
@@ -482,21 +486,21 @@ exports[`App renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="informationBarContainerParent-0-2-45"
+        class="informationBarContainerParent-0-2-49"
       >
         <div
-          class="informationBarContainer-0-2-46"
+          class="informationBarContainer-0-2-50"
         />
       </div>
     </div>
   </div>
   <div>
     <div
-      class="mainContainer-0-2-43 mainContainer-d1-0-2-49"
+      class="mainContainer-0-2-47 mainContainer-d1-0-2-53"
       name="Experience"
     >
       <div
-        class="header-0-2-44"
+        class="header-0-2-48"
       >
         <div
           style="opacity: 0; transform: translate3d(0,20px,0);"
@@ -509,10 +513,10 @@ exports[`App renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="informationBarContainerParent-0-2-45"
+        class="informationBarContainerParent-0-2-49"
       >
         <div
-          class="informationBarContainer-0-2-46"
+          class="informationBarContainer-0-2-50"
         />
       </div>
     </div>
@@ -522,7 +526,7 @@ exports[`App renders correctly 1`] = `
       name="Photography"
     >
       <div
-        class="header-0-2-50"
+        class="header-0-2-54"
       >
         <div
           style="opacity: 0; transform: translate3d(0,20px,0);"
@@ -535,16 +539,16 @@ exports[`App renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="photographyContainer-0-2-51"
+        class="photographyContainer-0-2-55"
       >
         <div
-          class="mainContainer-0-2-53"
+          class="mainContainer-0-2-57"
         >
           <div
-            class="photosContainer-0-2-55"
+            class="photosContainer-0-2-59"
           />
           <div
-            class="button-0-2-56"
+            class="button-0-2-60"
           >
             <button
               class="mainContainer-0-2-24"
@@ -562,7 +566,7 @@ exports[`App renders correctly 1`] = `
       name="Contact"
     >
       <div
-        class="header-0-2-57"
+        class="header-0-2-61"
       >
         <div
           style="opacity: 0; transform: translate3d(0,20px,0);"
@@ -575,10 +579,10 @@ exports[`App renders correctly 1`] = `
         </div>
       </div>
       <div
-        class="contactUsContainer-0-2-61"
+        class="contactUsContainer-0-2-65"
       >
         <div
-          class="mapContainer-0-2-59"
+          class="mapContainer-0-2-63"
         >
           <div
             style="position: relative; width: 0px; height: 0px; cursor: grab; outline: none;"
@@ -612,39 +616,39 @@ exports[`App renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="formContainer-0-2-58"
+          class="formContainer-0-2-62"
         >
           <form
-            class="form-0-2-63"
+            class="form-0-2-67"
           >
             <input
-              class="smallInputField-0-2-64"
+              class="smallInputField-0-2-68"
               name="name"
               placeholder="Your Name"
               type="text"
               value=""
             />
             <input
-              class="smallInputField-0-2-64"
+              class="smallInputField-0-2-68"
               name="email"
               placeholder="Email address"
               type="email"
               value=""
             />
             <input
-              class="smallInputField-0-2-64"
+              class="smallInputField-0-2-68"
               name="subject"
               placeholder="Subject"
               type="text"
               value=""
             />
             <textarea
-              class="smallInputField-0-2-64 textArea-0-2-65"
+              class="smallInputField-0-2-68 textArea-0-2-69"
               name="message"
               placeholder="Type your message here."
             />
             <div
-              class="buttonContainer-0-2-66"
+              class="buttonContainer-0-2-70"
             >
               <div>
                 <button
@@ -654,11 +658,11 @@ exports[`App renders correctly 1`] = `
                   Send Message
                 </button>
                 <div
-                  class="emailTextContainer-0-2-67"
+                  class="emailTextContainer-0-2-71"
                 >
                   Don't like forms? Send me an
                   <span
-                    class="email-0-2-68"
+                    class="email-0-2-72"
                   >
                     Email
                   </span>

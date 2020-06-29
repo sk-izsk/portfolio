@@ -6,34 +6,38 @@ exports[`AboutInfo renders correctly 1`] = `
     class="mainContainer-0-2-1"
   >
     <div
-      class="triangleContainer-0-2-8"
+      class="triangleContainer-0-2-10"
     >
       <div
-        class="triangle-0-2-9"
+        class="triangle-0-2-11"
       />
     </div>
     <div
-      class="descriptionContainer-0-2-2"
+      class="descriptionParentContainer-0-2-14"
     >
       <div
-        class="description-0-2-3"
+        class="descriptionContainer-0-2-2"
       >
-        I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website. Also I am a hobbyist photographer.
+        <div
+          class="description-0-2-4"
+        >
+          I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website. Also I am a hobbyist photographer.
+        </div>
+        <div
+          class="button-0-2-6"
+        >
+          <button
+            class="mainContainer-0-2-16"
+            style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+          >
+            Download My CV
+          </button>
+        </div>
       </div>
       <div
-        class="button-0-2-5"
-      >
-        <button
-          class="mainContainer-0-2-12"
-          style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
-        >
-          Download My CV
-        </button>
-      </div>
+        class="skillsInfoContainer-0-2-8"
+      />
     </div>
-    <div
-      class="skillsInfoContainer-0-2-7"
-    />
   </div>
 </DocumentFragment>
 `;
