@@ -12,12 +12,16 @@ const EducationIcon: () => JSX.Element = () => <IoMdSchool size={30} color={them
 const Education: React.FC<EducationProps> = () => {
   const context: Informations | undefined = useContext<Informations | undefined>(InformationsContext);
   return (
-    <InformationBarContainer
-      icon={<EducationIcon />}
-      marginTop={6}
-      title='Education'
-      informations={context?.educationInformations}
-    />
+    <>
+      {context?.educationInformations && (
+        <InformationBarContainer
+          icon={<EducationIcon />}
+          marginTop={6}
+          title='Education'
+          informations={context.educationInformations}
+        />
+      )}
+    </>
   );
 };
 

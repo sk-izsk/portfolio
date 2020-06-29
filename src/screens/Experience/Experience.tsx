@@ -12,11 +12,15 @@ const ExperienceIcon: () => JSX.Element = () => <FaNetworkWired size={30} color=
 const Experience: React.FC<ExperienceProps> = () => {
   const context: Informations | undefined = useContext<Informations | undefined>(InformationsContext);
   return (
-    <InformationBarContainer
-      icon={<ExperienceIcon />}
-      title='Experience'
-      informations={context?.experienceInformations}
-    />
+    <>
+      {context?.experienceInformations && (
+        <InformationBarContainer
+          icon={<ExperienceIcon />}
+          title='Experience'
+          informations={context.experienceInformations}
+        />
+      )}
+    </>
   );
 };
 

@@ -141,16 +141,17 @@ const AboutInfo: React.FC<AboutInfoProps> = () => {
             </div>
           </div>
           <div className={clsx([classes.skillsInfoContainer, isMobile && classes.skillsInfoContainerMobile])}>
-            {context?.skillsInformation.map((skillInformation: SkillInformationTypes) => {
-              return (
-                <ProgressBarContainer
-                  name={skillInformation.name}
-                  progress={skillInformation.progress}
-                  backgroundColor={skillInformation.backgroundColor}
-                  key={skillInformation.name}
-                />
-              );
-            })}
+            {context?.skillsInformation &&
+              context.skillsInformation.map((skillInformation: SkillInformationTypes) => {
+                return (
+                  <ProgressBarContainer
+                    name={skillInformation.name}
+                    progress={skillInformation.progress}
+                    backgroundColor={skillInformation.backgroundColor}
+                    key={skillInformation.name}
+                  />
+                );
+              })}
           </div>
         </div>,
         onClick,

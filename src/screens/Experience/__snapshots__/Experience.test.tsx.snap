@@ -1,31 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Experience renders correctly 1`] = `
-<DocumentFragment>
-  <div
-    class="mainContainer-0-2-1 mainContainer-d0-0-2-6"
-    name="Experience"
-  >
-    <div
-      class="header-0-2-2"
-    >
-      <div
-        style="opacity: 0; transform: translate3d(0,20px,0);"
-      >
-        <h2
-          class="h2Text-0-2-7"
-        >
-          Experience
-        </h2>
-      </div>
-    </div>
-    <div
-      class="informationBarContainerParent-0-2-3"
-    >
-      <div
-        class="informationBarContainer-0-2-4"
-      />
-    </div>
-  </div>
-</DocumentFragment>
-`;
+exports[`Experience renders correctly 1`] = `<DocumentFragment />`;

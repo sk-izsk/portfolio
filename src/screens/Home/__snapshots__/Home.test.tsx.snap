@@ -11,25 +11,17 @@ exports[`Home renders correctly 1`] = `
       <div
         class="childContainer-0-2-3"
       >
-        <div
-          style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
-        >
-          <img
-            alt="Avatar"
-            class="mainContainer-0-2-5"
-          />
-        </div>
         <h1
           class="textColor-0-2-2"
         >
           Zeeshan
         </h1>
         <div
-          class="textColor-0-2-6"
+          class="textColor-0-2-5"
         >
           I am a
           <span
-            class="animatedText-0-2-7"
+            class="animatedText-0-2-6"
           >
             <div
               class="x0 x1 x2 "
@@ -48,10 +40,10 @@ exports[`Home renders correctly 1`] = `
           </span>
         </div>
         <div
-          class="mainContainer-0-2-8"
+          class="mainContainer-0-2-7"
         >
           <div
-            class="socialIconContainer-0-2-9"
+            class="socialIconContainer-0-2-8"
           >
             <svg
               fill="currentColor"
@@ -69,7 +61,7 @@ exports[`Home renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="socialIconContainer-0-2-9"
+            class="socialIconContainer-0-2-8"
           >
             <svg
               fill="currentColor"
@@ -87,7 +79,7 @@ exports[`Home renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="socialIconContainer-0-2-9"
+            class="socialIconContainer-0-2-8"
           >
             <svg
               fill="none"
@@ -107,7 +99,7 @@ exports[`Home renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="socialIconContainer-0-2-9"
+            class="socialIconContainer-0-2-8"
           >
             <svg
               fill="currentColor"
@@ -125,7 +117,7 @@ exports[`Home renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="socialIconContainer-0-2-9"
+            class="socialIconContainer-0-2-8"
           >
             <svg
               fill="none"
@@ -159,7 +151,7 @@ exports[`Home renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="socialIconContainer-0-2-9"
+            class="socialIconContainer-0-2-8"
           >
             <svg
               fill="currentColor"
@@ -177,7 +169,7 @@ exports[`Home renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="socialIconContainer-0-2-9"
+            class="socialIconContainer-0-2-8"
           >
             <svg
               fill="currentColor"
@@ -199,7 +191,7 @@ exports[`Home renders correctly 1`] = `
           class="buttonContainer-0-2-4"
         >
           <button
-            class="mainContainer-0-2-10"
+            class="mainContainer-0-2-9"
             style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
           >
             Hire me
