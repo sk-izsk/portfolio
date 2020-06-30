@@ -16,7 +16,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     color: theme.colors.white,
     display: 'flex',
     padding: theme.spacing(2.5),
-    borderRadius: 20,
+    borderRadius: 10,
     height: '100%',
     border: `1px solid ${theme.colors.secondaryColor}`,
   },
