@@ -26,7 +26,7 @@ const UnMemoizedMapContainer: React.FC<MapContainerProps> = () => {
     <ReactMapModified>
       <ReactMapGl
         {...viewPort}
-        mapboxApiAccessToken='pk.eyJ1IjoiaXpzayIsImEiOiJja2JzNjI2OWIwMGphMnJvMzRqbmMyenN0In0.LbZxD4c_6i8AtMZ6sm4s5g'
+        mapboxApiAccessToken={process.env.REACT_APP_MAP_BOX_ACCESS_TOKEN}
         onViewportChange={(viewport) => setViewPort(viewport as any)}
         mapStyle='mapbox://styles/izsk/cjvwhrg9j559w1cn5tfedlugx'
         doubleClickZoom
