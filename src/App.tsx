@@ -30,7 +30,7 @@ const App: React.FC = () => {
         response.status === 200 && setInformations(response.data);
       })
       .catch((err) => console.warn(err));
-  }, []);
+  }, [informations]);
 
   const Components: JSX.Element[] = [
     <AppBar />,

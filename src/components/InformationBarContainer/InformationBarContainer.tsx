@@ -37,7 +37,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     backgroundColor: theme.colors.darkerPrimaryColor,
     color: theme.colors.white,
     border: `1px solid ${theme.colors.secondaryColor}`,
-    borderRadius: 20,
+    borderRadius: 10,
     width: '92%',
     flexDirection: 'column',
     paddingLeft: theme.spacing(2.5),
