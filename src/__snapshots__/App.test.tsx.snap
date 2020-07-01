@@ -188,11 +188,11 @@ exports[`App renders correctly 1`] = `
             Zeeshan
           </h1>
           <div
-            class="textColor-0-2-19"
+            class="textColor-0-2-20"
           >
             I am a
             <span
-              class="animatedText-0-2-20"
+              class="animatedText-0-2-21"
             >
               <div
                 class="x0 x1 x2 "
@@ -211,10 +211,10 @@ exports[`App renders correctly 1`] = `
             </span>
           </div>
           <div
-            class="mainContainer-0-2-21"
+            class="mainContainer-0-2-22"
           >
             <div
-              class="socialIconContainer-0-2-22"
+              class="socialIconContainer-0-2-23"
             >
               <svg
                 fill="currentColor"
@@ -232,7 +232,7 @@ exports[`App renders correctly 1`] = `
               </svg>
             </div>
             <div
-              class="socialIconContainer-0-2-22"
+              class="socialIconContainer-0-2-23"
             >
               <svg
                 fill="currentColor"
@@ -250,7 +250,7 @@ exports[`App renders correctly 1`] = `
               </svg>
             </div>
             <div
-              class="socialIconContainer-0-2-22"
+              class="socialIconContainer-0-2-23"
             >
               <svg
                 fill="none"
@@ -270,7 +270,7 @@ exports[`App renders correctly 1`] = `
               </svg>
             </div>
             <div
-              class="socialIconContainer-0-2-22"
+              class="socialIconContainer-0-2-23"
             >
               <svg
                 fill="currentColor"
@@ -288,7 +288,7 @@ exports[`App renders correctly 1`] = `
               </svg>
             </div>
             <div
-              class="socialIconContainer-0-2-22"
+              class="socialIconContainer-0-2-23"
             >
               <svg
                 fill="none"
@@ -322,7 +322,7 @@ exports[`App renders correctly 1`] = `
               </svg>
             </div>
             <div
-              class="socialIconContainer-0-2-22"
+              class="socialIconContainer-0-2-23"
             >
               <svg
                 fill="currentColor"
@@ -340,7 +340,7 @@ exports[`App renders correctly 1`] = `
               </svg>
             </div>
             <div
-              class="socialIconContainer-0-2-22"
+              class="socialIconContainer-0-2-23"
             >
               <svg
                 fill="currentColor"
@@ -362,11 +362,21 @@ exports[`App renders correctly 1`] = `
             class="buttonContainer-0-2-18"
           >
             <button
-              class="mainContainer-0-2-23"
+              class="mainContainer-0-2-24"
               style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
             >
               Hire me
             </button>
+            <div
+              class="button-0-2-19"
+            >
+              <button
+                class="mainContainer-0-2-24"
+                style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+              >
+                Vue Portfolio
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -377,13 +387,13 @@ exports[`App renders correctly 1`] = `
       name="About"
     >
       <div
-        class="header-0-2-24"
+        class="header-0-2-25"
       >
         <div
           style="opacity: 0; transform: translate3d(0,20px,0);"
         >
           <h2
-            class="h2Text-0-2-30"
+            class="h2Text-0-2-31"
           >
             About
           </h2>
@@ -392,47 +402,47 @@ exports[`App renders correctly 1`] = `
           style="opacity: 0; transform: translate3d(0,20px,0);"
         >
           <h2
-            class="h2Text-0-2-30"
+            class="h2Text-0-2-31"
           >
             Me
           </h2>
         </div>
       </div>
       <div
-        class="aboutContainer-0-2-28"
+        class="aboutContainer-0-2-29"
       >
         <div
-          class="avatar-0-2-25"
+          class="avatar-0-2-26"
         />
         <div
-          class="aboutInfo-0-2-26"
+          class="aboutInfo-0-2-27"
         >
           <div
-            class="mainContainer-0-2-31"
+            class="mainContainer-0-2-32"
           >
             <div
-              class="triangleContainer-0-2-40"
+              class="triangleContainer-0-2-41"
             >
               <div
-                class="triangle-0-2-41"
+                class="triangle-0-2-42"
               />
             </div>
             <div
-              class="descriptionParentContainer-0-2-44"
+              class="descriptionParentContainer-0-2-45"
             >
               <div
-                class="descriptionContainer-0-2-32"
+                class="descriptionContainer-0-2-33"
               >
                 <div
-                  class="description-0-2-34"
+                  class="description-0-2-35"
                 >
                   I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website. Also I am a hobbyist photographer.
                 </div>
                 <div
-                  class="button-0-2-36"
+                  class="button-0-2-37"
                 >
                   <button
-                    class="mainContainer-0-2-23"
+                    class="mainContainer-0-2-24"
                     style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
                   >
                     Download My CV
@@ -440,7 +450,7 @@ exports[`App renders correctly 1`] = `
                 </div>
               </div>
               <div
-                class="skillsInfoContainer-0-2-38"
+                class="skillsInfoContainer-0-2-39"
               />
             </div>
           </div>
@@ -455,32 +465,32 @@ exports[`App renders correctly 1`] = `
       name="Photography"
     >
       <div
-        class="header-0-2-46"
+        class="header-0-2-47"
       >
         <div
           style="opacity: 0; transform: translate3d(0,20px,0);"
         >
           <h2
-            class="h2Text-0-2-30"
+            class="h2Text-0-2-31"
           >
             Photography
           </h2>
         </div>
       </div>
       <div
-        class="photographyContainer-0-2-47"
+        class="photographyContainer-0-2-48"
       >
         <div
-          class="mainContainer-0-2-49"
+          class="mainContainer-0-2-50"
         >
           <div
-            class="photosContainer-0-2-51"
+            class="photosContainer-0-2-52"
           />
           <div
-            class="button-0-2-52"
+            class="button-0-2-53"
           >
             <button
-              class="mainContainer-0-2-23"
+              class="mainContainer-0-2-24"
               style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
             >
               Explore more images
@@ -495,23 +505,23 @@ exports[`App renders correctly 1`] = `
       name="Contact"
     >
       <div
-        class="header-0-2-53"
+        class="header-0-2-54"
       >
         <div
           style="opacity: 0; transform: translate3d(0,20px,0);"
         >
           <h2
-            class="h2Text-0-2-30"
+            class="h2Text-0-2-31"
           >
             Contact
           </h2>
         </div>
       </div>
       <div
-        class="contactUsContainer-0-2-57"
+        class="contactUsContainer-0-2-58"
       >
         <div
-          class="mapContainer-0-2-55"
+          class="mapContainer-0-2-56"
         >
           <div
             class="sc-AxjAm faZJjB"
@@ -549,53 +559,53 @@ exports[`App renders correctly 1`] = `
           </div>
         </div>
         <div
-          class="formContainer-0-2-54"
+          class="formContainer-0-2-55"
         >
           <form
-            class="form-0-2-59"
+            class="form-0-2-60"
           >
             <input
-              class="smallInputField-0-2-60"
+              class="smallInputField-0-2-61"
               name="name"
               placeholder="Your Name"
               type="text"
               value=""
             />
             <input
-              class="smallInputField-0-2-60"
+              class="smallInputField-0-2-61"
               name="email"
               placeholder="Email address"
               type="email"
               value=""
             />
             <input
-              class="smallInputField-0-2-60"
+              class="smallInputField-0-2-61"
               name="subject"
               placeholder="Subject"
               type="text"
               value=""
             />
             <textarea
-              class="smallInputField-0-2-60 textArea-0-2-61"
+              class="smallInputField-0-2-61 textArea-0-2-62"
               name="message"
               placeholder="Type your message here."
             />
             <div
-              class="buttonContainer-0-2-62"
+              class="buttonContainer-0-2-63"
             >
               <div>
                 <button
-                  class="mainContainer-0-2-23"
+                  class="mainContainer-0-2-24"
                   style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
                 >
                   Send Message
                 </button>
                 <div
-                  class="emailTextContainer-0-2-63"
+                  class="emailTextContainer-0-2-64"
                 >
                   Don't like forms? Send me an
                   <span
-                    class="email-0-2-64"
+                    class="email-0-2-65"
                   >
                     Email
                   </span>

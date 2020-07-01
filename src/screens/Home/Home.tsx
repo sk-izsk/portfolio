@@ -28,11 +28,19 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
   buttonContainer: {
     marginTop: theme.spacing(3),
+    display: 'flex',
+  },
+  button: {
+    width: '100%',
+    marginLeft: theme.spacing(1),
   },
 }));
 
 const Home: React.FC<HomeProps> = () => {
-  const classes: Record<'mainContainer' | 'textColor' | 'childContainer' | 'buttonContainer', string> = useStyles();
+  const classes: Record<
+    'mainContainer' | 'textColor' | 'button' | 'childContainer' | 'buttonContainer',
+    string
+  > = useStyles();
   const context: Informations | undefined = useContext<Informations | undefined>(InformationsContext);
 
   return (
@@ -49,6 +57,9 @@ const Home: React.FC<HomeProps> = () => {
           <SocialIcons />
           <div className={classes.buttonContainer}>
             <Button onClick={() => window.open('mailto:sk.zeeshan1992@gmail.com', '_blank')}>Hire me</Button>
+            <div className={classes.button}>
+              <Button onClick={() => window.open('http://izsk-vue.netlify.app', '_blank')}>Vue Portfolio</Button>
+            </div>
           </div>
         </div>
       </div>
