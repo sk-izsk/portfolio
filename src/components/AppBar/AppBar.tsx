@@ -63,7 +63,6 @@ const AppBar: React.FC<AppBarProps> = () => {
   > = useStyles();
   const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
   const [showMobileAppBar, setShowMobileAppBar] = useState<boolean>(true);
-
   return (
     <div className={classes.sticky}>
       {!isMobile ? (
