@@ -32,18 +32,11 @@ const App: React.FC = () => {
       .catch((err) => console.warn(err));
   }, [informations]);
 
-  const Components: JSX.Element[] = [
-    <AppBar />,
-    <Home />,
-    <About />,
-    <Education />,
-    <Experience />,
-    <Photography />,
-    <Contact />,
-  ];
+  const Components: JSX.Element[] = [<Home />, <About />, <Education />, <Experience />, <Photography />, <Contact />];
   return (
     <>
       <InformationsContext.Provider value={informations}>
+        <AppBar />
         {Components.map((Component: JSX.Element, index: number) => (
           <div key={index}>{MemoizedComponent(Component)}</div>
         ))}
