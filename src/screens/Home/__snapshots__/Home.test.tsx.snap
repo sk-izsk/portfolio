@@ -17,11 +17,11 @@ exports[`Home renders correctly 1`] = `
           Zeeshan
         </h1>
         <div
-          class="textColor-0-2-5"
+          class="textColor-0-2-6"
         >
           I am a
           <span
-            class="animatedText-0-2-6"
+            class="animatedText-0-2-7"
           >
             <div
               class="x0 x1 x2 "
@@ -40,10 +40,10 @@ exports[`Home renders correctly 1`] = `
           </span>
         </div>
         <div
-          class="mainContainer-0-2-7"
+          class="mainContainer-0-2-8"
         >
           <div
-            class="socialIconContainer-0-2-8"
+            class="socialIconContainer-0-2-9"
           >
             <svg
               fill="currentColor"
@@ -61,7 +61,7 @@ exports[`Home renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="socialIconContainer-0-2-8"
+            class="socialIconContainer-0-2-9"
           >
             <svg
               fill="currentColor"
@@ -79,7 +79,7 @@ exports[`Home renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="socialIconContainer-0-2-8"
+            class="socialIconContainer-0-2-9"
           >
             <svg
               fill="none"
@@ -99,7 +99,7 @@ exports[`Home renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="socialIconContainer-0-2-8"
+            class="socialIconContainer-0-2-9"
           >
             <svg
               fill="currentColor"
@@ -117,7 +117,7 @@ exports[`Home renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="socialIconContainer-0-2-8"
+            class="socialIconContainer-0-2-9"
           >
             <svg
               fill="none"
@@ -151,7 +151,7 @@ exports[`Home renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="socialIconContainer-0-2-8"
+            class="socialIconContainer-0-2-9"
           >
             <svg
               fill="currentColor"
@@ -169,7 +169,7 @@ exports[`Home renders correctly 1`] = `
             </svg>
           </div>
           <div
-            class="socialIconContainer-0-2-8"
+            class="socialIconContainer-0-2-9"
           >
             <svg
               fill="currentColor"
@@ -191,11 +191,21 @@ exports[`Home renders correctly 1`] = `
           class="buttonContainer-0-2-4"
         >
           <button
-            class="mainContainer-0-2-9"
+            class="mainContainer-0-2-10"
             style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
           >
             Hire me
           </button>
+          <div
+            class="button-0-2-5"
+          >
+            <button
+              class="mainContainer-0-2-10"
+              style="transform: perspective(600px) rotateX(0deg) rotateY(0deg) scale(1);"
+            >
+              Vue Portfolio
+            </button>
+          </div>
         </div>
       </div>
     </div>
