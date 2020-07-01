@@ -15,6 +15,13 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     borderRadius: 30,
     padding: theme.spacing(2),
     cursor: 'pointer',
+    filter: 'grayscale(100%)',
+    transition: 'transform 0.5s ease',
+
+    '&:hover': {
+      filter: 'grayscale(0%)',
+      transform: 'scale(1.1)',
+    },
   },
   photoMobile: {
     width: 150,
