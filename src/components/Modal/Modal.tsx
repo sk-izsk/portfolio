@@ -1,49 +1,44 @@
 import React from 'react';
+import { Modal as BootstrapModal } from 'react-bootstrap';
 import { createUseStyles } from 'react-jss';
-import { Modal as ResponsiveModal } from 'react-responsive-modal';
-import { Button } from '..';
+import { Button } from '../';
 import { CustomTheme } from '../../theme';
 
-interface ModalProps {
-  open: boolean;
-  onClose: () => void;
+export interface ModalProps {
+  open?: boolean;
+  onClose?: () => void;
+  header?: string;
   icon?: JSX.Element;
 }
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
-  modalContainer: {
-    display: 'flex',
-    justifyContent: 'center',
+  modalBody: {
     textAlign: 'center',
-    borderRadius: 10,
-    backgroundColor: theme.colors.darkerPrimaryColor,
-  },
-  modal: {
     display: 'flex',
     flexDirection: 'column',
-    color: theme.colors.white,
     alignItems: 'center',
-    padding: theme.spacing(2.5),
+  },
+  modalFooter: {
+    display: 'flex',
+    justifyContent: 'center',
   },
 }));
 
-const Modal: React.FC<ModalProps> = ({ open, onClose, icon, children }) => {
-  const classes: Record<'modalContainer' | 'modal', string> = useStyles();
+const Modal: React.FC<ModalProps> = ({ open, onClose, header, children, icon }) => {
+  const classes = useStyles();
   return (
-    <ResponsiveModal
-      closeOnEsc
-      closeOnOverlayClick
-      open={open}
-      classNames={{ modal: classes.modalContainer }}
-      onClose={onClose}
-      center
-    >
-      <div className={classes.modal}>
+    <BootstrapModal show={open} onHide={onClose} centered>
+      <BootstrapModal.Header closeButton>
+        <BootstrapModal.Title>{header}</BootstrapModal.Title>
+      </BootstrapModal.Header>
+      <BootstrapModal.Body className={classes.modalBody}>
         {icon}
-        <h2>{children}</h2>
-        <Button onClick={onClose}>Okay</Button>
-      </div>
-    </ResponsiveModal>
+        {children}
+      </BootstrapModal.Body>
+      <BootstrapModal.Footer className={classes.modalFooter}>
+        <Button onClick={onClose}>Close</Button>
+      </BootstrapModal.Footer>
+    </BootstrapModal>
   );
 };
 

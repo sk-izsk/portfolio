@@ -2,7 +2,6 @@ import clsx from 'clsx';
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { useMediaQuery } from 'react-responsive';
-import 'react-responsive-modal/styles.css';
 import { Element } from 'react-scroll';
 import { FormContainer, MapContainer, VanishAnimation } from '../../components';
 import { CustomTheme } from '../../theme';

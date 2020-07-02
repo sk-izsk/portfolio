@@ -8,6 +8,7 @@ const mockData = {
   open: true,
   onClose: jest.fn(),
   icon: <FaRegThumbsUp />,
+  header: 'mock header',
 };
 
 test('Modal renders correctly', () => {

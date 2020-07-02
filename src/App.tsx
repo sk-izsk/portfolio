@@ -4,7 +4,7 @@ import { createUseStyles } from 'react-jss';
 import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import { getInformations } from './api/api';
-import { AppBar } from './components';
+import { NavBar } from './components';
 import { About, Contact, Education, Experience, Home, Photography } from './screens';
 import { CustomTheme, theme } from './theme';
 import { Informations } from './utils/informations';
@@ -54,7 +54,8 @@ const App: React.FC = () => {
           </div>
         ) : (
           <>
-            <AppBar />
+            <NavBar />
+            {/* <AppBar /> */}
             {Components.map((Component: JSX.Element, index: number) => (
               <div key={`${index}`}>{Component}</div>
             ))}

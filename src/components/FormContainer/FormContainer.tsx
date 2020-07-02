@@ -120,15 +120,20 @@ const FormContainer: React.FC<FormContainerProps> = () => {
 
   return (
     <>
-      <Modal open={openModal} onClose={() => setOpenModal(false)} icon={<SuccessIcon />}>
+      <Modal header='Successfully Sent.' open={openModal} onClose={() => setOpenModal(false)} icon={<SuccessIcon />}>
         Will get back to you as soon as possible
       </Modal>
-      <Modal open={openErrorModal} onClose={() => setOpenErrorModal(false)} icon={<SadIcon />}>
+      <Modal
+        header='Opsss something goes wrong!!!'
+        open={openErrorModal}
+        onClose={() => setOpenErrorModal(false)}
+        icon={<SadIcon />}
+      >
         Something is going wrong. Kindly send me email at
         <span onClick={() => window.open('mailto:sk.zeeshan1992@gmail.com', '_blank')} className={classes.email}>
           sk.zeeshan1992@gmail.com
-        </span>{' '}
-        . Thanks
+        </span>
+        Thanks
       </Modal>
       <form className={classes.form}>
         <input

@@ -11,6 +11,7 @@ export { InformationBar } from './InformationBar/InformationBar';
 export { InformationBarContainer } from './InformationBarContainer/InformationBarContainer';
 export { MapContainer } from './MapContainer/MapContainer';
 export { Modal } from './Modal/Modal';
+export { NavBar } from './NavBar/NavBar';
 export { Photo } from './Photo/Photo';
 export { PhotographsContainer } from './PhotographsContainer/PhotographsContainer';
 export { ProgressBarContainer } from './ProgressBarContainer/ProgressBarContainer';
