@@ -16,7 +16,7 @@ const Education: React.FC<EducationProps> = () => {
       {context?.educationInformations && (
         <InformationBarContainer
           icon={<EducationIcon />}
-          marginTop={6}
+          marginTop={3}
           title='Education'
           informations={context.educationInformations}
         />

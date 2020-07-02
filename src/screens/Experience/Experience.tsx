@@ -17,6 +17,7 @@ const Experience: React.FC<ExperienceProps> = () => {
         <InformationBarContainer
           icon={<ExperienceIcon />}
           title='Experience'
+          marginTop={3}
           informations={context.experienceInformations}
         />
       )}

@@ -18,6 +18,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     display: 'flex',
     justifyContent: 'center',
     cursor: 'pointer',
+    marginBottom: theme.spacing(1.5),
   },
   avatar: {
     width: '50%',
@@ -42,18 +43,21 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   aboutContainerMobile: {
     flexWrap: 'wrap',
   },
+  mainContainer: {
+    marginTop: theme.spacing(1.5),
+  },
 }));
 
 const About: React.FC<AboutProps> = () => {
   const classes: Record<
-    'header' | 'avatar' | 'aboutInfo' | 'aboutContainer' | 'aboutContainerMobile' | 'aboutInfoMobile',
+    'header' | 'avatar' | 'mainContainer' | 'aboutInfo' | 'aboutContainer' | 'aboutContainerMobile' | 'aboutInfoMobile',
     string
   > = useStyles();
   const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
   const context: Informations | undefined = useContext<Informations | undefined>(InformationsContext);
 
   return (
-    <Element name='About'>
+    <Element className={classes.mainContainer} name='About'>
       <div className={classes.header}>{MemoizedComponent(<VanishAnimation words={['About', 'Me']} />)}</div>
       <div className={clsx([classes.aboutContainer, isMobile && classes.aboutContainerMobile])}>
         <div className={classes.avatar}>
