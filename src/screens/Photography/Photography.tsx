@@ -15,6 +15,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     display: 'flex',
     justifyContent: 'center',
     cursor: 'pointer',
+    marginBottom: theme.spacing(1.5),
   },
   photographyContainer: {
     display: 'flex',
@@ -24,14 +25,20 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   photographyContainerMobile: {
     flexWrap: 'wrap',
   },
+  mainContainer: {
+    marginTop: theme.spacing(1.5),
+  },
 }));
 
 const Photography: React.FC<PhotographyProps> = () => {
-  const classes: Record<'header' | 'photographyContainer' | 'photographyContainerMobile', string> = useStyles();
+  const classes: Record<
+    'header' | 'photographyContainer' | 'mainContainer' | 'photographyContainerMobile',
+    string
+  > = useStyles();
   const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
 
   return (
-    <Element name='Photography'>
+    <Element className={classes.mainContainer} name='Photography'>
       <div className={classes.header}>
         <VanishAnimation words={['Photography']} />
       </div>

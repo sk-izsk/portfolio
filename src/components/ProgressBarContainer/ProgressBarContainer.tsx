@@ -33,10 +33,13 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   progressBarParent: {
     width: '100%',
   },
+  text: {
+    fontSize: 25,
+  },
 }));
 const UnMemoizedProgressBarContainer: React.FC<ProgressBarContainerProps> = (props) => {
   const classes: Record<
-    'mainContainer' | 'description' | 'progressBarContainer' | 'progressBar' | 'progressBarParent',
+    'mainContainer' | 'text' | 'description' | 'progressBarContainer' | 'progressBar' | 'progressBarParent',
     string
   > = useStyles(props);
 
@@ -45,8 +48,8 @@ const UnMemoizedProgressBarContainer: React.FC<ProgressBarContainerProps> = (pro
   return (
     <div className={classes.progressBarParent}>
       <div className={classes.description}>
-        <h3>{name}</h3>
-        <h3>{progress}%</h3>
+        <h3 className={classes.text}>{name}</h3>
+        <h3 className={classes.text}>{progress}%</h3>
       </div>
       <div className={classes.progressBarContainer}>
         <div className={classes.progressBar} />

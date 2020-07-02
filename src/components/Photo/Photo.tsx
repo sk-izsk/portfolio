@@ -10,8 +10,8 @@ interface PhotoProps {
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
   photo: {
-    width: 200,
-    height: 150,
+    width: 220,
+    height: 160,
     borderRadius: 30,
     padding: theme.spacing(2),
     cursor: 'pointer',

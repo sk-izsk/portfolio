@@ -26,6 +26,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     display: 'flex',
     justifyContent: 'center',
     cursor: 'pointer',
+    marginBottom: theme.spacing(1.5),
   },
   informationBarContainerParent: {
     display: 'flex',

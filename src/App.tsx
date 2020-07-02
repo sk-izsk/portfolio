@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Context, createContext, useEffect, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import Loader from 'react-loader-spinner';

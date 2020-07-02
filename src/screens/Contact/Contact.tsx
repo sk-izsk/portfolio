@@ -16,6 +16,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     display: 'flex',
     justifyContent: 'center',
     cursor: 'pointer',
+    marginBottom: theme.spacing(1.5),
   },
   formContainer: {
     display: 'flex',
@@ -40,6 +41,9 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   contactUsContainerMobile: {
     flexDirection: 'column',
   },
+  mainContainer: {
+    marginTop: theme.spacing(1.5),
+  },
 }));
 
 const Contact: React.FC<ContactProps> = () => {
@@ -49,14 +53,15 @@ const Contact: React.FC<ContactProps> = () => {
     | 'contactUsContainerMobile'
     | 'formContainer'
     | 'mapContainer'
-    | 'mapContainerMobile',
+    | 'mapContainerMobile'
+    | 'mainContainer',
     string
   > = useStyles();
 
   const isMobile: boolean = useMediaQuery({ maxWidth: 1118 });
 
   return (
-    <Element name='Contact'>
+    <Element className={classes.mainContainer} name='Contact'>
       <div className={classes.header}>
         <VanishAnimation words={['Contact']} />
       </div>

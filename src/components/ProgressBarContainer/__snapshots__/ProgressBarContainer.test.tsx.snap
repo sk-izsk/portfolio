@@ -8,10 +8,14 @@ exports[`ProgressBarContainer renders correctly 1`] = `
     <div
       class="description-0-2-2"
     >
-      <h3>
+      <h3
+        class="text-0-2-6"
+      >
         mock name
       </h3>
-      <h3>
+      <h3
+        class="text-0-2-6"
+      >
         50%
       </h3>
     </div>
@@ -19,7 +23,7 @@ exports[`ProgressBarContainer renders correctly 1`] = `
       class="progressBarContainer-0-2-3"
     >
       <div
-        class="progressBar-0-2-4 progressBar-d0-0-2-6"
+        class="progressBar-0-2-4 progressBar-d0-0-2-7"
       />
     </div>
   </div>

@@ -37,14 +37,14 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     paddingRight: theme.spacing(0),
   },
   description: {
-    fontSize: 25,
+    fontSize: 22,
   },
   descriptionMobile: {
     fontSize: 20,
   },
   button: {
     position: 'relative',
-    top: theme.spacing(5.75),
+    top: 6,
     justifyContent: 'center',
     display: 'flex',
   },
@@ -59,9 +59,11 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     paddingLeft: theme.spacing(2.5),
     paddingRight: theme.spacing(1),
     width: '100%',
+    justifyContent: 'space-around',
   },
   skillsInfoContainerMobile: {
     paddingLeft: theme.spacing(0),
+    paddingTop: theme.spacing(1),
   },
   triangleContainer: {
     display: 'flex',

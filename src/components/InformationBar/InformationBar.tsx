@@ -26,6 +26,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     display: 'flex',
     flexDirection: 'column',
     paddingLeft: theme.spacing(2.5),
+    overflow: 'hidden',
   },
   durationContainer: {
     color: theme.colors.grayishBlue,
