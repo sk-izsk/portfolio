@@ -37,7 +37,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     paddingRight: theme.spacing(0),
   },
   description: {
-    fontSize: 22,
+    fontSize: 27,
   },
   descriptionMobile: {
     fontSize: 20,

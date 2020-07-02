@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyOffers renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="mainContainer-0-2-2"
+    name="My Offers"
+  >
+    <div
+      class="header-0-2-1"
+    >
+      <div
+        style="opacity: 0; transform: translate3d(0,20px,0);"
+      >
+        <h2
+          class="h2Text-0-2-10"
+        >
+          My Offers
+        </h2>
+      </div>
+    </div>
+    <div
+      class="mainOfferContainer-0-2-3"
+    />
+  </div>
+</DocumentFragment>
+`;

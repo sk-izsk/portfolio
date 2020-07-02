@@ -5,7 +5,7 @@ import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import { getInformations } from './api/api';
 import { NavBar } from './components';
-import { About, Contact, Education, Experience, Home, Photography } from './screens';
+import { About, Contact, Education, Experience, Home, MyOffers, Photography } from './screens';
 import { CustomTheme, theme } from './theme';
 import { Informations } from './utils/informations';
 
@@ -44,7 +44,15 @@ const App: React.FC = () => {
       .finally(() => setShowLoader(false));
   }, []);
 
-  const Components: JSX.Element[] = [<Home />, <About />, <Education />, <Experience />, <Photography />, <Contact />];
+  const Components: JSX.Element[] = [
+    <Home />,
+    <About />,
+    <Education />,
+    <Experience />,
+    <MyOffers />,
+    <Photography />,
+    <Contact />,
+  ];
   return (
     <>
       <InformationsContext.Provider value={informations}>

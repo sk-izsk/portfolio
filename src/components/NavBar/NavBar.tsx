@@ -13,7 +13,6 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     top: 0,
     zIndex: 1200,
     background: 'rgba(0, 0, 0, 0.7)',
-    // backgroundColor: theme.colors.primaryColor,
   },
   link: {
     color: `${theme.colors.white} !important`,
@@ -23,7 +22,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
 }));
 
-const navLinks: string[] = ['Home', 'About', 'Education', 'Experience', 'Photography', 'Contact'];
+const navLinks: string[] = ['Home', 'About', 'Education', 'Experience', 'My Offers', 'Photography', 'Contact'];
 
 const NavBar: React.FC<NavBarProps> = () => {
   const classes: Record<'navbarContainer' | 'link', string> = useStyles();

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`OffersContainer renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="mainContainer-0-2-1"
+  >
+    <h3
+      class="header-0-2-2"
+    >
+      mock title
+    </h3>
+    <ul
+      class="ulContainer-0-2-3"
+    >
+      <li>
+        mock description
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

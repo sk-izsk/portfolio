@@ -84,6 +84,14 @@ exports[`NavBar renders correctly 1`] = `
           href="#"
           role="button"
         >
+          My Offers
+        </a>
+        <a />
+        <a
+          class="link-0-2-2 nav-link"
+          href="#"
+          role="button"
+        >
           Photography
         </a>
         <a />
