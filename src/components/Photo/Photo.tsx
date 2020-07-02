@@ -12,7 +12,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   photo: {
     width: 220,
     height: 160,
-    borderRadius: 30,
+    borderRadius: 20,
     padding: theme.spacing(2),
     cursor: 'pointer',
     filter: 'grayscale(100%)',

@@ -34,7 +34,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     width: '100%',
   },
   text: {
-    fontSize: 25,
+    fontSize: 20,
   },
 }));
 const UnMemoizedProgressBarContainer: React.FC<ProgressBarContainerProps> = (props) => {
