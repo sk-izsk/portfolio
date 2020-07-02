@@ -55,7 +55,6 @@ const App: React.FC = () => {
         ) : (
           <>
             <NavBar />
-            {/* <AppBar /> */}
             {Components.map((Component: JSX.Element, index: number) => (
               <div key={`${index}`}>{Component}</div>
             ))}
