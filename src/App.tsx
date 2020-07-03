@@ -38,7 +38,7 @@ const App: React.FC = () => {
   useEffect(() => {
     getInformations()
       .then((response) => {
-        response.status === 200 && setInformations(response.data);
+        response.status === 200 && setInformations(response.data[0]);
       })
       .catch((err) => console.warn(err))
       .finally(() => setShowLoader(false));

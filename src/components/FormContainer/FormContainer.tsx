@@ -98,7 +98,11 @@ const FormContainer: React.FC<FormContainerProps> = () => {
         }
       > = await formSchema.validate(values);
       if (validatedValues !== undefined) {
-        const response = await sendEmail(validatedValues);
+        const addEnvironment = {
+          ...validatedValues,
+          environment: process.env.NODE_ENV,
+        };
+        const response = await sendEmail(addEnvironment);
         if (response.status === 200) {
           const dataArray: string[] = ['name', 'subject', 'message', 'email'];
           dataArray.forEach((item: string) => reset(item));
