@@ -135,7 +135,7 @@ const AboutInfo: React.FC<AboutInfoProps> = () => {
         >
           <div className={clsx([classes.descriptionContainer, isMobile && classes.descriptionContainerMobile])}>
             <div className={clsx([classes.description, isSmallerDevices && classes.descriptionMobile])}>
-              I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making
+              I am Shaikh Zeeshan Murshed, Full stack web developer from Montreal, Canada. I have experience in making
               Website. Also I am a hobbyist photographer.
             </div>
             <div className={clsx([classes.button, isMobile && classes.buttonMobile])}>

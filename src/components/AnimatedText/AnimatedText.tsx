@@ -26,7 +26,7 @@ const AnimatedText: React.FC<AnimatedTextProps> = () => {
           <TextLoop
             springConfig={{ stiffness: 180, damping: 8 }}
             interval={1500}
-            children={['Front End Developer', 'Photography Lover']}
+            children={['Full Stack Web Developer', 'Photography Lover']}
           />,
         )}
       </span>
