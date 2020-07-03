@@ -21,7 +21,7 @@ exports[`AboutInfo renders correctly 1`] = `
         <div
           class="description-0-2-4"
         >
-          I am Shaikh Zeeshan Murshed, Front-End developer from Montreal, Canada. I have experience in making Website. Also I am a hobbyist photographer.
+          I am Shaikh Zeeshan Murshed, Full stack web developer from Montreal, Canada. I have experience in making Website. Also I am a hobbyist photographer.
         </div>
         <div
           class="button-0-2-6"
