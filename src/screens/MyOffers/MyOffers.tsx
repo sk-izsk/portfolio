@@ -56,7 +56,6 @@ const MyOffers: React.FC<MyOffersProps> = () => {
   const classes = useStyles();
   const context: Informations | undefined = useContext<Informations | undefined>(InformationsContext);
 
-  console.log('this is my offers', context?.myOffers);
   const isMobile: boolean = useMediaQuery({ maxWidth: 980 });
   return (
     <Element className={classes.mainContainer} name='My Offers'>

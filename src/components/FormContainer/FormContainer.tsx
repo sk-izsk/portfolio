@@ -102,7 +102,6 @@ const FormContainer: React.FC<FormContainerProps> = () => {
           ...validatedValues,
           environment: process.env.NODE_ENV,
         };
-        console.log('this is env', addEnvironment);
         const response = await sendEmail(addEnvironment);
         if (response.status === 200) {
           const dataArray: string[] = ['name', 'subject', 'message', 'email'];
