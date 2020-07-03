@@ -5,6 +5,7 @@ export interface InputValues {
   email: string;
   subject: string;
   message: string;
+  environment?: string;
 }
 
 const stringSchema: yup.StringSchema<string | undefined> = yup.string().required('Required');
