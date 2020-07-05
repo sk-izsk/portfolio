@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Nav, Navbar } from 'react-bootstrap';
 import { RiMenuLine } from 'react-icons/ri';
 import { createUseStyles } from 'react-jss';
@@ -26,19 +26,33 @@ const navLinks: string[] = ['Home', 'About', 'Education', 'Experience', 'My Offe
 
 const NavBar: React.FC<NavBarProps> = () => {
   const classes: Record<'navbarContainer' | 'link', string> = useStyles();
+  const [expandNavBar, setExpandNavBar] = useState<boolean>(false);
+
   return (
-    <Navbar className={classes.navbarContainer} sticky='top' expand='lg'>
+    <Navbar expanded={expandNavBar} className={classes.navbarContainer} sticky='top' expand='lg'>
       <Navbar.Brand className={classes.link} href='/'>
         iZsk
       </Navbar.Brand>
-      <Navbar.Toggle aria-controls='basic-navbar-nav'>
+      <Navbar.Toggle
+        onClick={() => {
+          setExpandNavBar(!expandNavBar);
+        }}
+        aria-controls='basic-navbar-nav'
+      >
         <RiMenuLine size={25} className={classes.link} />
       </Navbar.Toggle>
       <Navbar.Collapse className={classes.link} id='basic-navbar-nav'>
         <Nav className='mr-auto'>
           {navLinks.map((navLink: string) => {
             return (
-              <Link key={navLink} to={navLink} spy={true} smooth={true} duration={500}>
+              <Link
+                key={navLink}
+                to={navLink}
+                spy={true}
+                onClick={() => setExpandNavBar(false)}
+                smooth={true}
+                duration={500}
+              >
                 <Nav.Link className={classes.link}>{navLink}</Nav.Link>
               </Link>
             );
