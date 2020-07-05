@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { FaRegThumbsUp } from 'react-icons/fa';
 import { IoMdSad } from 'react-icons/io';
 import { createUseStyles } from 'react-jss';
+import Loader from 'react-loader-spinner';
 import { Shape } from 'yup';
 import { Button, Modal } from '..';
 import { sendEmail } from '../../api/api';
@@ -82,12 +83,14 @@ const FormContainer: React.FC<FormContainerProps> = () => {
   const [openModal, setOpenModal] = useState<boolean>(false);
   const [openErrorModal, setOpenErrorModal] = useState<boolean>(false);
   const [error, setError] = useState<Error>({ name: '', errorMessage: '' });
+  const [loader, setLoader] = useState<boolean>(false);
   const [values, handleChange, reset] = useForm({ name: '', subject: '', message: '', email: '' });
 
   const onSubmit: (e: KeyboardEvent) => void = async (e: KeyboardEvent) => {
     try {
       e.preventDefault();
       setError({ name: '', errorMessage: '' });
+      setLoader(true);
       const validatedValues: Shape<
         InputValues | undefined,
         {
@@ -106,10 +109,12 @@ const FormContainer: React.FC<FormContainerProps> = () => {
         if (response.status === 200) {
           const dataArray: string[] = ['name', 'subject', 'message', 'email'];
           dataArray.forEach((item: string) => reset(item));
+          setLoader(false);
           setOpenModal(true);
         }
       }
     } catch (err) {
+      setLoader(false);
       err.name === 'ValidationError'
         ? setError({ name: err.path, errorMessage: err.message })
         : setOpenErrorModal(true);
@@ -175,6 +180,7 @@ const FormContainer: React.FC<FormContainerProps> = () => {
           onChange={handleChange}
         />
         {error.name === 'message' && <span className={classes.warningMessage}>*{error.errorMessage}</span>}
+        <Loader type='ThreeDots' color={theme.colors.thirdColor} height={50} width={50} visible={loader} />
         <div className={classes.buttonContainer}>
           <div>
             <Button onKeyDown={onKeyDownHandler as any} onClick={onSubmit as any}>
