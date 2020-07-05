@@ -47,6 +47,8 @@ I love coding specially on javascript/typescript. This is my small effort to sho
 
 The Frontend of this portfolio build mainly on React along with some other important technologies followed
 
+- [React](https://reactjs.org)
+- [React-Hooks](https://reactjs.org)
 - [React-JSS](https://cssinjs.org/react-jss/)
 - [React-Bootstrap](https://react-bootstrap.github.io)
 - [Axios](https://github.com/axios/axios)
