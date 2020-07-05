@@ -1,44 +1,144 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Available Scripts
+<!-- PROJECT LOGO -->
+<br />
+<p align="center">
+  <a href="https://github.com/sk-izsk/portfolio">
+    <img src="README/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-In the project directory, you can run:
+  <h3 align="center">React Portfolio</h3>
 
-### `yarn start`
+  <p align="center">
+    Built in React with love and passion
+    <br />
+    <a href="https://izsk.netlify.app"><strong>Explore the website »</strong></a>
+    <br />
+    <br />
+  </p>
+</p>
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<!-- TABLE OF CONTENTS -->
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Table of Contents
 
-### `yarn test`
+- [Table of Contents](#table-of-contents)
+- [About The Project](#about-the-project)
+  - [Built With](#built-with)
+    - [Frontend](#frontend)
+    - [Backend](#backend)
+    - [Database](#database)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Contact](#contact)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- ABOUT THE PROJECT -->
 
-### `yarn build`
+## About The Project
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[![Product Name Screen Shot][product-screenshot]](https://izsk.netlify.app)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+I love coding specially on javascript/typescript. This is my small effort to show my skill and knowledge so far. As headline suggest I create this react portfolio just out of my passion and 💕 React.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Built With
 
-### `yarn eject`
+#### Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The Frontend of this portfolio build mainly on React along with some other important technologies followed
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- [React-JSS](https://cssinjs.org/react-jss/)
+- [React-Bootstrap](https://react-bootstrap.github.io)
+- [Axios](https://github.com/axios/axios)
+- [React-MapGL](https://visgl.github.io/react-map-gl)
+- [MapBox](https://www.mapbox.com)
+- [Typescript](https://www.typescriptlang.org)
+- [Yup](https://github.com/jquense/yup)
+- [Netlify(deploy)](https://www.netlify.com)
+- [Yarn](https://classic.yarnpkg.com/lang/en/)
+- [Prettier](https://prettier.io)
+- [Husky](https://github.com/typicode/husky)
+- [@testing-library/react](https://testing-library.com/docs/react-testing-library/intro)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+#### Backend
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The Backend of this portfolio build mainly on NodeJS along with some other important technologies followed
 
-## Learn More
+- [NodeJS](https://nodejs.org/en/)
+- [ExpressJS](https://expressjs.com)
+- [Axios](https://github.com/axios/axios)
+- [Typescript](https://www.typescriptlang.org)
+- [Dotenv](https://www.npmjs.com/package/dotenv)
+- [Yup](https://github.com/jquense/yup)
+- [NodeMailer](https://nodemailer.com/about/)
+- [Mailgun](https://www.mailgun.com)
+- [Yarn](https://classic.yarnpkg.com/lang/en/)
+- [Prettier](https://prettier.io)
+- [Husky](https://github.com/typicode/husky)
+- [Heroku(deploy)](https://www.heroku.com)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+#### Database
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [MongoDB](https://www.mongodb.com)
+
+<!-- GETTING STARTED -->
+
+## Getting Started
+
+This is just simple guide incase if you wish to run this locally
+
+### Prerequisites
+
+You can either go with Yarn (version-1) or NPM. I personally like Yarn so I describe accordingly. Kindly follow the corresponding npm command incase if you use npm
+
+- Yarn / npm
+
+```sh
+npm install yarn
+```
+
+### Installation
+
+1. Kindly get a free api from mapbox for React-MapGL
+2. Clone the repo
+
+```sh
+git clone https://github.com/sk-izsk/portfolio.git
+```
+
+3. Install NPM packages
+
+```sh
+yarn
+```
+
+```sh
+yarn start
+```
+
+4. Testing
+
+```sh
+yarn test
+```
+
+5. For prettier
+
+```sh
+yarn prettier:fix
+```
+
+<!-- CONTACT -->
+
+## Contact
+
+Shaikh Zeeshan Murshed - [@Sk_iZsk](https://twitter.com/Sk_iZsk) - sk.zeeshan1992@gmail.com
+
+Project Link: [https://github.com/sk-izsk/portfolio](https://github.com/sk-izsk/portfolio)
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://www.linkedin.com/in/skizsk/
+[product-screenshot]: README/izsk-react.gif
