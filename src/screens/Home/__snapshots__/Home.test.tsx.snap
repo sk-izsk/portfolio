@@ -5,6 +5,9 @@ exports[`Home renders correctly 1`] = `
   <div
     name="Home"
   >
+    <canvas
+      style="width: 100%; height: 100%; position: absolute; z-index: -1; top: 0px; left: 0px;"
+    />
     <div
       class="mainContainer-0-2-1"
     >

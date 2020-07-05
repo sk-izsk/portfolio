@@ -46,7 +46,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     paddingTop: theme.spacing(2.5),
   },
   informationBarContainerMobile: {
-    width: '82%',
+    width: '90%',
   },
 }));
 

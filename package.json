@@ -21,6 +21,7 @@
     "clsx": "^1.1.1",
     "husky": "^4.2.5",
     "lint": "^0.7.0",
+    "particles-bg": "^2.5.0",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.1",

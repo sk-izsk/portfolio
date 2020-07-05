@@ -34,8 +34,8 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     justifyContent: 'space-between',
   },
   offerContainerMobile: {
-    paddingRight: theme.spacing(2),
-    paddingLeft: theme.spacing(2),
+    // paddingRight: theme.spacing(2),
+    // paddingLeft: theme.spacing(2),
     flexDirection: 'column',
   },
   backEndContainer: {
