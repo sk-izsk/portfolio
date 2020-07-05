@@ -24,7 +24,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     textAlign: 'center',
   },
   mainContainerMobile: {
-    width: '82%',
+    width: '92%',
   },
   photosContainer: {
     width: '100%',
