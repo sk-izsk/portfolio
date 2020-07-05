@@ -14,7 +14,6 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     display: 'flex',
     justifyContent: 'center',
     backgroundSize: 'cover',
-    // background: `linear-gradient(transparent, #000 ), url("https://lh3.googleusercontent.com/pw/ACtC-3cIqjvnyBnmXJ4ffwm3IxbhS3GYetTzeeT36RLKGXt3dpcSe2yGXApMXvB7dhCt5t5Vga9i2hm8Io3o7tqhAg6gd8X_KpWcutJGJ3AN3vbgrWzg7S7zPDW9aTjR_aiONuTMcAgtwmSrdtfK2IOEe3hKZg=w1391-h927-no")`,
     backgroundPosition: '50% 0',
     height: 400,
     backgroundAttachment: 'fixed',
