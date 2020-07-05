@@ -29,7 +29,7 @@ const NavBar: React.FC<NavBarProps> = () => {
   const [expandNavBar, setExpandNavBar] = useState<boolean>(false);
 
   return (
-    <Navbar expanded={expandNavBar} className={classes.navbarContainer} sticky='top' expand='lg'>
+    <Navbar expanded={expandNavBar} className={classes.navbarContainer} sticky='top' expand='md'>
       <Navbar.Brand className={classes.link} href='/'>
         iZsk
       </Navbar.Brand>

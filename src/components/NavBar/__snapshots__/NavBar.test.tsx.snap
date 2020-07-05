@@ -3,7 +3,7 @@
 exports[`NavBar renders correctly 1`] = `
 <DocumentFragment>
   <nav
-    class="navbarContainer-0-2-1 navbar navbar-expand-lg navbar-light sticky-top"
+    class="navbarContainer-0-2-1 navbar navbar-expand-md navbar-light sticky-top"
   >
     <a
       class="link-0-2-2 navbar-brand"
