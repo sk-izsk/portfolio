@@ -16,6 +16,10 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     cursor: 'pointer',
     '&:hover': {
       backgroundColor: theme.colors.darkerThirdColor,
+      outline: 'none',
+    },
+    '&:focus': {
+      outline: 'none',
     },
   },
 }));
