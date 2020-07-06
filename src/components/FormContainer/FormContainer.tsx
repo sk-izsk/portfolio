@@ -107,8 +107,7 @@ const FormContainer: React.FC<FormContainerProps> = () => {
         };
         const response = await sendEmail(addEnvironment);
         if (response.status === 200) {
-          const dataArray: string[] = ['name', 'subject', 'message', 'email'];
-          dataArray.forEach((item: string) => reset(item));
+          reset();
           setLoader(false);
           setOpenModal(true);
         }
