@@ -2,6 +2,7 @@ import { ChangeEvent, useMemo, useState } from 'react';
 
 const useForm = (initialValue: any) => {
   const [values, setValues] = useState(initialValue);
+
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setValues({
       ...values,
@@ -9,11 +10,10 @@ const useForm = (initialValue: any) => {
     });
   };
 
-  const reset = (name: string) =>
-    setValues({
-      ...values,
-      [name]: '',
-    });
+  const reset = () => {
+    setValues(initialValue);
+  };
+
   return [values, handleChange, reset];
 };
 
