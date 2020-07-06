@@ -1,8 +1,11 @@
+import { AxiosResponse } from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { Context, createContext, useEffect, useState } from 'react';
+import React, { Context, createContext } from 'react';
 import { createUseStyles } from 'react-jss';
 import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
+import { useQuery } from 'react-query';
+import { ReactQueryDevtools } from 'react-query-devtools';
 import { getInformations } from './api/api';
 import { NavBar } from './components';
 import { About, Contact, Education, Experience, Home, MyOffers, Photography } from './screens';
@@ -33,16 +36,12 @@ const InformationsContext: Context<Informations | undefined> = createContext<Inf
 const App: React.FC = () => {
   useStyles();
   const classes: Record<'@global' | 'loaderContainer', string> = useStyles();
-  const [informations, setInformations] = useState<Informations | undefined>();
-  const [showLoader, setShowLoader] = useState<boolean>(true);
-  useEffect(() => {
-    getInformations()
-      .then((response) => {
-        response.status === 200 && setInformations(response.data[0]);
-      })
-      .catch((err) => console.warn(err))
-      .finally(() => setShowLoader(false));
-  }, []);
+  const { data, isLoading, isFetching, error } = useQuery<AxiosResponse<any>, 'informations', Error>(
+    'informations',
+    getInformations,
+  );
+
+  const informations: Informations = data?.data[0];
 
   const Components: JSX.Element[] = [
     <Home />,
@@ -56,9 +55,9 @@ const App: React.FC = () => {
   return (
     <>
       <InformationsContext.Provider value={informations}>
-        {showLoader ? (
+        {isLoading || error ? (
           <div className={classes.loaderContainer}>
-            <Loader type='Puff' color={theme.colors.secondaryColor} height={200} width={200} visible={showLoader} />
+            <Loader type='Puff' color={theme.colors.secondaryColor} height={200} width={200} visible={isFetching} />
           </div>
         ) : (
           <>
@@ -68,6 +67,7 @@ const App: React.FC = () => {
             ))}
           </>
         )}
+        <ReactQueryDevtools initialIsOpen={false} />
       </InformationsContext.Provider>
     </>
   );

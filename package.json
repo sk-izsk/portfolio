@@ -30,6 +30,7 @@
     "react-jss": "^10.3.0",
     "react-loader-spinner": "^3.1.14",
     "react-map-gl": "^5.2.7",
+    "react-query": "^2.4.13",
     "react-responsive": "^8.1.0",
     "react-scripts": "3.4.1",
     "react-scroll": "^1.7.16",
@@ -82,6 +83,7 @@
     ]
   },
   "devDependencies": {
+    "react-query-devtools": "^2.2.1",
     "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^9.0.0",
     "tslint-react": "^5.0.0"
