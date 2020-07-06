@@ -52,6 +52,8 @@ The Frontend of this portfolio build mainly on React along with some other impor
 - [React-JSS](https://cssinjs.org/react-jss/)
 - [React-Bootstrap](https://react-bootstrap.github.io)
 - [Axios](https://github.com/axios/axios)
+- [React-Query](https://github.com/tannerlinsley/react-query)
+- [React-Query-Devtools](https://github.com/tannerlinsley/react-query-devtools)
 - [React-MapGL](https://visgl.github.io/react-map-gl)
 - [MapBox](https://www.mapbox.com)
 - [Typescript](https://www.typescriptlang.org)
