@@ -32,6 +32,8 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
   progressBarParent: {
     width: '100%',
+    paddingTop: theme.spacing(1),
+    paddingBottom: theme.spacing(1),
   },
   text: {
     fontSize: 20,

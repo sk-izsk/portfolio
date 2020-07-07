@@ -21,27 +21,28 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     marginBottom: theme.spacing(1.5),
   },
   avatar: {
-    width: '50%',
+    flex: 1,
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
   },
   aboutInfo: {
-    width: '50%',
+    flex: 3,
     paddingRight: theme.spacing(3.75),
   },
   aboutInfoMobile: {
-    width: '90%',
-    paddingRight: theme.spacing(0),
+    paddingRight: theme.spacing(2.5),
     marginTop: theme.spacing(2),
+    paddingLeft: theme.spacing(2.5),
   },
   aboutContainer: {
     display: 'flex',
     justifyContent: 'center',
-    width: '100%',
+    width: '98%',
   },
   aboutContainerMobile: {
-    flexWrap: 'wrap',
+    flexDirection: 'column',
+    width: '100%',
   },
   mainContainer: {
     marginTop: theme.spacing(1.5),
