@@ -2,11 +2,12 @@ import clsx from 'clsx';
 import React, { useContext } from 'react';
 import { createUseStyles } from 'react-jss';
 import { useMediaQuery } from 'react-responsive';
-import { Button, ProgressBarContainer } from '..';
+import { Button } from '..';
 import { InformationsContext } from '../../App';
 import { CustomTheme } from '../../theme';
 import { MemoizedComponent } from '../../utils/custom-hook';
-import { Informations, SkillInformationTypes } from '../../utils/informations';
+import { Informations } from '../../utils/informations';
+import { SkillInformationsContainer } from '../SkillInformationsContainer/SkillInformationsContainer';
 
 interface AboutInfoProps {}
 
@@ -22,10 +23,10 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
   descriptionContainer: {
     width: '100%',
-    borderRightColor: theme.colors.thirdColor,
-    borderRightWidth: 2,
-    borderRightStyle: 'solid',
-    paddingRight: theme.spacing(2),
+    borderBottomColor: theme.colors.thirdColor,
+    borderBottomWidth: 2,
+    borderBottomStyle: 'solid',
+    paddingBottom: theme.spacing(2),
   },
   descriptionContainerMobile: {
     borderBottomColor: theme.colors.thirdColor,
@@ -56,8 +57,6 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   skillsInfoContainer: {
     display: 'flex',
     flexDirection: 'column',
-    paddingLeft: theme.spacing(2.5),
-    paddingRight: theme.spacing(1),
     width: '100%',
     justifyContent: 'space-around',
   },
@@ -87,7 +86,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   triangleContainerMobile: {
     alignSelf: 'end',
   },
-  descriptionParentContainer: { display: 'flex', width: '100%', flexDirection: 'row' },
+  descriptionParentContainer: { display: 'flex', width: '100%', flexDirection: 'column' },
   descriptionParentContainerMobile: { flexDirection: 'column' },
 }));
 
@@ -143,17 +142,9 @@ const AboutInfo: React.FC<AboutInfoProps> = () => {
             </div>
           </div>
           <div className={clsx([classes.skillsInfoContainer, isMobile && classes.skillsInfoContainerMobile])}>
-            {context?.skillsInformation &&
-              context.skillsInformation.map((skillInformation: SkillInformationTypes) => {
-                return (
-                  <ProgressBarContainer
-                    name={skillInformation.name}
-                    progress={skillInformation.progress}
-                    backgroundColor={skillInformation.backgroundColor}
-                    key={skillInformation.name}
-                  />
-                );
-              })}
+            {context?.skillsInformation && (
+              <SkillInformationsContainer skillsInformations={context?.skillsInformation} />
+            )}
           </div>
         </div>,
         onClick,

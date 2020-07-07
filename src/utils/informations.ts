@@ -9,6 +9,7 @@ export interface SkillInformationTypes {
   name?: string;
   progress?: number;
   backgroundColor?: string;
+  technology?: 'BACKEND' | 'FRONTEND' | 'MISC';
 }
 
 export interface PhotoType {
