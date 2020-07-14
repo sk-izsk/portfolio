@@ -34,6 +34,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
 const InformationsContext: Context<Informations | undefined> = createContext<Informations | undefined>(undefined);
 
 const App: React.FC = () => {
+  // const [informations, setInformations] = useState();
   useStyles();
   const classes: Record<'@global' | 'loaderContainer', string> = useStyles();
   const { data, isLoading, isFetching, error } = useQuery<AxiosResponse<any>, 'informations', Error>(
@@ -42,6 +43,14 @@ const App: React.FC = () => {
   );
 
   const informations: Informations = data?.data[0];
+
+  // useEffect(() => {
+  //   socket.on('getInformations', (data: any) => {
+  //     console.log('this is socket data', data);
+  //     const { informations } = data;
+  //     setInformations(informations[0]);
+  //   });
+  // }, []);
 
   const Components: JSX.Element[] = [
     <Home />,
