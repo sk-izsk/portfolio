@@ -1,5 +1,5 @@
 import ParticlesBg from 'particles-bg';
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { createUseStyles } from 'react-jss';
 import { Element } from 'react-scroll';
 import { InformationsContext } from '../../App';
@@ -37,6 +37,8 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
 }));
 
 const Home: React.FC<HomeProps> = () => {
+  // eslint-disable-next-line
+  const [animationStyle, setAnimationStyle] = useState<boolean>(Math.round(Math.random() * 2) % 2 === 1);
   const classes: Record<
     'mainContainer' | 'textColor' | 'button' | 'childContainer' | 'buttonContainer',
     string
@@ -45,7 +47,7 @@ const Home: React.FC<HomeProps> = () => {
 
   return (
     <Element name='Home'>
-      <ParticlesBg type='fountain' bg={true}></ParticlesBg>
+      <ParticlesBg type={animationStyle ? 'fountain' : 'circle'} bg={true}></ParticlesBg>
       <div className={classes.mainContainer}>
         <div className={classes.childContainer}>
           {context?.avatar.avatarOne && (
