@@ -3,6 +3,7 @@ export interface Information {
   endYear?: string;
   nameOfOrganization?: string;
   details?: string;
+  link?: string;
 }
 
 export interface SkillInformationTypes {

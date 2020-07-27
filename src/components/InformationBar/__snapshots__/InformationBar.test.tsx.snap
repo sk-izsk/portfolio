@@ -26,9 +26,13 @@ exports[`InformationBar renders correctly 1`] = `
       class="descriptionContainer-0-2-3"
     >
       <div
-        class="durationContainer-0-2-4"
+        style="display: flex; flex-direction: row; justify-content: space-between;"
       >
-        2016-2019
+        <div
+          class="durationContainer-0-2-4"
+        >
+          2016-2019
+        </div>
       </div>
       <h2>
         mock organization
