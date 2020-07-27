@@ -1,5 +1,6 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
+import { Button } from '..';
 import { CustomTheme } from '../../theme';
 
 interface InformationBarProps {
@@ -8,6 +9,7 @@ interface InformationBarProps {
   endYear?: string;
   nameOfOrganization?: string;
   details?: string;
+  link?: string;
 }
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
@@ -31,6 +33,10 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   durationContainer: {
     color: theme.colors.grayishBlue,
   },
+  openProject: {
+    maxWidth: 100,
+    width: '100%',
+  },
 }));
 
 const UnMemoizedInformationBar: React.FC<InformationBarProps> = ({
@@ -39,9 +45,10 @@ const UnMemoizedInformationBar: React.FC<InformationBarProps> = ({
   endYear,
   details,
   nameOfOrganization,
+  link,
 }) => {
   const classes: Record<
-    'mainContainer' | 'iconContainer' | 'durationContainer' | 'descriptionContainer',
+    'mainContainer' | 'iconContainer' | 'durationContainer' | 'descriptionContainer' | 'openProject',
     string
   > = useStyles();
 
@@ -49,8 +56,15 @@ const UnMemoizedInformationBar: React.FC<InformationBarProps> = ({
     <div className={classes.mainContainer}>
       <div className={classes.iconContainer}>{icon}</div>
       <div className={classes.descriptionContainer}>
-        <div className={classes.durationContainer}>
-          {startYear}-{endYear}
+        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
+          <div className={classes.durationContainer}>
+            {startYear}-{endYear}
+          </div>
+          {link && (
+            <Button onClick={() => window.open(link, '_blank')} className={classes.openProject}>
+              Open
+            </Button>
+          )}
         </div>
         <h2>{nameOfOrganization}</h2>
         <div>{details}</div>

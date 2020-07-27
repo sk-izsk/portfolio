@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { animated, useSpring } from 'react-spring';
@@ -35,9 +36,10 @@ const trans: (x: number, y: number, s: number) => string | undefined = (x: numbe
 interface ButtonProps {
   onClick?: () => void;
   onKeyDown?: () => void;
+  className?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ children, onClick, onKeyDown }) => {
+const Button: React.FC<ButtonProps> = ({ children, onClick, onKeyDown, className }) => {
   const classes: Record<'mainContainer', string> = useStyles();
   const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 5, tension: 350, friction: 40 } }));
 
@@ -47,7 +49,7 @@ const Button: React.FC<ButtonProps> = ({ children, onClick, onKeyDown }) => {
       onMouseLeave={() => set({ xys: [0, 0, 1] })}
       style={{ transform: props.xys.interpolate(trans as any) }}
       onClick={onClick}
-      className={classes.mainContainer}
+      className={clsx([classes.mainContainer, className && className])}
       onKeyDown={onKeyDown}
     >
       {children}
