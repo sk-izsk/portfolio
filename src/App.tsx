@@ -37,7 +37,7 @@ const App: React.FC = () => {
   // const [informations, setInformations] = useState();
   useStyles();
   const classes: Record<'@global' | 'loaderContainer', string> = useStyles();
-  const { data, isLoading, isFetching, error } = useQuery<AxiosResponse<any>, 'informations', Error>(
+  const { data, isLoading, isFetching, error } = useQuery<AxiosResponse<any>, 'informations', any>(
     'informations',
     getInformations,
   );
