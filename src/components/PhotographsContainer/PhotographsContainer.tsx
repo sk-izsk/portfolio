@@ -28,10 +28,14 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   },
   photosContainer: {
     width: '100%',
-    display: 'flex',
-    flexDirection: 'row',
-    flexWrap: 'wrap',
+    display: 'grid',
     justifyContent: 'space-evenly',
+    gridTemplateColumns: '1fr 1fr 1fr 1fr',
+    gridTemplateRows: '1fr 1fr',
+  },
+  photosContainerMobile: {
+    display: 'flex',
+    flexWrap: 'wrap',
   },
   button: {
     position: 'relative',
@@ -39,13 +43,17 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
 }));
 
 const PhotographsContainer: React.FC<PhotographsContainerProps> = () => {
-  const classes: Record<'mainContainer' | 'mainContainerMobile' | 'photosContainer' | 'button', string> = useStyles();
+  const classes: Record<
+    'mainContainer' | 'mainContainerMobile' | 'photosContainer' | 'button' | 'photosContainerMobile',
+    string
+  > = useStyles();
   const isMobile: boolean = useMediaQuery({ maxWidth: 780 });
+  const isTablet: boolean = useMediaQuery({ maxWidth: 970 });
   const context: Informations | undefined = useContext<Informations | undefined>(InformationsContext);
 
   return (
     <div className={clsx([classes.mainContainer, isMobile && classes.mainContainerMobile])}>
-      <div className={classes.photosContainer}>
+      <div className={clsx([classes.photosContainer, isTablet && classes.photosContainerMobile])}>
         {context?.photos &&
           context.photos.map((photo: PhotoType) => {
             return <ThreeDAnimation key={photo.url}>{<Photo url={photo.url} />}</ThreeDAnimation>;
