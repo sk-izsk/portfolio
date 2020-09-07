@@ -1,6 +1,7 @@
 import { AxiosResponse } from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import React, { Context, createContext } from 'react';
+import React, { Context, createContext, useEffect } from 'react';
+import ReactGa from 'react-ga';
 import { createUseStyles } from 'react-jss';
 import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
@@ -51,6 +52,13 @@ const App: React.FC = () => {
   //     setInformations(informations[0]);
   //   });
   // }, []);
+
+  useEffect(() => {
+    if (process.env.NODE_ENV === 'production') {
+      process.env.REACT_GOOGLE_ANALYTICS_TOKEN && ReactGa.initialize(process.env.REACT_GOOGLE_ANALYTICS_TOKEN);
+      ReactGa.pageview('/');
+    }
+  }, []);
 
   const Components: JSX.Element[] = [
     <Home />,
