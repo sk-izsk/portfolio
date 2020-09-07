@@ -55,7 +55,8 @@ const App: React.FC = () => {
 
   useEffect(() => {
     if (process.env.NODE_ENV === 'production') {
-      process.env.REACT_GOOGLE_ANALYTICS_TOKEN && ReactGa.initialize(process.env.REACT_GOOGLE_ANALYTICS_TOKEN);
+      //@ts-ignore
+      ReactGa.initialize(process.env.REACT_GOOGLE_ANALYTICS_TOKEN);
       ReactGa.pageview('/');
     }
   }, []);
