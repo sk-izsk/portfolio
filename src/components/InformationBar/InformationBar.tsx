@@ -36,6 +36,7 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
   openProject: {
     maxWidth: 100,
     width: '100%',
+    marginTop: theme.spacing(1),
   },
 }));
 
@@ -56,18 +57,16 @@ const UnMemoizedInformationBar: React.FC<InformationBarProps> = ({
     <div className={classes.mainContainer}>
       <div className={classes.iconContainer}>{icon}</div>
       <div className={classes.descriptionContainer}>
-        <div style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between' }}>
-          <div className={classes.durationContainer}>
-            {startYear}-{endYear}
-          </div>
-          {link && (
-            <Button onClick={() => window.open(link, '_blank')} className={classes.openProject}>
-              Open
-            </Button>
-          )}
+        <div className={classes.durationContainer}>
+          {startYear}-{endYear}
         </div>
         <h2>{nameOfOrganization}</h2>
         <div>{details}</div>
+        {link && (
+          <Button onClick={() => window.open(link, '_blank')} className={classes.openProject}>
+            Open
+          </Button>
+        )}
       </div>
     </div>
   );
