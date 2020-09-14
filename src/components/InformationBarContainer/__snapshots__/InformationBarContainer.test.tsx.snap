@@ -59,6 +59,7 @@ exports[`InformationBarContainer renders correctly 1`] = `
             <div>
               mock details
             </div>
+            <div />
           </div>
         </div>
       </div>

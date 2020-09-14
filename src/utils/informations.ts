@@ -4,6 +4,7 @@ export interface Information {
   nameOfOrganization?: string;
   details?: string;
   link?: string;
+  demoLink?: string;
 }
 
 export interface SkillInformationTypes {

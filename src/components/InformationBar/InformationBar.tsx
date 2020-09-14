@@ -1,3 +1,4 @@
+import clsx from 'clsx';
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { Button } from '..';
@@ -10,6 +11,7 @@ interface InformationBarProps {
   nameOfOrganization?: string;
   details?: string;
   link?: string;
+  demoLink?: string;
 }
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
@@ -38,6 +40,9 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     width: '100%',
     marginTop: theme.spacing(1),
   },
+  openDemo: {
+    marginLeft: theme.spacing(1),
+  },
 }));
 
 const UnMemoizedInformationBar: React.FC<InformationBarProps> = ({
@@ -47,9 +52,10 @@ const UnMemoizedInformationBar: React.FC<InformationBarProps> = ({
   details,
   nameOfOrganization,
   link,
+  demoLink,
 }) => {
   const classes: Record<
-    'mainContainer' | 'iconContainer' | 'durationContainer' | 'descriptionContainer' | 'openProject',
+    'mainContainer' | 'iconContainer' | 'durationContainer' | 'descriptionContainer' | 'openProject' | 'openDemo',
     string
   > = useStyles();
 
@@ -62,11 +68,21 @@ const UnMemoizedInformationBar: React.FC<InformationBarProps> = ({
         </div>
         <h2>{nameOfOrganization}</h2>
         <div>{details}</div>
-        {link && (
-          <Button onClick={() => window.open(link, '_blank')} className={classes.openProject}>
-            Open
-          </Button>
-        )}
+        <div>
+          {link && (
+            <Button onClick={() => window.open(link, '_blank')} className={classes.openProject}>
+              Open
+            </Button>
+          )}
+          {demoLink && (
+            <Button
+              onClick={() => window.open(demoLink, '_blank')}
+              className={clsx([classes.openProject, classes.openDemo])}
+            >
+              Demo
+            </Button>
+          )}
+        </div>
       </div>
     </div>
   );
