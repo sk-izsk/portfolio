@@ -36,6 +36,7 @@ exports[`InformationBar renders correctly 1`] = `
       <div>
         mock details
       </div>
+      <div />
     </div>
   </div>
 </DocumentFragment>
