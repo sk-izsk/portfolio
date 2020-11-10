@@ -78,7 +78,7 @@ exports[`App renders correctly 1`] = `
       </svg>
     </div>
   </div>
-  <div
+  <footer
     class="ReactQueryDevtools"
   >
     <button
@@ -124,6 +124,6 @@ exports[`App renders correctly 1`] = `
         </g>
       </svg>
     </button>
-  </div>
+  </footer>
 </DocumentFragment>
 `;
