@@ -10,14 +10,13 @@ interface PhotoProps {
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
   photo: {
-    width: 220,
-    height: 160,
+    width: '80%',
+    height: theme.spacing(25),
     borderRadius: 20,
-    padding: theme.spacing(2),
+    padding: theme.spacing(0.75),
     cursor: 'pointer',
     filter: 'grayscale(100%)',
     transition: 'transform 0.5s ease',
-
     '&:hover': {
       filter: 'grayscale(0%)',
       transform: 'scale(1.1)',
