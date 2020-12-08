@@ -4,12 +4,11 @@ import { FaRegThumbsUp } from 'react-icons/fa';
 import { IoMdSad } from 'react-icons/io';
 import { createUseStyles } from 'react-jss';
 import Loader from 'react-loader-spinner';
-import { Shape } from 'yup';
 import { Button, Modal } from '..';
 import { sendEmail } from '../../api/api';
 import { CustomTheme, theme } from '../../theme';
 import { useForm } from '../../utils/custom-hook';
-import { formSchema, InputValues } from '../../validation/validation';
+import { formSchema } from '../../validation/validation';
 
 interface FormContainerProps {}
 
@@ -91,15 +90,7 @@ const FormContainer: React.FC<FormContainerProps> = () => {
       e.preventDefault();
       setError({ name: '', errorMessage: '' });
       setLoader(true);
-      const validatedValues: Shape<
-        InputValues | undefined,
-        {
-          name: string;
-          email: string;
-          subject: string;
-          message: string;
-        }
-      > = await formSchema.validate(values);
+      const validatedValues = await formSchema.validate(values);
       if (validatedValues !== undefined) {
         const addEnvironment = {
           ...validatedValues,

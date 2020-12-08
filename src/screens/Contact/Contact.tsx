@@ -27,11 +27,13 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
     width: '50%',
     justifyContent: 'center',
     marginLeft: theme.spacing(3),
+    paddingRight: theme.spacing(6),
   },
   mapContainerMobile: {
     width: '90%',
     marginLeft: theme.spacing(0),
     alignSelf: 'center',
+    paddingRight: theme.spacing(0),
   },
   contactUsContainer: {
     display: 'flex',
@@ -65,11 +67,11 @@ const Contact: React.FC<ContactProps> = () => {
         <VanishAnimation words={['Contact']} />
       </div>
       <div className={clsx([classes.contactUsContainer, isMobile && classes.contactUsContainerMobile])}>
-        <div className={clsx([classes.mapContainer, isMobile && classes.mapContainerMobile])}>
-          <MapContainer />
-        </div>
         <div className={classes.formContainer}>
           <FormContainer />
+        </div>
+        <div className={clsx([classes.mapContainer, isMobile && classes.mapContainerMobile])}>
+          <MapContainer />
         </div>
       </div>
     </Element>
