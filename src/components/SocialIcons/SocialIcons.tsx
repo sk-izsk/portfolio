@@ -5,7 +5,7 @@ import { FiInstagram, FiTwitter } from 'react-icons/fi';
 import { createUseStyles } from 'react-jss';
 import { CustomTheme } from '../../theme';
 
-interface SocialIcons {}
+interface SocialIconsProps {}
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
   mainContainer: {
@@ -33,7 +33,7 @@ const socialIcons: JSX.Element[] | any = [
   <AiOutlineMail onClick={() => window.open('mailto:sk.zeeshan1992@gmail.com', '_blank')} size={25} />,
 ];
 
-const SocialIcons: React.FC<SocialIcons> = () => {
+const SocialIcons: React.FC<SocialIconsProps> = () => {
   const classes: Record<'mainContainer' | 'socialIconContainer', string> = useStyles();
 
   return (
