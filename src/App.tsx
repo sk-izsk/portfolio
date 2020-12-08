@@ -43,7 +43,7 @@ const App: React.FC = () => {
     getInformations,
   );
 
-  const informations: Informations = data?.data[0];
+  const informations: Informations = data?.data[0]; // ?
 
   // useEffect(() => {
   //   socket.on('getInformations', (data: any) => {
