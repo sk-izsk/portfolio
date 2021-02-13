@@ -11,6 +11,8 @@ cypress.env.json
 /cypress/screenshots
 /cypress/videos
 
+.eslintcache
+
 
 # production
 /build
