@@ -20,8 +20,9 @@ const useStyles = createUseStyles((theme: CustomTheme) => ({
       padding: 0,
       margin: 0,
       backgroundColor: theme.colors.primaryColor,
-      fontFamily: theme.fontProperties.fontFamily,
       scrollBehavior: 'smooth',
+      fontFamily: theme.fontProperties.fontFamily,
+      src: `local(${theme.fontProperties.fontFamily}), url(./fonts/JetBrainsMono-Regular.ttf) format('truetype')`,
     },
   },
   loaderContainer: {
