@@ -9,6 +9,7 @@ import { useQuery } from 'react-query';
 import { ReactQueryDevtools } from 'react-query-devtools';
 import { getInformations } from './api/api';
 import { NavBar } from './components';
+import './fonts/JetBrainsMono-Regular.ttf';
 import { About, Contact, Education, Experience, Home, MyOffers, Photography } from './screens';
 import { CustomTheme, theme } from './theme';
 import { Informations } from './utils/informations';

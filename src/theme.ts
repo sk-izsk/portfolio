@@ -35,7 +35,7 @@ const theme: CustomTheme = {
   fontProperties: {
     textFontSize: 16,
     headerFontSize: 36,
-    fontFamily: 'Open Sans,Montserrat, Fira Sans, Lato, Roboto',
+    fontFamily: 'JetBrains Mono, Open Sans,Montserrat, Fira Sans, Lato, Roboto',
   },
   spacing: (value: number) => 8 * value,
 };
