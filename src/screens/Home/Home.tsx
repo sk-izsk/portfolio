@@ -59,7 +59,7 @@ const Home: React.FC<HomeProps> = () => {
           <AnimatedText />
           <SocialIcons />
           <div className={classes.buttonContainer}>
-            <Button onClick={() => window.open('https://izsk.vercel.app', '_blank')}>Next Portfolio</Button>
+            <Button onClick={() => window.open('https://izsk.vercel.app', '_blank')}>NEXT Portfolio</Button>
             <div className={classes.button}>
               <Button onClick={() => window.open('https://izsk-vue.netlify.app', '_blank')}>Vue Portfolio</Button>
             </div>
