@@ -15,12 +15,12 @@
     "react-icons": "^4.2.0",
     "react-jss": "^10.6.0",
     "react-loader-spinner": "^4.0.0",
-    "react-map-gl": "^6.1.11",
-    "react-query": "^3.13.4",
+    "react-map-gl": "^6.1.12",
+    "react-query": "^3.13.10",
     "react-responsive": "^8.2.0",
     "react-scripts": "4.0.3",
     "react-scroll": "^1.8.2",
-    "react-spring": "^8.0.27",
+    "react-spring": "^9.1.1",
     "react-text-loop": "^2.3.0",
     "socket.io-client": "^4.0.1",
     "styled-components": "^5.2.3",
@@ -43,9 +43,7 @@
     "quality:fix": "yarn lint:fix && yarn prettier:fix",
     "precommit:check": "yarn prettier:fix-all",
     "clean": "rm -rf node_modules && rm -rf yarn.lock",
-    "validate": "yarn prettier:fix && yarn test",
-    "cypress": "yarn run cypress run --port 8080",
-    "cypress-tool": "yarn run cypress open --port 8080"
+    "validate": "yarn prettier:fix && yarn test"
   },
   "resolutions": {
     "styled-components": "^5"
@@ -80,9 +78,9 @@
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^13.1.1",
+    "@testing-library/user-event": "^13.1.4",
     "@types/jest": "^26.0.22",
-    "@types/node": "^14.14.37",
+    "@types/node": "^14.14.41",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
     "@types/react-ga": "^2.3.0",
@@ -93,8 +91,6 @@
     "@types/socket.io-client": "^1.4.36",
     "@types/styled-components": "^5.1.9",
     "@types/yup": "^0.29.11",
-    "cypress": "^6.8.0",
-    "cypress-axe": "^0.12.2",
     "lint": "^0.7.0",
     "prettier": "^2.2.1",
     "react-query-devtools": "^2.6.3",
@@ -102,6 +98,6 @@
     "tslint-config-prettier": "^1.18.0",
     "tslint-config-standard": "^9.0.0",
     "tslint-react": "^5.0.0",
-    "typescript": "~4.2.3"
+    "typescript": "~4.2.4"
   }
 }
