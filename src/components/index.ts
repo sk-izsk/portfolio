@@ -9,7 +9,6 @@ export { Button } from './Button/Button';
 export { FormContainer } from './FormContainer/FormContainer';
 export { InformationBar } from './InformationBar/InformationBar';
 export { InformationBarContainer } from './InformationBarContainer/InformationBarContainer';
-export { MapContainer } from './MapContainer/MapContainer';
 export { Modal } from './Modal/Modal';
 export { NavBar } from './NavBar/NavBar';
 export { OffersContainer } from './OffersContainer/OffersContainer';

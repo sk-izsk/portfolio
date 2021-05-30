@@ -3,7 +3,7 @@ import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { useMediaQuery } from 'react-responsive';
 import { Element } from 'react-scroll';
-import { FormContainer, MapContainer, VanishAnimation } from '../../components';
+import { FormContainer, VanishAnimation } from '../../components';
 import { CustomTheme } from '../../theme';
 
 interface ContactProps {}
@@ -69,9 +69,6 @@ const Contact: React.FC<ContactProps> = () => {
       <div className={clsx([classes.contactUsContainer, isMobile && classes.contactUsContainerMobile])}>
         <div className={classes.formContainer}>
           <FormContainer />
-        </div>
-        <div className={clsx([classes.mapContainer, isMobile && classes.mapContainerMobile])}>
-          <MapContainer />
         </div>
       </div>
     </Element>
