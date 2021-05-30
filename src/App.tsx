@@ -6,7 +6,6 @@ import { createUseStyles } from 'react-jss';
 import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
 import { useQuery } from 'react-query';
-import { ReactQueryDevtools } from 'react-query-devtools';
 import { getInformations } from './api/api';
 import { NavBar } from './components';
 import { About, Contact, Education, Experience, Home, MyOffers, Photography } from './screens';
@@ -84,7 +83,7 @@ const App: React.FC = () => {
             ))}
           </>
         )}
-        <ReactQueryDevtools initialIsOpen={false} />
+        {/* <ReactQueryDevtools initialIsOpen={false} /> */}
       </InformationsContext.Provider>
     </>
   );
