@@ -103,7 +103,7 @@ const FormContainer: React.FC<FormContainerProps> = () => {
           setOpenModal(true);
         }
       }
-    } catch (err) {
+    } catch (err: any) {
       setLoader(false);
       err.name === 'ValidationError'
         ? setError({ name: err.path, errorMessage: err.message })
