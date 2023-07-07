@@ -1,15 +1,12 @@
-import { AxiosResponse } from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { Context, createContext, useEffect } from 'react';
 import ReactGa from 'react-ga';
 import { createUseStyles } from 'react-jss';
-import Loader from 'react-loader-spinner';
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
-import { useQuery } from 'react-query';
-import { getInformations } from './api/api';
 import { NavBar } from './components';
+import { informations } from './data';
 import { About, Contact, Education, Experience, Home, MyOffers, Photography } from './screens';
-import { CustomTheme, theme } from './theme';
+import { CustomTheme } from './theme';
 import { Informations } from './utils/informations';
 
 const useStyles = createUseStyles((theme: CustomTheme) => ({
@@ -37,12 +34,12 @@ const App: React.FC = () => {
   // const [informations, setInformations] = useState();
   useStyles();
   const classes: Record<'@global' | 'loaderContainer', string> = useStyles();
-  const { data, isLoading, isFetching, error } = useQuery<AxiosResponse<any>, 'informations', any>(
-    'informations',
-    getInformations,
-  );
+  // const { data, isLoading, isFetching, error } = useQuery<AxiosResponse<any>, 'informations', any>(
+  //   'informations',
+  //   getInformations,
+  // );
 
-  const informations: Informations = data?.data[0]; // ?
+  console.log('information', informations);
 
   // useEffect(() => {
   //   socket.on('getInformations', (data: any) => {
@@ -71,18 +68,13 @@ const App: React.FC = () => {
   return (
     <>
       <InformationsContext.Provider value={informations}>
-        {isLoading || error ? (
-          <div className={classes.loaderContainer}>
-            <Loader type='Puff' color={theme.colors.secondaryColor} height={200} width={200} visible={isFetching} />
-          </div>
-        ) : (
-          <>
-            <NavBar />
-            {Components.map((Component: JSX.Element, index: number) => (
-              <div key={`${index}`}>{Component}</div>
-            ))}
-          </>
-        )}
+        <>
+          <NavBar />
+          {Components.map((Component: JSX.Element, index: number) => (
+            <div key={`${index}`}>{Component}</div>
+          ))}
+        </>
+
         {/* <ReactQueryDevtools initialIsOpen={false} /> */}
       </InformationsContext.Provider>
     </>
